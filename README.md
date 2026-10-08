@@ -1,23 +1,23 @@
-<p align="center">
-  <a href="https://getartcraft.com/">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="docs/brand/artcraft-logo-white.svg">
-      <img alt="ArtCraft" src="docs/brand/artcraft-logo.svg" width="200">
-    </picture>
-  </a>
-</p>
+<h1 align="center">Epic Film</h1>
 
-
-<h1 align="center">FilmCraft</h1>
-
-<p align="center">
-  <b>Video editing, color and sound; an open-source, clean-room reimplementation of Adobe Premiere Pro, rebuilt in pure Rust.</b>
+<p align="center" dir="rtl">
+  <b>Epic Film — עריכת וידאו</b><br>
+  חיתוך על ציר זמן, צבע, סאונד, כתוביות ואפקטים, וייצוא ל-MP4 ולפורמטים מקצועיים, בלי לשלם על כל חודש שבו פתחתם את התוכנה.
 </p>
 
 <p align="center">
-  An open-source, clean-room take on the Adobe Premiere Pro workflow: native on macOS, Windows and Linux, and in the browser via WebAssembly.<br>
-  By the ArtCraft team.
+  Video editing, color and sound in a native app for Windows, macOS and Linux.
+  Open source, offline, and yours.
 </p>
+
+<p align="center">
+  <b>Download:</b> see <a href="https://github.com/prockstem/filmcraftheb/releases">Releases</a>
+  (Windows, macOS and Linux zips, each with installation instructions).
+</p>
+
+> [!NOTE]
+> Epic Film is based on [FilmCraft](https://github.com/storytold/filmcraft), an open-source
+> (MIT OR Apache-2.0) video editor. The sections below describe the FilmCraft engine it is built on.
 
 <p align="center">
   <a href="#license-and-credits"><img alt="License: MIT OR Apache-2.0" src="https://img.shields.io/badge/license-MIT%20%7C%20Apache--2.0-8b5cf6"></a>

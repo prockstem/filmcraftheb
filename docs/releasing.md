@@ -5,7 +5,7 @@ installers for macOS, Windows and Linux, plus the web build, and creates or upda
 GitHub Release named `FilmCraft v<version>`. Nobody sees a draft until a maintainer publishes it.
 
 User-facing names say **FilmCraft**. Files, binaries and ids stay lowercase
-(`filmcraft-<version>-<platform>-<arch>.<ext>`, `ai.storyteller.filmcraft`).
+(`filmcraft-<version>-<platform>-<arch>.<ext>`, `io.github.prockstem.epicfilm`).
 
 ## Cutting a release
 
@@ -62,7 +62,7 @@ deliberately, in every job at once.
 `packaging/macos/package.sh` builds `aarch64-apple-darwin` and `x86_64-apple-darwin` with
 `MACOSX_DEPLOYMENT_TARGET=11.0`, joins them with `lipo` and assembles `FilmCraft.app`:
 
-- `Info.plist` is generated from `Info.plist.in` (bundle id `ai.storyteller.filmcraft`, the
+- `Info.plist` is generated from `Info.plist.in` (bundle id `io.github.prockstem.epicfilm`, the
   version and the build commit).
 - **Signing** uses the hardened runtime and a secure timestamp, with the entitlements in
   `entitlements.plist`. The Developer ID certificate is imported into a temporary keychain by
@@ -104,7 +104,7 @@ the job to a newer image raises the floor, so do it deliberately and update `nfp
 After packaging, the job prints the `.deb`'s metadata and contents, runs `ldd` on the binary and
 runs each AppImage with `--version`.
 
-`packaging/linux/flatpak/ai.storyteller.filmcraft.yml` is a Flatpak manifest (its header says how
+`packaging/linux/flatpak/io.github.prockstem.epicfilm.yml` is a Flatpak manifest (its header says how
 to build it). The release doesn't build a Flatpak; the workflows only check the manifest's id.
 
 ### Web

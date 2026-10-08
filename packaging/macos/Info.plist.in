@@ -7,13 +7,13 @@
   <key>CFBundleDevelopmentRegion</key>
   <string>en</string>
   <key>CFBundleDisplayName</key>
-  <string>FilmCraft</string>
+  <string>Epic Film</string>
   <key>CFBundleName</key>
-  <string>FilmCraft</string>
+  <string>Epic Film</string>
   <key>CFBundleExecutable</key>
-  <string>FilmCraft</string>
+  <string>Epic Film</string>
   <key>CFBundleIdentifier</key>
-  <string>ai.storyteller.filmcraft</string>
+  <string>io.github.prockstem.epicfilm</string>
   <key>CFBundleInfoDictionaryVersion</key>
   <string>6.0</string>
   <key>CFBundlePackageType</key>
@@ -29,7 +29,7 @@
   <key>FilmCraftBuildCommit</key>
   <string>@BUILD_SHA@</string>
   <key>CFBundleIconFile</key>
-  <string>FilmCraft</string>
+  <string>Epic Film</string>
   <key>LSApplicationCategoryType</key>
   <string>public.app-category.video</string>
   <!-- Must match MACOSX_DEPLOYMENT_TARGET in package.sh. Big Sur is the first release on
@@ -50,16 +50,16 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>ai.storyteller.filmcraft.project</string>
+      <string>io.github.prockstem.epicfilm.project</string>
       <key>UTTypeDescription</key>
-      <string>FilmCraft Project</string>
+      <string>Epic Film Project</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
         <string>public.json</string>
       </array>
       <key>UTTypeIconFile</key>
-      <string>FilmCraft</string>
+      <string>Epic Film</string>
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.filename-extension</key>

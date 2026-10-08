@@ -140,7 +140,7 @@ pub fn install_japanese_font(ctx: &egui::Context) -> bool {
 }
 
 const SPANISH: &[(&str, &str)] = &[
-    ("About FilmCraft", "Acerca de FilmCraft"),
+    ("About Epic Film", "Acerca de Epic Film"),
     ("Add Audio Submix Track", "Añadir pista de submezcla de audio"),
     ("Add Caption at Playhead", "Añadir subtítulo en el cabezal"),
     ("Add Chapter Marker…", "Añadir marcador de capítulo…"),
@@ -490,7 +490,7 @@ const SPANISH: &[(&str, &str)] = &[
 ];
 
 const PORTUGUESE: &[(&str, &str)] = &[
-    ("About FilmCraft", "Sobre o FilmCraft"),
+    ("About Epic Film", "Sobre o Epic Film"),
     ("Add Audio Submix Track", "Adicionar faixa de submixagem de áudio"),
     ("Add Caption at Playhead", "Adicionar legenda no cursor de reprodução"),
     ("Add Chapter Marker…", "Adicionar marcador de capítulo…"),
