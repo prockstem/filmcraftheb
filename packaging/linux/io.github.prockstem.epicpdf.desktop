@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Name=Epic PDF
+GenericName=PDF Editor
+Comment=Read, organize, combine, split and secure PDFs
+Exec=pdfcraft %F
+TryExec=pdfcraft
+Icon=io.github.prockstem.epicpdf
+Terminal=false
+StartupNotify=true
+StartupWMClass=pdfcraft
+Categories=Office;Viewer;Graphics;
+Keywords=pdf;viewer;editor;annotate;sign;forms;merge;split;
+MimeType=application/pdf;
