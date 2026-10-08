@@ -269,9 +269,22 @@ pub fn install(ctx: &egui::Context, t: &Tokens) {
     fonts.families.entry(FontFamily::Monospace).or_default().insert(0, "jbmono".into());
     fonts.families.insert(FontFamily::Name("semibold".into()), vec!["inter-semibold".into(), "inter".into()]);
     fonts.families.insert(FontFamily::Name("medium".into()), vec!["inter-medium".into(), "inter".into()]);
+    add_hebrew_font(&mut fonts);
     add_craft_fonts(&mut fonts);
     ctx.set_fonts(fonts);
+    // egui draws text left to right only; rows with Hebrew are put into visual order (rtl_text.rs)
+    crate::rtl_text::install(ctx);
     apply_visuals(ctx, t);
+}
+
+/// Add the system's Hebrew font (`i18n::system_hebrew_font`) as a fallback of every font family,
+/// right after the app's own fonts (Inter and JetBrains Mono have no Hebrew letters).
+fn add_hebrew_font(fonts: &mut FontDefinitions) {
+    let Some(font) = crate::i18n::system_hebrew_font() else { return };
+    fonts.font_data.insert(crate::i18n::HEBREW_FONT.into(), font);
+    for stack in fonts.families.values_mut() {
+        stack.push(crate::i18n::HEBREW_FONT.into());
+    }
 }
 
 /// Name of the egui font for a craft-fonts entry.

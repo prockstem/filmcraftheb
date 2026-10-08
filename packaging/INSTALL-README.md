@@ -34,8 +34,8 @@
 - **Fedora / openSUSE:** `sudo dnf install ./@APP_FILE@-*.rpm`
 
 ### שפת הממשק
-הממשק זמין באנגלית, ספרדית, פורטוגזית ויפנית (עדיין לא בעברית).
-בחירת שפה: **Edit ← Language**.
+התוכנה נפתחת בעברית. הממשק זמין גם באנגלית, ספרדית, פורטוגזית ויפנית.
+החלפת שפה: **עריכה ← שפה**.
 
 ### בדיקת הקבצים
 `SHA256SUMS.txt` (בדף ההורדה) מכיל טביעות אצבע לכל קובץ, לבדיקה שההורדה שלמה.
@@ -70,8 +70,8 @@ Pick the file for your machine (`x86_64` for a regular PC, `aarch64` for ARM):
 - **Fedora / openSUSE:** `sudo dnf install ./@APP_FILE@-*.rpm`
 
 ### Interface language
-The interface is available in English, Spanish, Portuguese and Japanese (no Hebrew yet). Pick one
-under **Edit › Language**.
+The app opens in Hebrew. English, Spanish, Portuguese and Japanese are also available: switch
+under **Edit › Language** (עריכה ← שפה).
 
 ### Checking the files
 `SHA256SUMS.txt` (on the download page) lists a checksum for every file.

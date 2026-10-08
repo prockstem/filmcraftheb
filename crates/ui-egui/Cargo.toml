@@ -28,6 +28,8 @@ eframe = { workspace = true, features = ["default_fonts", "wgpu", "accesskit"] }
 serde = { workspace = true }
 serde_json = { workspace = true }
 log = { workspace = true }
+# UAX #9 visual order for Hebrew interface text (rtl_text.rs)
+unicode-bidi = "0.3"
 rayon = { workspace = true }
 web-time = "1"
 # ArtCraft wordmark (PNG) for the About dialog and Home screen.

@@ -155,6 +155,11 @@ fn main() -> eframe::Result {
                 }
             }
             let mut app = FilmcraftApp::new(session);
+            // Epic Film opens in Hebrew (Edit ▸ Language switches); FILMCRAFT_LANGUAGE=en|ja|es|pt-br|he overrides.
+            app.ui.language = std::env::var("FILMCRAFT_LANGUAGE")
+                .ok()
+                .and_then(|code| filmcraft_ui_egui::i18n::Language::parse(&code))
+                .unwrap_or(filmcraft_ui_egui::i18n::Language::He);
             if recover == Some(false) {
                 app.dialog = None;
             }

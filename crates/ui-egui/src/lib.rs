@@ -22,6 +22,7 @@ pub mod panels;
 pub mod perf;
 #[cfg(not(target_arch = "wasm32"))]
 pub mod play_ahead;
+pub mod rtl_text;
 pub mod state;
 pub mod theme;
 pub mod widgets;
