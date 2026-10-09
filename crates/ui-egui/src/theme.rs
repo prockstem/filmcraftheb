@@ -274,6 +274,44 @@ static INTER_SEMIBOLD: &[u8] = include_bytes!("../../../assets/fonts/Inter-SemiB
 static JETBRAINS_MONO: &[u8] = include_bytes!("../../../assets/fonts/JetBrainsMono-Regular.ttf");
 
 /// Install fonts (Inter, Inter Medium/SemiBold, JetBrains Mono) and egui visuals.
+/// Font files that carry Hebrew letters, best first: Segoe UI and Arial on Windows, Arial on macOS,
+/// Noto Sans Hebrew, DejaVu Sans and FreeSans on Linux. None is bundled; Inter has none.
+#[cfg(not(target_arch = "wasm32"))]
+const HEBREW_FONT_FILES: &[&str] = &[
+    "C:\\Windows\\Fonts\\segoeui.ttf",
+    "C:\\Windows\\Fonts\\arial.ttf",
+    "C:\\Windows\\Fonts\\tahoma.ttf",
+    "/System/Library/Fonts/Supplemental/Arial.ttf",
+    "/Library/Fonts/Arial.ttf",
+    "/usr/share/fonts/truetype/noto/NotoSansHebrew-Regular.ttf",
+    "/usr/share/fonts/noto/NotoSansHebrew-Regular.ttf",
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "/usr/share/fonts/dejavu-sans-fonts/DejaVuSans.ttf",
+    "/usr/share/fonts/TTF/DejaVuSans.ttf",
+    "/usr/share/fonts/truetype/freefont/FreeSans.ttf",
+];
+
+/// A Hebrew font already installed on this system: the first of [`HEBREW_FONT_FILES`] that exists
+/// (Windows' fonts folder taken from `WINDIR` when set). Read once per process.
+#[cfg(not(target_arch = "wasm32"))]
+pub fn system_hebrew_font() -> Option<Arc<FontData>> {
+    static FONT: std::sync::OnceLock<Option<Arc<FontData>>> = std::sync::OnceLock::new();
+    FONT.get_or_init(|| {
+        let windir = std::env::var("WINDIR").ok();
+        HEBREW_FONT_FILES.iter().find_map(|path| {
+            let path = match (&windir, path.strip_prefix("C:\\Windows")) {
+                (Some(dir), Some(rest)) => format!("{dir}{rest}"),
+                _ => (*path).to_owned(),
+            };
+            let bytes = std::fs::read(&path).ok()?;
+            // kept for the life of the process (one font, read once), shared by every reinstall
+            let bytes: &'static [u8] = Box::leak(bytes.into_boxed_slice());
+            Some(Arc::new(FontData::from_static(bytes)))
+        })
+    })
+    .clone()
+}
+
 pub fn install(ctx: &egui::Context, t: &Tokens) {
     let mut fonts = FontDefinitions::default();
     fonts.font_data.insert("inter".into(), Arc::new(FontData::from_static(INTER_REGULAR)));
@@ -301,15 +339,10 @@ pub fn install(ctx: &egui::Context, t: &Tokens) {
                 family.push("japanese-system".into());
             }
         }
-        // Hebrew the same way (Inter has no Hebrew letters): the system face the text engine
-        // falls back to for Hebrew, e.g. Segoe UI or Arial.
-        let face = fonts::face(fonts::fallback_for('א', base));
-        if face.has_char('א')
-            && let Some(font) = face.font()
-        {
-            let mut data = FontData::from_owned(font.data().as_bytes().to_vec());
-            data.index = face.info.index;
-            fonts.font_data.insert("hebrew-system".into(), Arc::new(data));
+        // Hebrew (Inter has no Hebrew letters): a known sans-serif with Hebrew from the system
+        // (Segoe UI, Arial, DejaVu Sans…), the same faces the sibling Epic apps use.
+        if let Some(data) = system_hebrew_font() {
+            fonts.font_data.insert("hebrew-system".into(), data);
             for family in fonts.families.values_mut() {
                 family.push("hebrew-system".into());
             }
