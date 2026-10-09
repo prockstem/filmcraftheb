@@ -255,7 +255,65 @@ pub fn install_fonts(ctx: &egui::Context) {
     mono.extend(fallback);
     fonts.families.insert(FontFamily::Name(FONT_MONO.into()), mono);
     add_craft_fonts(&mut fonts);
+    add_hebrew_font(&mut fonts);
     ctx.set_fonts(fonts);
+    // egui draws text left to right only; rows with Hebrew are put into visual order (rtl_text.rs).
+    // A no-op when already installed (egui keeps one plugin per type).
+    crate::rtl_text::install(ctx);
+}
+
+/// Font files that carry Hebrew letters, best first: Segoe UI and Arial on Windows, Arial on macOS,
+/// Noto Sans Hebrew, DejaVu Sans and FreeSans on Linux. None is bundled (fonts live in
+/// craft-fonts); Source Sans 3 and JetBrains Mono have no Hebrew letters.
+const HEBREW_FONT_FILES: &[&str] = &[
+    "C:\\Windows\\Fonts\\segoeui.ttf",
+    "C:\\Windows\\Fonts\\arial.ttf",
+    "C:\\Windows\\Fonts\\tahoma.ttf",
+    "/System/Library/Fonts/Supplemental/Arial.ttf",
+    "/Library/Fonts/Arial.ttf",
+    "/usr/share/fonts/truetype/noto/NotoSansHebrew-Regular.ttf",
+    "/usr/share/fonts/noto/NotoSansHebrew-Regular.ttf",
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "/usr/share/fonts/dejavu-sans-fonts/DejaVuSans.ttf",
+    "/usr/share/fonts/TTF/DejaVuSans.ttf",
+    "/usr/share/fonts/truetype/freefont/FreeSans.ttf",
+];
+
+/// egui name of the system Hebrew font.
+const HEBREW_FONT: &str = "system-hebrew";
+
+/// A Hebrew font already installed on this system: the first of [`HEBREW_FONT_FILES`] that exists
+/// (Windows' fonts folder taken from `WINDIR` when set). Read once per process; `None` on the web
+/// and on systems without one, where Hebrew shows replacement boxes.
+pub fn system_hebrew_font() -> Option<Arc<FontData>> {
+    static FONT: std::sync::OnceLock<Option<Arc<FontData>>> = std::sync::OnceLock::new();
+    FONT.get_or_init(|| {
+        if cfg!(target_arch = "wasm32") {
+            return None;
+        }
+        let windir = std::env::var("WINDIR").ok();
+        HEBREW_FONT_FILES.iter().find_map(|path| {
+            let path = match (&windir, path.strip_prefix("C:\\Windows")) {
+                (Some(dir), Some(rest)) => format!("{dir}{rest}"),
+                _ => (*path).to_owned(),
+            };
+            let bytes = std::fs::read(&path).ok()?;
+            // kept for the life of the process (one font, read once), shared by every font reload
+            let bytes: &'static [u8] = Box::leak(bytes.into_boxed_slice());
+            Some(Arc::new(FontData::from_static(bytes)))
+        })
+    })
+    .clone()
+}
+
+/// The system Hebrew font as the last fallback of every font family. Placed earlier, a large
+/// system face would also serve egui's replacement box.
+fn add_hebrew_font(fonts: &mut FontDefinitions) {
+    let Some(font) = system_hebrew_font() else { return };
+    fonts.font_data.insert(HEBREW_FONT.to_owned(), font);
+    for stack in fonts.families.values_mut() {
+        stack.push(HEBREW_FONT.to_owned());
+    }
 }
 
 /// The egui name of a craft-fonts face.

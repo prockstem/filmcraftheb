@@ -64,7 +64,7 @@ fn plural_czech(n: u64) -> usize {
 }
 
 /// The registry. English first: it is the fallback and the source language.
-pub static LANGUAGES: [LangInfo; 7] = [
+pub static LANGUAGES: [LangInfo; 8] = [
     LangInfo { code: "en", name: "English", source: "", plural: plural_one_other, complete_menus: false, catalog: OnceLock::new() },
     // Japanese: the whole interface (every menu string and `tl!` literal), keeping the product,
     // workspace and perspective preset names in English (`MENU_KEEP_AS_IS`).
@@ -111,6 +111,11 @@ pub static LANGUAGES: [LangInfo; 7] = [
         plural: plural_none,
         complete_menus: true,
         catalog: OnceLock::new(),
+    },
+    // Hebrew: the whole interface, drawn right to left by rtl_text.rs, keeping the same names in
+    // English as Japanese (`MENU_KEEP_AS_IS`); `he-IL` and the legacy `iw` resolve here.
+    LangInfo {
+        code: "he", name: "עברית", source: include_str!("he.tsv"), plural: plural_one_other, complete_menus: true, catalog: OnceLock::new()
     },
 ];
 
@@ -189,6 +194,10 @@ fn candidates(tag: &str) -> Vec<String> {
         // Chinese by region when no script is given.
         let script = if parts.iter().any(|p| matches!(*p, "tw" | "hk" | "mo")) { "zh-hant" } else { "zh-hans" };
         out.insert(out.len() - 1, script.to_string());
+    }
+    if primary == "iw" {
+        // The legacy ISO 639 code for Hebrew, still reported by some systems.
+        out.push("he".to_string());
     }
     out
 }

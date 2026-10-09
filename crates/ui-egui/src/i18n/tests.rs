@@ -221,6 +221,9 @@ fn bundled_fonts_cover_the_catalogs() {
         ];
         for l in LANGUAGES.iter().filter(|l| !l.source.is_empty()) {
             let (entries, _) = parse_entries(l.source);
+            if l.code == "he" && crate::theme::system_hebrew_font().is_none() {
+                continue; // Hebrew letters come from a system font (none is bundled)
+            }
             let cjk_checked = japanese_ui_font && l.code == "ja";
             let chars: std::collections::BTreeSet<char> =
                 entries.iter().flat_map(|(_, _, tr)| tr.chars()).filter(|c| !c.is_whitespace() && (cjk_checked || !is_cjk(*c))).collect();
@@ -391,7 +394,7 @@ fn cs() -> Lang {
 }
 
 /// Languages whose catalogs leave [`MENU_KEEP_AS_IS`] in English.
-const KEEPS_MENU_NAMES: [&str; 4] = ["cs", "es", "ja", "pt-br"];
+const KEEPS_MENU_NAMES: [&str; 5] = ["cs", "es", "ja", "pt-br", "he"];
 
 /// Menu labels the menu-complete catalogs (Czech, Spanish, Japanese, Brazilian Portuguese) show as they are: the product name, a format name, the built-in workspace
 /// names and the perspective grid presets (names, shown untranslated wherever else they appear).

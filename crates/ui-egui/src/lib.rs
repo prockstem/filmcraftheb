@@ -38,6 +38,7 @@ pub mod prefs_dialog;
 pub mod print;
 pub mod recovery;
 pub mod render_worker;
+pub mod rtl_text;
 mod scrub;
 pub mod shortcut_editor;
 pub mod shortcuts;

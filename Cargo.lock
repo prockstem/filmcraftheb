@@ -4692,6 +4692,7 @@ dependencies = [
  "serde",
  "serde_json",
  "toml",
+ "unicode-bidi",
  "vectorcraft-cad",
  "vectorcraft-color",
  "vectorcraft-doc",

@@ -34,8 +34,8 @@
 - **Fedora / openSUSE:** `sudo dnf install ./@APP_FILE@-*.rpm`
 
 ### שפת הממשק
-הממשק זמין באנגלית, צ'כית, ספרדית, יפנית, פורטוגזית (ברזיל) וסינית (עדיין לא בעברית).
-בחירת שפה: תפריט **Epic Vector ← Language**.
+התוכנה נפתחת בעברית. הממשק זמין גם באנגלית, צ'כית, ספרדית, יפנית, פורטוגזית (ברזיל) וסינית.
+החלפת שפה: תפריט **Epic Vector ← שפה** (Language).
 
 ### בדיקת הקבצים
 `SHA256SUMS.txt` (בדף ההורדה) מכיל טביעות אצבע לכל קובץ, לבדיקה שההורדה שלמה.
@@ -70,8 +70,8 @@ Pick the file for your machine (`x86_64` for a regular PC, `aarch64` for ARM):
 - **Fedora / openSUSE:** `sudo dnf install ./@APP_FILE@-*.rpm`
 
 ### Interface language
-The interface is available in English, Czech, Spanish, Japanese, Brazilian Portuguese and Chinese
-(no Hebrew yet). Pick one under **Epic Vector › Language**.
+The app opens in Hebrew. English, Czech, Spanish, Japanese, Brazilian Portuguese and Chinese are
+also available: pick one under **Epic Vector › Language**.
 
 ### Checking the files
 `SHA256SUMS.txt` (on the download page) lists a checksum for every file.

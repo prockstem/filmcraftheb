@@ -29,6 +29,8 @@ image = { workspace = true }
 serde = { workspace = true }
 serde_json = { workspace = true }
 log = { workspace = true }
+# UAX #9 visual order for Hebrew interface text (rtl_text.rs)
+unicode-bidi = "0.3"
 
 [dev-dependencies]
 vectorcraft-testkit = { workspace = true }

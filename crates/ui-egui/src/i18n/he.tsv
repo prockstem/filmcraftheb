@@ -1,0 +1,3041 @@
+# Hebrew (he) catalog. Same format as zh-hant.tsv:  context <TAB> source <TAB> translation
+# (empty context = a plain UI string; `@id` = a command id; `@plural` = "one|other" forms).
+#
+# Text is stored in logical (reading) order; the UI draws it right to left (see rtl_text.rs).
+#
+# Clean-room: written from the meaning of Epic Vector's English labels using ordinary Hebrew
+# computing vocabulary; no other application's Hebrew localisation was copied.
+#
+# Coverage: the whole interface — every menu string and every `tl!` literal (`complete_menus`,
+# tested). Left in English on purpose (`MENU_KEEP_AS_IS` in the tests): the product name, language
+# names, OpenType, the built-in workspace names and the bracketed perspective grid preset names.
+	About Epic Vector	אודות Epic Vector
+	All Scripts	כל הכתבים
+	Anchors:	עוגנים:
+	Any Kind	כל סוג
+	Ascender	קו עולה
+	Baseline	קו בסיס
+	Bottom-to-Bottom Leading	מרווח שורות מתחתית לתחתית
+	Burasagari	Burasagari
+	Force	כפייה
+	Center	מרכז
+	Character Alignment	יישור תווים
+	Connect Selected End Points	חיבור נקודות הקצה שנבחרו
+	Convert Selected Anchor Points to Corner	המרת נקודות העוגן שנבחרו לפינה
+	Convert Selected Anchor Points to Smooth	המרת נקודות העוגן שנבחרו לחלקה
+	Convert:	המרה:
+	Cut Path	חיתוך נתיב
+	Decorative	דקורטיבי
+	Descender	קו יורד
+	Em Box Bottom/Left	תחתית/שמאל של תיבת Em
+	Em Box Center	מרכז תיבת Em
+	Em Box Top/Right	עליון/ימין של תיבת Em
+	Favorites	מועדפים
+	Flip	היפוך
+	Japanese	יפנית
+	Join Our Discord	הצטרפו ל-Discord שלנו
+	Line-end Punctuation Half Width	חצי רוחב לסימני פיסוק בסוף שורה
+	Mojikumi Set	ערכת Mojikumi
+	Latin	לטינית
+	Monospaced	ברוחב קבוע
+	Roman Baseline	קו בסיס רומי
+	Rounded	מעוגל
+	Sans Serif / Gothic	Sans Serif / גותי
+	Script / Brush	כתב יד / מכחול
+	Serif / Mincho	Serif / Mincho
+	Settings…	הגדרות…
+	Language	שפה
+	Spacing	ריווח
+	Top-to-Top Leading	מרווח שורות מעליון לעליון
+	Type on a Path Options	אפשרויות טקסט על נתיב
+	UI Brightness	בהירות הממשק
+	Dark	כהה
+	Medium Dark	כהה בינוני
+	Medium Light	בהיר בינוני
+	Light	בהיר
+	Quit Epic Vector	יציאה מ-Epic Vector
+	File	קובץ
+	New…	חדש…
+	New from Template…	חדש מתבנית…
+	Open…	פתיחה…
+	Open Recent Files	פתיחת קבצים אחרונים
+	Clear Recent Files	ניקוי רשימת הקבצים האחרונים
+	Show in Folder	הצגה בתיקייה
+	Close	סגירה
+	Close All	סגירת הכול
+	Save	שמירה
+	Save As…	שמירה בשם…
+	Save a Copy…	שמירת עותק…
+	Save as Template…	שמירה כתבנית…
+	Save as PDF…	שמירה כ-PDF…
+	Save for Office Documents…	שמירה למסמכי Office…
+	Revert	חזרה לגרסה השמורה
+	Place…	מיקום…
+	Export	ייצוא
+	Export for Screens…	ייצוא למסכים…
+	Export As…	ייצוא בתור…
+	Export As SVG…	ייצוא כ-SVG…
+	Export As PNG…	ייצוא כ-PNG…
+	Save for Web (Legacy)…	שמירה לאינטרנט (ישן)…
+	Export Selection…	ייצוא הבחירה…
+	Package…	אריזה…
+	Scripts	סקריפטים
+	Other Script…	כתב אחר…
+	Document Setup…	הגדרות מסמך…
+	Document Color Mode	מצב צבע של המסמך
+	CMYK Color	צבע CMYK
+	RGB Color	צבע RGB
+	File Info…	פרטי קובץ…
+	Print…	הדפסה…
+	Edit	עריכה
+	Undo	ביטול
+	Redo	ביצוע מחדש
+	Cut	גזירה
+	Copy	העתקה
+	Paste	הדבקה
+	Paste in Front	הדבקה מלפנים
+	Paste in Back	הדבקה מאחור
+	Paste in Place	הדבקה במקום
+	Paste on All Artboards	הדבקה בכל משטחי העבודה
+	Paste without Formatting	הדבקה ללא עיצוב
+	Clear	ניקוי
+	Find and Replace…	חיפוש והחלפה…
+	Find Next	חיפוש הבא
+	Find Objects	חיפוש אובייקטים
+	Spelling	בדיקת איות
+	Auto Spell Check	בדיקת איות אוטומטית
+	Check Spelling…	בדיקת איות…
+	Edit Custom Dictionary…	עריכת מילון מותאם אישית…
+	Edit Colors	עריכת צבעים
+	Recolor Artwork…	צביעה מחדש של היצירה…
+	Recolor with Preset	צביעה מחדש לפי הגדרה מוכנה
+	1 Color Job…	עבודת צבע אחד…
+	2 Color Job…	עבודת שני צבעים…
+	3 Color Job…	עבודת שלושה צבעים…
+	Color Library…	ספריית צבעים…
+	Adjust Color Balance…	התאמת איזון צבעים…
+	Blend Front to Back	מיזוג מהחזית לרקע
+	Blend Horizontally	מיזוג אופקי
+	Blend Vertically	מיזוג אנכי
+	Convert to CMYK	המרה ל-CMYK
+	Convert to Grayscale	המרה לגווני אפור
+	Convert to RGB	המרה ל-RGB
+	Invert Colors	היפוך צבעים
+	Overprint Black…	הדפסת יתר של שחור…
+	Saturate…	הרוויה…
+	Edit Original	עריכת המקור
+	Transparency Flattener Presets…	הגדרות מוכנות לשיטוח שקיפות…
+	Print Presets…	הגדרות מוכנות להדפסה…
+	PDF Presets…	הגדרות מוכנות ל-PDF…
+	Perspective Grid Presets…	הגדרות מוכנות לרשת פרספקטיבה…
+	Color Settings…	הגדרות צבע…
+	Assign Profile…	הקצאת פרופיל…
+	Keyboard Shortcuts…	קיצורי מקלדת…
+	Preferences…	העדפות…
+	Object	אובייקט
+	Transform	טרנספורמציה
+	Transform Again	טרנספורמציה חוזרת
+	Move…	הזזה…
+	Rotate…	סיבוב…
+	Reflect…	שיקוף…
+	Scale…	שינוי גודל…
+	Shear…	גזירה אופקית…
+	Transform Each…	טרנספורמציה לכל אחד…
+	Reset Bounding Box	איפוס תיבת התוחמת
+	Arrange	סידור
+	Bring to Front	הבאה לחזית
+	Bring Forward	הבאה קדימה
+	Send Backward	שליחה אחורה
+	Send to Back	שליחה לרקע
+	Send to Current Layer	שליחה לשכבה הנוכחית
+	Align	יישור
+	Horizontal Align Left	יישור אופקי לשמאל
+	Horizontal Align Center	יישור אופקי למרכז
+	Horizontal Align Right	יישור אופקי לימין
+	Vertical Align Top	יישור אנכי למעלה
+	Vertical Align Center	יישור אנכי למרכז
+	Vertical Align Bottom	יישור אנכי למטה
+	Group	קבוצה
+	Ungroup	פירוק קבוצה
+	Lock	נעילה
+	Selection	בחירה
+	All Artwork Above	כל היצירה שמעל
+	Other Layers	שכבות אחרות
+	Unlock All	שחרור הנעילה מהכול
+	Hide	הסתרה
+	Show All	הצגת הכול
+	Expand…	הרחבה…
+	Expand Appearance	פריסת מראה
+	Crop Image	חיתוך תמונה
+	Mask	מסכה
+	Rasterize…	המרה לרסטר…
+	Create Gradient Mesh…	יצירת רשת מעברי צבע…
+	Create Object Mosaic…	יצירת פסיפס אובייקטים…
+	Vector Halftone…	חצי גוונים וקטוריים…
+	Create Trim Marks	יצירת סימני חיתוך
+	Flatten Transparency…	שיטוח שקיפות…
+	Make Pixel Perfect	התאמה לפיקסלים מדויקים
+	Slice	פרוסה
+	Make	יצירה
+	Release	שחרור
+	Create from Guides	יצירה מקווי עזר
+	Create from Selection	יצירה מהבחירה
+	Duplicate Slice	שכפול פרוסה
+	Combine Slices	איחוד פרוסות
+	Divide Slices…	חלוקת פרוסות…
+	Delete All	מחיקת הכול
+	Slice Options…	אפשרויות פרוסה…
+	Clip to Artboard	חיתוך למשטח העבודה
+	Path	נתיב
+	Join	חיבור
+	Average…	חישוב ממוצע…
+	Outline Stroke	המרת קו מתאר למתאר
+	Offset Path…	הסטת נתיב…
+	Reverse Path Direction	היפוך כיוון הנתיב
+	Simplify…	פישוט…
+	Add Anchor Points	הוספת נקודות עוגן
+	Remove Anchor Points	הסרת נקודות עוגן
+	Divide Objects Below	חלוקת האובייקטים שמתחת
+	Split Into Grid…	פיצול לרשת…
+	Clean Up…	ניקוי…
+	Shape	צורה
+	Convert to Shape	המרה לצורה
+	Expand Shape	פריסת צורה
+	Pattern	דוגמה
+	Edit Pattern	עריכת דוגמה
+	Tile Edge Color…	צבע קצה האריח…
+	Repeat	חזרה
+	Radial	רדיאלי
+	Grid	רשת
+	Mirror	מראה
+	Options…	אפשרויות…
+	Blend	מיזוג
+	Blend Options…	אפשרויות מיזוג…
+	Expand	הרחבה
+	Replace Spine	החלפת עמוד השדרה
+	Reverse Spine	היפוך עמוד השדרה
+	Reverse Front to Back	היפוך מהחזית לרקע
+	Envelope Distort	עיוות מעטפת
+	Make with Warp…	יצירה עם עיוות…
+	Reset with Warp…	איפוס עם עיוות…
+	Make with Mesh…	יצירה עם רשת…
+	Reset with Mesh…	איפוס עם רשת…
+	Make with Top Object	יצירה עם האובייקט העליון
+	Envelope Options…	אפשרויות מעטפת…
+	Edit Contents	עריכת תוכן
+	Perspective	פרספקטיבה
+	Attach to Active Plane	הצמדה למישור הפעיל
+	Release with Perspective	שחרור עם פרספקטיבה
+	Move Plane to Match Object	הזזת המישור להתאמה לאובייקט
+	Edit Text	עריכת טקסט
+	Live Paint	צביעה חיה
+	Merge	מיזוג
+	Gap Options…	אפשרויות פער…
+	Image Trace	מעקב אחר תמונה
+	Image Tracing	מעקב אחר תמונה
+	Tracing Presets	הגדרות מוכנות למעקב
+	Make…	יצירה…
+	Make and Expand…	יצירה ופריסה…
+	Text Wrap	עטיפת טקסט
+	Text Wrap Options…	אפשרויות עטיפת טקסט…
+	Clipping Mask	מסכת חיתוך
+	Edit Clipping Path	עריכת נתיב החיתוך
+	Compound Path	נתיב מורכב
+	Artboards	משטחי עבודה
+	Convert to Artboards	המרה למשטחי עבודה
+	Rearrange All Artboards…	סידור מחדש של כל משטחי העבודה…
+	Fit to Artwork Bounds	התאמה לגבולות היצירה
+	Fit to Selected Art	התאמה ליצירה שנבחרה
+	Graph	גרף
+	Type…	טקסט…
+	Data…	נתונים…
+	Design…	עיצוב…
+	Column…	עמודה…
+	Marker…	סמן…
+	Collect for Export	איסוף לייצוא
+	As Single Asset	כנכס יחיד
+	As Multiple Assets	ככמה נכסים
+	Plug-ins	תוספים
+	No filter plug-ins installed	לא מותקנים תוספי מסנן
+	Install Plug-in…	התקנת תוסף…
+	Reload Plug-ins	טעינת תוספים מחדש
+	Type	טקסט
+	Font	גופן
+	Recent Fonts	גופנים אחרונים
+	Size	גודל
+	Glyphs	גליפים
+	Insert Special Character	הוספת תו מיוחד
+	Bullet	תבליט
+	Copyright Symbol	סמל זכויות יוצרים
+	Ellipsis	שלוש נקודות
+	Paragraph Symbol	סמל פסקה
+	Registered Trademark Symbol	סמל סימן מסחרי רשום
+	Section Symbol	סמל סעיף
+	Trademark Symbol	סמל סימן מסחרי
+	Em Dash	מקף ארוך
+	En Dash	מקף בינוני
+	Discretionary Hyphen	מקף רשות
+	Nonbreaking Hyphen	מקף בלתי שביר
+	Double Left Quotation Marks	גרשיים כפולים שמאליים
+	Double Right Quotation Marks	גרשיים כפולים ימניים
+	Single Left Quotation Mark	גרש בודד שמאלי
+	Single Right Quotation Mark	גרש בודד ימני
+	Insert Whitespace Character	הוספת תו רווח
+	Em Space	רווח Em
+	En Space	רווח En
+	Hair Space	רווח דק מאוד
+	Sixth Space	רווח שישית
+	Thin Space	רווח דק
+	Nonbreaking Space	רווח בלתי שביר
+	Figure Space	רווח ספרה
+	Punctuation Space	רווח פיסוק
+	Third Space	רווח שליש
+	Quarter Space	רווח רבע
+	Insert Break Character	הוספת תו מעבר
+	Forced Line Break	מעבר שורה כפוי
+	Tab	טאב
+	Convert To Area Type	המרה לטקסט באזור
+	Convert To Point Type	המרה לטקסט בנקודה
+	Area Type Options…	אפשרויות טקסט באזור…
+	Type on a Path	טקסט על נתיב
+	Rainbow	קשת
+	Skew	הטיה
+	3D Ribbon	סרט תלת-ממדי
+	Stair Step	מדרגות
+	Gravity	כבידה
+	Type on a Path Options…	אפשרויות טקסט על נתיב…
+	Threaded Text	טקסט משורשר
+	Create	יצירה
+	Release Selection	שחרור הבחירה
+	Remove Threading	הסרת שרשור
+	Fit Headline	התאמת כותרת
+	Decrease Font Size	הקטנת גודל הגופן
+	Increase Font Size	הגדלת גודל הגופן
+	Step Type	שינוי טקסט בשלבים
+	Find Font…	חיפוש גופן…
+	Change Case	שינוי רישיות
+	UPPERCASE	אותיות גדולות
+	lowercase	אותיות קטנות
+	Title Case	רישיות כותרת
+	Sentence case	רישיות משפט
+	Smart Punctuation…	פיסוק חכם…
+	Create Outlines	יצירת מתארים
+	Optical Margin Alignment	יישור שוליים אופטי
+	Fill with Placeholder Text	מילוי בטקסט ממלא מקום
+	Show Hidden Characters	הצגת תווים מוסתרים
+	Type Orientation	כיוון הטקסט
+	Horizontal	אופקי
+	Vertical	אנכי
+	Select	בחירה
+	All	הכול
+	All on Active Artboard	הכול במשטח העבודה הפעיל
+	Deselect	ביטול בחירה
+	Reselect	בחירה מחדש
+	Inverse	היפוך
+	Next Object Above	האובייקט הבא מעל
+	Next Object Below	האובייקט הבא מתחת
+	Same	זהה
+	Appearance	מראה
+	Appearance Attribute	מאפיין מראה
+	Blending Mode	מצב מיזוג
+	Fill & Stroke	מילוי וקו מתאר
+	Fill Color	צבע מילוי
+	Opacity	אטימות
+	Stroke Color	צבע קו מתאר
+	Stroke Weight	עובי קו מתאר
+	Graphic Style	סגנון גרפי
+	Symbol Instance	מופע סמל
+	Font Family	משפחת גופנים
+	Font Family & Style	משפחת גופנים וסגנון
+	Font Family, Style & Size	משפחת גופנים, סגנון וגודל
+	Font Size	גודל גופן
+	Text Fill Color	צבע מילוי הטקסט
+	Text Stroke Color	צבע קו המתאר של הטקסט
+	All on Same Layers	הכול באותן שכבות
+	Direction Handles	ידיות כיוון
+	Brush Strokes	משיכות מכחול
+	Bristle Brush Strokes	משיכות מכחול זיפים
+	Clipping Masks	מסכות חיתוך
+	Slices	פרוסות
+	Stray Points	נקודות בודדות
+	Open Paths	נתיבים פתוחים
+	All Text Objects	כל אובייקטי הטקסט
+	Point Text Objects	אובייקטי טקסט בנקודה
+	Area Text Objects	אובייקטי טקסט באזור
+	Start Global Edit	התחלת עריכה גלובלית
+	Save Selection…	שמירת בחירה…
+	Edit Selection…	עריכת הבחירה…
+	Effect	אפקט
+	Apply Last Effect	החלת האפקט האחרון
+	Last Effect…	האפקט האחרון…
+	Document Raster Effects Settings…	הגדרות אפקטי רסטר של המסמך…
+	Vector Effects	אפקטים וקטוריים
+	3D and Materials	תלת-ממד וחומרים
+	Extrude & Bevel…	שחול ושיפוע…
+	Revolve…	סיבוב היקפי…
+	Inflate…	ניפוח…
+	Materials…	חומרים…
+	Color Adjustments	התאמות צבע
+	Brightness/Contrast…	בהירות/ניגודיות…
+	Curves…	עקומות…
+	Hue/Saturation…	גוון/רוויה…
+	Levels…	רמות…
+	Shift to Color…	הסטה לצבע…
+	Temperature/Tint…	טמפרטורה/גוון…
+	Rectangle…	מלבן…
+	Rounded Rectangle…	מלבן מעוגל…
+	Ellipse…	אליפסה…
+	Crop Marks	סימני חיתוך
+	Distort & Transform	עיוות וטרנספורמציה
+	Free Distort…	עיוות חופשי…
+	Pucker & Bloat…	כיווץ וניפוח…
+	Roughen…	חספוס…
+	Transform…	טרנספורמציה…
+	Tweak…	כוונון…
+	Twist…	פיתול…
+	Zig Zag…	זיגזג…
+	Pathfinder	Pathfinder
+	Add	הוספה
+	Intersect	חיתוך
+	Exclude	החרגה
+	Subtract	חיסור
+	Minus Back	החסרת האחורי
+	Divide	חלוקה
+	Trim	קיצוץ
+	Crop	חיתוך
+	Outline	מתאר
+	Stylize	הסגנה
+	Round Corners…	עיגול פינות…
+	Scribble…	שרבוט…
+	Drop Shadow…	הטלת צל…
+	Inner Glow…	זוהר פנימי…
+	Outer Glow…	זוהר חיצוני…
+	Feather…	ריכוך…
+	SVG Filters	מסנני SVG
+	Apply SVG Filter…	החלת מסנן SVG…
+	Warp	כיפוף
+	Arc…	קשת…
+	Arc Lower…	קשת תחתונה…
+	Arc Upper…	קשת עליונה…
+	Arch…	קשת מתחדדת…
+	Bulge…	בליטה…
+	Shell Lower…	צדפה תחתונה…
+	Shell Upper…	צדפה עליונה…
+	Flag…	דגל…
+	Wave…	גל…
+	Fish…	דג…
+	Rise…	עלייה…
+	Fisheye…	עין דג…
+	Squeeze…	כיווץ…
+	Raster Effects	אפקטי רסטר
+	Blur	טשטוש
+	Gaussian Blur…	טשטוש גאוסיאני…
+	View	תצוגה
+	Overprint Preview	תצוגה מקדימה של הדפסת יתר
+	Pixel Preview	תצוגה מקדימה בפיקסלים
+	Trim View	תצוגת חיתוך
+	Presentation Mode	מצב מצגת
+	Screen Mode	מצב מסך
+	Normal Screen Mode	מצב מסך רגיל
+	Full Screen Mode with Menu Bar	מצב מסך מלא עם שורת תפריטים
+	Full Screen Mode	מצב מסך מלא
+	Proof Setup	הגדרת הגהה
+	Working CMYK	CMYK עבודה
+	Legacy Macintosh RGB (Gamma 1.8)	RGB מקינטוש ישן (גמא 1.8)
+	Internet Standard RGB (sRGB)	RGB סטנדרטי לאינטרנט (sRGB)
+	Monitor RGB	RGB של המסך
+	Color blindness – Protanopia-type	עיוורון צבעים – מסוג פרוטנופיה
+	Color blindness – Deuteranopia-type	עיוורון צבעים – מסוג דאוטרנופיה
+	Customize…	התאמה אישית…
+	Proof Colors	צבעי הגהה
+	Zoom In	הגדלת תצוגה
+	Zoom Out	הקטנת תצוגה
+	Fit Artboard in Window	התאמת משטח העבודה לחלון
+	Fit All in Window	התאמת הכול לחלון
+	Actual Size	גודל אמיתי
+	Reset Rotate View	איפוס סיבוב התצוגה
+	Hide Edges	הסתרת קצוות
+	Hide Artboards	הסתרת משטחי עבודה
+	Show Print Tiling	הצגת ריצוף להדפסה
+	Hide Slices	הסתרת פרוסות
+	Lock Slices	נעילת פרוסות
+	Rulers	סרגלים
+	Show Rulers	הצגת סרגלים
+	Change to Global Rulers	מעבר לסרגלים גלובליים
+	Show Video Rulers	הצגת סרגלי וידאו
+	Hide Bounding Box	הסתרת תיבת התוחמת
+	Show Transparency Grid	הצגת רשת שקיפות
+	Hide Text Threads	הסתרת קישורי טקסט
+	Hide Gradient Annotator	הסתרת מחוון מעבר הצבע
+	Hide Corner Widget	הסתרת ווידג'ט הפינה
+	Guides	קווי עזר
+	Hide Guides	הסתרת קווי עזר
+	Lock Guides	נעילת קווי עזר
+	Make Guides	יצירת קווי עזר
+	Release Guides	שחרור קווי עזר
+	Clear Guides	ניקוי קווי עזר
+	Smart Guides	קווי עזר חכמים
+	Perspective Grid	רשת פרספקטיבה
+	Show Grid	הצגת רשת
+	Snap to Grid	הצמדה לרשת
+	Lock Grid	נעילת הרשת
+	Lock Station Point	נעילת נקודת התצפית
+	Define Grid…	הגדרת רשת…
+	One Point Perspective	פרספקטיבה בנקודה אחת
+	Two Point Perspective	פרספקטיבה בשתי נקודות
+	Three Point Perspective	פרספקטיבה בשלוש נקודות
+	Save Grid as Preset…	שמירת הרשת כהגדרה מוכנה…
+	Snap to Pixel	הצמדה לפיקסל
+	Snap to Point	הצמדה לנקודה
+	Snap to Glyph	הצמדה לגליף
+	New View…	תצוגה חדשה…
+	Edit Views…	עריכת תצוגות…
+	Saved View 1	תצוגה שמורה 1
+	Saved View 2	תצוגה שמורה 2
+	Saved View 3	תצוגה שמורה 3
+	Saved View 4	תצוגה שמורה 4
+	Saved View 5	תצוגה שמורה 5
+	Saved View 6	תצוגה שמורה 6
+	Saved View 7	תצוגה שמורה 7
+	Saved View 8	תצוגה שמורה 8
+	Saved View 9	תצוגה שמורה 9
+	Saved View 10	תצוגה שמורה 10
+	Window	חלון
+	New Window	חלון חדש
+	Cascade	מדורג
+	Tile	פריסה
+	Float in Window	ציפה בחלון
+	Consolidate All Windows	איחוד כל החלונות
+	Workspace	סביבת עבודה
+	Reset Essentials	איפוס Essentials
+	New Workspace…	סביבת עבודה חדשה…
+	Manage Workspaces…	ניהול סביבות עבודה…
+	Control	בקרה
+	Contextual Task Bar	סרגל משימות הקשרי
+	Tools	כלים
+	Toolbars	סרגלי כלים
+	Advanced	מתקדם
+	Double Column	עמודה כפולה
+	Actions	פעולות
+	Asset Export	ייצוא נכסים
+	Attributes	מאפיינים
+	Brushes	מברשות
+	Color	צבע
+	Color Guide	מדריך צבעים
+	Color Themes	ערכות צבעים
+	CSS Properties	מאפייני CSS
+	Document Info	פרטי המסמך
+	Flattener Preview	תצוגה מקדימה של שיטוח
+	Gradient	מעבר צבע
+	Graphic Styles	סגנונות גרפיים
+	History	היסטוריה
+	Info	מידע
+	Layers	שכבות
+	Libraries	ספריות
+	Links	קישורים
+	Magic Wand	שרביט קסמים
+	Navigator	נווט
+	Pattern Options	אפשרויות תבנית
+	Properties	מאפיינים
+	Separations Preview	תצוגה מקדימה של הפרדות צבעים
+	Stroke	קו מתאר
+	SVG Interactivity	אינטראקטיביות SVG
+	Swatches	דוגמיות צבע
+	Symbols	סמלים
+	Transparency	שקיפות
+	Character	תו
+	Character Styles	סגנונות תווים
+	Paragraph	פסקה
+	Paragraph Styles	סגנונות פסקה
+	Tabs	טאבים
+	Variables	משתנים
+	Brush Libraries	ספריות מברשות
+	Built-in Libraries	ספריות מובנות
+	User Defined	מוגדר על ידי המשתמש
+	Other Library…	ספרייה אחרת…
+	Graphic Style Libraries	ספריות סגנונות גרפיים
+	Shadows and Glows	צללים וזוהרים
+	Outlines and Rules	קווי מתאר וקווים
+	Hand-Drawn	ציור ידני
+	Gradient Finishes	גימורי מעבר צבע
+	Shape Effects	אפקטי צורה
+	Blends and Transparency	מיזוגים ושקיפות
+	Save Graphic Style Library…	שמירת ספריית סגנונות גרפיים…
+	Swatch Libraries	ספריות דוגמיות צבע
+	Default Swatches	דוגמיות צבע ברירת מחדל
+	Web Safe 216	216 צבעים בטוחים לרשת
+	Grays and Neutrals	אפורים וניטרליים
+	Earth Tones	גווני אדמה
+	Skin Tone Ramps	סולמות גווני עור
+	Pastels	פסטלים
+	Brights	צבעים בוהקים
+	Metallic Gradients	מעברי צבע מתכתיים
+	Perceptual Scales	סולמות תפיסתיים
+	Harmony Sets	ערכות הרמוניה
+	Gradients	מעברי צבע
+	Spectrum Gradients	מעברי צבע ספקטרליים
+	Sky Gradients	מעברי צבע של שמיים
+	Neutral Gradients	מעברי צבע ניטרליים
+	Duotone Gradients	מעברי צבע דו-גווניים
+	Radial Glows	זוהרים רדיאליים
+	Save Swatch Library…	שמירת ספריית דוגמיות צבע…
+	Symbol Libraries	ספריות סמלים
+	Help	עזרה
+	ArtCraft Website	אתר ArtCraft
+	VectorCraft on getartcraft.com	VectorCraft ב-getartcraft.com
+	VectorCraft on GitHub	VectorCraft ב-GitHub
+	Search Commands…	חיפוש פקודות…
+	VectorCraft Help…	עזרה של VectorCraft…
+	Preview	תצוגה מקדימה
+	Show Edges	הצגת קצוות
+	Show Corner Widget	הצגת ווידג'ט הפינה
+	Show Text Threads	הצגת קישורי טקסט
+	Hide Hidden Characters	הסתרת תווים נסתרים
+	Show Gradient Annotator	הצגת מחוון מעבר הצבע
+	Show Artboards	הצגת משטחי עבודה
+	Hide Rulers	הסתרת סרגלים
+	Show Bounding Box	הצגת תיבת התוחמת
+	Hide Transparency Grid	הסתרת רשת שקיפות
+	Show Guides	הצגת קווי עזר
+	Hide Grid	הסתרת הרשת
+	Unlock Guides	ביטול נעילת קווי עזר
+	Show Slices	הצגת פרוסות
+	Hide Print Tiling	הסתרת ריצוף להדפסה
+	Unlock Grid	ביטול נעילת הרשת
+	Edit Envelope	עריכת מעטפת
+	Automatic	אוטומטי
+	Isolate Selected Group	בידוד הקבוצה הנבחרת
+	Exit Isolation Mode	יציאה ממצב בידוד
+	Make Clipping Mask	יצירת מסכת חיתוך
+	Release Clipping Mask	שחרור מסכת חיתוך
+	Make Compound Path	יצירת נתיב מורכב
+	Release Compound Path	שחרור נתיב מורכב
+	Select All	בחירת הכול
+	Collapse Panels to Icons	כיווץ חלוניות לסמלים
+	Collapse to Icons	כיווץ לסמלים
+	Expand Panels	הרחבת חלוניות
+
+# Panels, dialogs, tooltips, the hint bar and document tabs (from issue #217): written from the
+# meaning of the English labels in the vocabulary Japanese users of vector illustration software know.
+	  — missing	  — חסר
+	  — substituted by {style}	  — הוחלף ב-{style}
+	  — {n} characters from another font	  — {n} תווים מגופן אחר
+	 a pin to warp  |  	 על סיכה כדי לעוות  |  
+	 a point to edit it  |  	 על נקודה כדי לערוך אותה  |  
+	 a stroke to add a width point  |  	 על קו מתאר כדי להוסיף נקודת עובי  |  
+	 across a selected object to set the gradient direction	 על פני אובייקט נבחר כדי לקבוע את כיוון מעבר הצבע
+	 across paths to push them along  |  	 על פני נתיבים כדי לדחוף אותם לאורכם  |  
+	 an anchor or path segment to select it  |  	 על עוגן או קטע נתיב כדי לבחור אותו  |  
+	 an object to copy its attributes  |  	 על אובייקט כדי להעתיק את המאפיינים שלו  |  
+	 an object, then another to blend them  |  	 על אובייקט ואז על אחר כדי למזג ביניהם  |  
+	 for exact size	 לגודל מדויק
+	 for exact values	 לערכים מדויקים
+	 from center  |  	 מהמרכז  |  
+	 keeps its proportions)	 שומר על היחסים שלו)
+	 near a selected pin to rotate  |  	 ליד סיכה נבחרת כדי לסובב  |  
+	 on the canvas to create one	 על הקנבס כדי ליצור אחד
+	 over paths to roughen their outlines  |  	 מעל נתיבים כדי לחספס את קווי המתאר שלהם  |  
+	 over paths, and hold still to keep going  |  	 מעל נתיבים, והחזיקו במקום כדי להמשיך  |  
+	 the art to add a pin  |  	 על האיור כדי להוסיף סיכה  |  
+	 the object to duplicate	 על האובייקט כדי לשכפל אותו
+	 the object to select  |  	 על האובייקט כדי לבחור בו  |  
+	 to add	 כדי להוסיף
+	 to add a corner point  |  	 כדי להוסיף נקודת פינה  |  
+	 to add a smooth point  |  	 כדי להוסיף נקודה חלקה  |  
+	 to add smooth points  |  	 כדי להוסיף נקודות חלקות  |  
+	 to apply the selection's to it  |  	 כדי להחיל עליה את אלה של הבחירה  |  
+	 to blend from it  |  	 כדי למזג ממנו  |  
+	 to change one side  |  	 כדי לשנות צד אחד  |  
+	 to close  |  	 כדי לסגור  |  
+	 to constrain proportions  |  	 כדי לשמור על יחסים  |  
+	 to copy  |  	 כדי להעתיק  |  
+	 to create area type  |  	 כדי ליצור טקסט שטח  |  
+	 to create point type  |  	 כדי ליצור טקסט נקודתי  |  
+	 to draw  |  	 כדי לצייר  |  
+	 to exit editing	 כדי לצאת מהעריכה
+	 to finish	 כדי לסיים
+	 to move  |  	 כדי להזיז  |  
+	 to move in perspective  |  	 כדי להזיז בפרספקטיבה  |  
+	 to pan the view	 כדי להזיז את התצוגה
+	 to remove pins	 כדי להסיר סיכות
+	 to remove points	 כדי להסיר נקודות
+	 to sample a color	 כדי לדגום צבע
+	 to scale in perspective	 כדי לשנות קנה מידה בפרספקטיבה
+	 to search every command	 כדי לחפש בכל הפקודות
+	 to select an artboard  |  	 כדי לבחור משטח עבודה  |  
+	 to select more pins  |  	 כדי לבחור עוד סיכות  |  
+	 to select more points  |  	 כדי לבחור עוד נקודות  |  
+	 to select multiple objects  |  	 כדי לבחור כמה אובייקטים  |  
+	 to set spacing and orientation	 כדי לקבוע מרווחים וכיוון
+	 to set the reference point  |  	 כדי לקבוע את נקודת הייחוס  |  
+	 to size the brush (	 כדי לשנות את גודל המברשת (
+	 to toggle corner  |  	 כדי להחליף פינה  |  
+	 to transform  |  	 כדי לשנות צורה  |  
+	 to zoom in  |  	 כדי להתקרב  |  
+	 to zoom into an area	 כדי להתקרב לאזור
+	 to zoom out  |  	 כדי להתרחק  |  
+	 while dragging to move perpendicular to the plane  |  	 בזמן גרירה כדי להזיז בניצב למישור  |  
+	(closest)	(הקרוב ביותר)
+	+ Add Scale	+ הוספת קנה מידה
+	0.2 (quality) to 100 (speed)	0.2 (איכות) עד 100 (מהירות)
+	1 {unit} on the artboard stands for {real} {unit} in the scene.	1 {unit} במשטח העבודה מייצג {real} {unit} בסצנה.
+	30° Angles	זוויות של 30°
+	45° Angles	זוויות של 45°
+	60° Angles	זוויות של 60°
+	90° & 45° & 30° Angles	זוויות של 90°, 45° ו-30°
+	90° & 45° Angles	זוויות של 90° ו-45°
+	90° Angles	זוויות של 90°
+	< 1 sec	< שנייה
+	<Opacity Mask>	<מסכת אטימות>
+	A File…	קובץ…
+	A lower value follows the stroke closely; a higher one gives fewer points and smoother curves.	ערך נמוך יותר עוקב מקרוב אחר הקו; ערך גבוה יותר נותן פחות נקודות ועקומות חלקות יותר.
+	A new preset starting from the selected one	הגדרה מוכנה חדשה שמבוססת על זו שנבחרה
+	A saved copy of the selected preset	עותק שמור של ההגדרה המוכנה שנבחרה
+	Absolute Position	מיקום מוחלט
+	Accurate	מדויק
+	Abutting	צמוד
+	Activate Document	הפעלת מסמך
+	Active Perspective Plane	מישור פרספקטיבה פעיל
+	Add Anchor (Pen)	הוספת עוגן (עט)
+	Add Anchor Point	הוספת נקודת עוגן
+	Add Anchor Point Tool	כלי הוספת נקודת עוגן
+	Add Effect	הוספת אפקט
+	Add Freeform Line	הוספת קו חופשי
+	Add Freeform Point	הוספת נקודה חופשית
+	Add Guide	הוספת קו עזר
+	Add Mesh Line	הוספת קו רשת
+	Add New	הוספת חדש
+	Add New Effect	הוספת אפקט חדש
+	Add New Fill	הוספת מילוי חדש
+	Add New Stroke	הוספת קו מתאר חדש
+	Add Selected Artwork (Alt: as one asset)	הוספת האיור הנבחר (Alt: כנכס אחד)
+	Add Selected Artwork as Multiple Assets	הוספת האיור הנבחר ככמה נכסים
+	Add Selected Artwork as One Asset	הוספת האיור הנבחר כנכס אחד
+	Add Spine Point	הוספת נקודה לציר
+	Add Used Colors	הוספת צבעים בשימוש
+	Add to Graphic Styles	הוספה לסגנונות גרפיים
+	Add to Profiles	הוספה לפרופילים
+	Add to Profiles…	הוספה לפרופילים…
+	Add to Selection	הוספה לבחירה
+	Add to Swatches	הוספה לדוגמיות צבע
+	Additional Plug-ins Folder	תיקיית תוספים נוספת
+	Adjust Adjoining Width Points	התאמת נקודות עובי סמוכות
+	Adjust Colors	התאמת צבעים
+	Adjust Options:	אפשרויות התאמה:
+	Advanced Options	אפשרויות מתקדמות
+	Align Objects:	יישור אובייקטים:
+	Align On:	יישור על:
+	Align Stroke to Center	יישור קו המתאר למרכז
+	Align Stroke to Inside	יישור קו המתאר פנימה
+	Align Stroke to Outside	יישור קו המתאר החוצה
+	Align Stroke:	יישור קו המתאר:
+	Align To:	יישור אל:
+	Align to Artboard	יישור למשטח העבודה
+	Align to Glyph Bounds	יישור לגבולות הגליף
+	Align to Key Object	יישור לאובייקט המפתח
+	Align to Page	יישור לעמוד
+	Align to Path	יישור לנתיב
+	Align to Selection	יישור לבחירה
+	Align:	יישור:
+	Alignment Guides	קווי עזר ליישור
+	Alignment:	יישור:
+	All Caps	כולו אותיות רישיות
+	All Categories	כל הקטגוריות
+	All Tools	כל הכלים
+	All printer's marks	כל סימני המדפסת
+	All the art	כל האיור
+	Alt:	Alt:
+	Alter Paths for Appearance	שינוי נתיבים לפי המראה
+	Amount:	כמות:
+	Anchor Point	נקודת עוגן
+	Anchor Point Tool	כלי נקודת עוגן
+	Anchor Points	נקודות עוגן
+	Anchor Points, Handle, and Bounding Box Display	תצוגת נקודות עוגן, ידיות ותיבה תוחמת
+	Anchor/Path Labels	תוויות עוגנים/נתיבים
+	Angle	זווית
+	Angle:	זווית:
+	Angles	זוויות
+	Animated Zoom	זום מונפש
+	Anti-Alias	החלקת קצוות
+	Anti-alias	החלקת קצוות
+	Anti-alias Rasters	החלקת קצוות בתמונות רסטר
+	Anti-aliased Artwork	איור מוחלק
+	Anti-aliasing:	החלקת קצוות:
+	Appearance Item	פריט מראה
+	Appearance Panel	חלונית מראה
+	Appearance of Black	מראה השחור
+	Appearance panel	חלונית מראה
+	Applies the next time Epic Vector starts.	יחול בהפעלה הבאה של Epic Vector.
+	Applies when the linked file is relinked or updated.	יחול בעת קישור מחדש או עדכון של הקובץ המקושר.
+	Apply Brush	החלת מברשת
+	Apply Character Style	החלת סגנון תווים
+	Apply Effect	החלת אפקט
+	Apply Graphic Style	החלת סגנון גרפי
+	Apply Last Color	החלת הצבע האחרון
+	Apply Last Gradient	החלת מעבר הצבע האחרון
+	Apply Paragraph Style	החלת סגנון פסקה
+	Apply to All	החלה על הכול
+	Apply to All ({count} more missing)	החלה על הכול (חסרים עוד {count})
+	Arc	קשת
+	Arc Tool	כלי קשת
+	Area / Path Type	טקסט שטח / טקסט על נתיב
+	Area Graph Tool	כלי תרשים שטח
+	Area Type Tool	כלי טקסט שטח
+	Around Object	סביב האובייקט
+	Arrange: Bring to Front	סידור: העברה לחזית
+	Arrowheads:	ראשי חצים:
+	Art using a deleted global swatch keeps its colour.	איור שמשתמש בדוגמית צבע גלובלית שנמחקה שומר על הצבע שלו.
+	ArtCraft website	אתר ArtCraft
+	Artboard Options	אפשרויות משטח עבודה
+	Artboard Options: edit with the Artboard tool	אפשרויות משטח עבודה: עריכה בכלי משטח העבודה
+	Artboard Options…	אפשרויות משטח עבודה…
+	Artboard Tool	כלי משטח עבודה
+	Artboard {number}	משטח עבודה {number}
+	Artboard:	משטח עבודה:
+	Artwork Colors	צבעי האיור
+	Ask When Modified	לשאול בעת שינוי
+	Aspect Ratio	יחס גובה-רוחב
+	Asset Export Settings	הגדרות ייצוא נכסים
+	Assets	נכסים
+	Assign	הקצאה
+	Assign:	הקצאה:
+	Author Title:	תפקיד המחבר:
+	Author:	יוצר:
+	Auto	אוטומטי
+	Auto Size New Area Type	שינוי גודל אוטומטי של טקסט שטח חדש
+	Auto-Collapse Iconic Panels	כיווץ אוטומטי של חלוניות סמלים
+	Auto-Rotate (turn the paper to each artboard)	סיבוב אוטומטי (הפיכת הנייר לכל משטח עבודה)
+	Automatic flatness	שטיחות אוטומטית
+	Automatically	אוטומטית
+	Automatically Save Recovery Data	שמירה אוטומטית של נתוני שחזור
+	Average	ממוצע
+	BLANK DOCUMENT PRESETS	הגדרות מוכנות למסמך ריק
+	Background Color:	צבע רקע:
+	Background Contents	תוכן הרקע
+	Background Contents:	תוכן הרקע:
+	Background:	רקע:
+	Bar Graph Tool	כלי תרשים עמודות
+	Baseline Shift	הזזת קו בסיס
+	Batch	אצווה
+	Begin Recording	התחלת הקלטה
+	Bend:	כיפוף:
+	Bevel Join	חיבור קטום
+	Bitmap	מפת סיביות
+	Black	שחור
+	Bleed	גלישה (Bleed)
+	Bleed:	גלישה:
+	Bleeds	גלישות
+	Blend Info	פרטי מיזוג
+	Blend Options	אפשרויות מיזוג
+	Blend Tool	כלי מיזוג
+	Bloat Tool	כלי ניפוח
+	Blob Brush	מברשת כתמים
+	Blob Brush Tool	כלי מברשת כתם
+	Blue	כחול
+	Bottom:	תחתית:
+	Break Link to Graphic Style	שבירת הקישור לסגנון גרפי
+	Break Link to Symbol	שבירת הקישור לסמל
+	Brick Offset:	היסט לבנים:
+	Brightness	בהירות
+	Browser	דפדפן
+	Brush Affects:	המברשת משפיעה על:
+	Brush Definition	הגדרת מברשת
+	Brush Libraries (on the roadmap)	ספריות מברשות (בתוכנית העבודה)
+	Brush Options…	אפשרויות מברשת…
+	Built-in presets are read-only: New… starts an editable copy.	הגדרות מוכנות מובנות הן לקריאה בלבד: "חדש…" יוצר עותק לעריכה.
+	Built-in presets don't change: New makes a copy you can edit.	הגדרות מוכנות מובנות אינן משתנות: "חדש" יוצר עותק שאפשר לערוך.
+	Built-in presets don't change: New… starts an editable copy.	הגדרות מוכנות מובנות אינן משתנות: "חדש…" יוצר עותק לעריכה.
+	Butt Cap	קצה שטוח
+	Byte Order:	סדר בתים:
+	CMYK colours print with their own values; off, they go through the colour settings too.	צבעי CMYK מודפסים עם הערכים שלהם; כשהאפשרות כבויה, הם עוברים גם דרך הגדרות הצבע.
+	Can't print these settings: see the Summary	לא ניתן להדפיס עם הגדרות אלה: ראו את הסיכום
+	Cancel	ביטול
+	Cancel Key Object	ביטול אובייקט מפתח
+	Canvas Color	צבע הקנבס
+	Cap:	קצה:
+	Center Artwork	מירכוז הציור
+	Centimeters	סנטימטרים
+	Change	שינוי
+	Change All	שינוי הכול
+	Change to Right-to-Left Layout	מעבר לפריסה מימין לשמאל
+	Changed since the last Refresh.	השתנה מאז הרענון האחרון.
+	Changes allowed:	שינויים מותרים:
+	Changes made since it was last saved will be lost.	שינויים שבוצעו מאז השמירה האחרונה יאבדו.
+	Changing these settings changes how raster effects look when exported, flattened or expanded.	שינוי ההגדרות האלה משנה את מראה אפקטי הרסטר בעת ייצוא, שיטוח או הרחבה.
+	Channel	ערוץ
+	Character / Paragraph	תו / פסקה
+	Character Rotation	סיבוב תווים
+	Character Set:	קבוצת תווים:
+	Character Style Options	אפשרויות סגנון תווים
+	Check Links	בדיקת קישורים
+	Choose a folder	בחירת תיקייה
+	Choose…	בחירה…
+	Circle	עיגול
+	Clear All Tabs	ניקוי כל העצירות
+	Clear Appearance	ניקוי מראה
+	Clear Overrides	ניקוי עקיפות
+	Click	לחיצה
+	Click an anchor point	לחצו על נקודת עיגון
+	Click or drag	לחיצה או גרירה
+	Click the art with the Gradient tool to add or select points.	לחצו על הציור בכלי מעבר הצבע כדי להוסיף נקודות או לבחור בהן.
+	Click the first point	לחצו על הנקודה הראשונה
+	Click the ramp or a type button to apply a gradient.	לחצו על הסרגל או על לחצן סוג כדי להחיל מעבר צבע.
+	Click to add a tab stop, drag to move it, drag it off the ruler to delete it	לחצו כדי להוסיף עצירת טאב, גררו כדי להזיז אותה, גררו אותה מחוץ לסרגל כדי למחוק
+	Click to choose a swatch, Shift-click to mix a colour	לחצו כדי לבחור דוגמית, Shift+לחיצה כדי לערבב צבע
+	Click to edit the mask; Alt-click to view only the mask; Shift-click to disable or enable it	לחצו כדי לערוך את המסכה; Alt+לחיצה כדי להציג רק את המסכה; Shift+לחיצה כדי להשבית או להפעיל אותה
+	Click to place each file at 100%, or drag to size it; arrow keys switch files, Esc skips one.	לחצו כדי למקם כל קובץ ב-100%, או גררו כדי לקבוע גודל; מקשי החצים מחליפים קובץ, Esc מדלג על קובץ.
+	Click to select, double-click to edit	לחיצה לבחירה, לחיצה כפולה לעריכה
+	Click to toggle visibility	לחצו כדי להחליף נראות
+	Click to zoom in, Alt-click to zoom out, drag to pan, double-click to fit	לחיצה להגדלה, Alt+לחיצה להקטנה, גרירה להזזה, לחיצה כפולה להתאמה
+	Clip	קליפ
+	Clip Complex Regions	חיתוך אזורים מורכבים
+	Clip to Art	חיתוך לפי הציור
+	Clip to Bounding Box	חיתוך לתיבה התוחמת
+	Clipboard Formats	פורמטים בלוח העריכה
+	Clipboard Handling	טיפול בלוח העריכה
+	Clipboard as PDF	לוח העריכה כ-PDF
+	Clipboard as PNG	לוח העריכה כ-PNG
+	Clipboard as SVG	לוח העריכה כ-SVG
+	Clipboard as Text	לוח העריכה כטקסט
+	Close Library	סגירת ספרייה
+	Close Path	סגירת נתיב
+	Close paths when ends are within:	סגירת נתיבים כשהקצוות במרחק של עד:
+	Collate	איסוף עותקים
+	Collect in New Layer	איסוף בשכבה חדשה
+	Color Burn	שריפת צבע
+	Color Dodge	הבהרת צבע
+	Color Group:	קבוצת צבעים:
+	Color Group: {name}	קבוצת צבעים: {name}
+	Color Guide Options	אפשרויות מדריך הצבעים
+	Color Guide Options…	אפשרויות מדריך הצבעים…
+	Color Mode	מצב צבע
+	Color Mode:	מצב צבע:
+	Color Model:	מודל צבע:
+	Color Models	מודלי צבע
+	Color Picker	בוחר צבעים
+	Color Picker…	בוחר צבעים…
+	Color Reduction:	הפחתת צבעים:
+	Color Settings	הגדרות צבע
+	Color Space	מרחב צבע
+	Color Swatches	דוגמיות צבע
+	Color Table	טבלת צבעים
+	Color Type:	סוג צבע:
+	Color conversion:	המרת צבע:
+	Color images	תמונות צבעוניות
+	Color:	צבע:
+	Colorize	צביעה
+	Colors	צבעים
+	Colors:	צבעים:
+	Column Graph Tool	כלי תרשים עמודות
+	Columns:	עמודות:
+	Coming soon — tracked in the parity plan	בקרוב — במעקב בתוכנית השוויון
+	Command Click to Select Objects Behind	Command+לחיצה לבחירת אובייקטים מאחור
+	Command Dialog	חלון פקודות
+	Community	קהילה
+	Compatibility:	תאימות:
+	Compatible Gradient and Gradient Mesh Printing	הדפסה תואמת של מעברי צבע ורשתות מעבר צבע
+	Complement	משלים
+	Complexity:	מורכבות:
+	Composite colours are converted to it; separations separate with it when it is a CMYK profile.	צבעים מורכבים מומרים אליו; הפרדות צבע מופרדות איתו כשהוא פרופיל CMYK.
+	Compress (RLE)	דחיסה (RLE)
+	Compress text and line art	דחיסת טקסט וקווי ציור
+	Compression:	דחיסה:
+	Condition identifier:	מזהה תנאי:
+	Conflict {n} of {count}	התנגשות {n} מתוך {count}
+	Constrain Angle	הגבלת זווית
+	Constrain Width and Height Proportions	שמירה על יחס רוחב וגובה
+	Construction Guides	קווי בנייה
+	Contextual Alternates	חלופות תלויות הקשר
+	Convert	המרה
+	Convert All Spot Colors to Process	המרת כל צבעי הדגש לצבעי תהליך
+	Convert All Strokes to Outlines	המרת כל קווי המתאר למתארים
+	Convert All Text to Outlines	המרת כל הטקסט למתארים
+	Convert Anchor Point	המרת נקודת עיגון
+	Convert Anchor Points	המרת נקודות עיגון
+	Convert Color	המרת צבע
+	Convert Document Color Mode	המרת מצב הצבע של המסמך
+	Convert Process to Global	המרת צבע תהליך לגלובלי
+	Convert text to outlines	המרת טקסט למתארים
+	Convert to sRGB	המרה ל-sRGB
+	Copies:	עותקים:
+	Copy (make a transformed copy)	העתקה (יצירת עותק שעבר טרנספורמציה)
+	Copy All Styles	העתקת כל הסגנונות
+	Copy Color Value (Hex)	העתקת ערך צבע (Hex)
+	Copy Selected Style	העתקת הסגנון הנבחר
+	Copy Width Point	העתקת נקודת רוחב
+	Copyright	זכויות יוצרים
+	Copyright Info URL:	כתובת URL של מידע זכויות יוצרים:
+	Copyright Notice:	הודעת זכויות יוצרים:
+	Copyright Status:	סטטוס זכויות יוצרים:
+	Corner Radius	רדיוס פינה
+	Corner Radius:	רדיוס פינה:
+	Corner:	פינה:
+	Corners	פינות
+	Round	מעוגל
+	Radius:	רדיוס:
+	Inverted Round	מעוגל הפוך
+	Corners…	פינות…
+	Chamfer	שיפוע
+	Create Clipping Mask	יצירת מסכת חיתוך
+	Create Document	יצירת מסמך
+	Create From:	יצירה מתוך:
+	Create Graph	יצירת תרשים
+	Create New Layer	יצירת שכבה חדשה
+	Create New Sublayer	יצירת תת-שכבה חדשה
+	Create New Swatch…	יצירת דוגמית צבע חדשה…
+	Create New {kind} Style	יצירת סגנון {kind} חדש
+	Create PDF layers from top-level layers	יצירת שכבות PDF משכבות ברמה העליונה
+	Create PDF-Compatible File	יצירת קובץ תואם PDF
+	Create Path	יצירת נתיב
+	Create Slice	יצירת פרוסה
+	Create Sub-folders	יצירת תיקיות משנה
+	Create Text	יצירת טקסט
+	Created	נוצר
+	Created:	נוצר:
+	Crop To	חיתוך ל
+	Crystallize Tool	כלי התגבשות
+	Current Brush	מברשת נוכחית
+	Current Colors ({total})	צבעים נוכחיים ({total})
+	Current Symbol	סמל נוכחי
+	Curvature	עקמומיות
+	Curvature Tool	כלי עקמומיות
+	Custom	מותאם אישית
+	Cut Path at Selected Anchor Points	חיתוך נתיב בנקודות העיגון הנבחרות
+	Dim Images to:	עמעום תמונות ל:
+	Duplicate Selection	שכפול הבחירה
+	DXF Import Options	אפשרויות ייבוא DXF
+	DXF Info	מידע DXF
+	DXF Options	אפשרויות DXF
+	DXF Options Dialog	חלון אפשרויות DXF
+	Darken	הכהיה
+	Dashed	מקווקו
+	Dashed Line	קו מקווקו
+	Data Recovery	שחזור נתונים
+	Dates	תאריכים
+	Decimal:	עשרוני:
+	Default	ברירת מחדל
+	Default Fill and Stroke	מילוי וקו מתאר ברירת מחדל
+	Default Language	שפת ברירת מחדל
+	Define Perspective Grid	הגדרת רשת פרספקטיבה
+	Define Perspective Grid…	הגדרת רשת פרספקטיבה…
+	Delete	מחיקה
+	Delete Anchor Point	מחיקת נקודת עיגון
+	Delete Anchor Point Tool	כלי מחיקת נקודת עיגון
+	Delete Artboard	מחיקת משטח עבודה
+	Delete Artboards	מחיקת משטחי עבודה
+	Delete Brush	מחיקת מברשת
+	Delete Character Style	מחיקת סגנון תווים
+	Delete Empty Artboards	מחיקת משטחי עבודה ריקים
+	Delete Freeform Point	מחיקת נקודה חופשית
+	Delete Graphic Style	מחיקת סגנון גרפי
+	Delete Graphic Style (Alt-click: without asking)	מחיקת סגנון גרפי (Alt+לחיצה: ללא שאלה)
+	Delete Layer	מחיקת שכבה
+	Delete Mesh Point	מחיקת נקודת רשת
+	Delete PDF Preset	מחיקת הגדרה מוכנה של PDF
+	Delete Paragraph Style	מחיקת סגנון פסקה
+	Delete Pattern	מחיקת תבנית
+	Delete Perspective Grid Preset	מחיקת הגדרה מוכנה של רשת פרספקטיבה
+	Delete Point	מחיקת נקודה
+	Delete Preset	מחיקת הגדרה מוכנה
+	Delete Print Preset	מחיקת הגדרה מוכנה של הדפסה
+	Delete Profile	מחיקת פרופיל
+	Delete Save for Web Preset	מחיקת הגדרה מוכנה של שמירה לאינטרנט
+	Delete Selected Item	מחיקת הפריט הנבחר
+	Delete Selection	מחיקת הבחירה
+	Delete Slices	מחיקת פרוסות
+	Delete Spine Point	מחיקת נקודת שדרה
+	Delete Stop	מחיקת עצירה
+	Delete Swatch	מחיקת דוגמית צבע
+	Delete Symbol	מחיקת סמל
+	Delete Tab	מחיקת טאב
+	Delete Theme	מחיקת ערכת נושא
+	Delete Transparency Flattener Preset	מחיקת הגדרה מוכנה של מיישר שקיפות
+	Delete Width Point	מחיקת נקודת רוחב
+	Delete Workspace	מחיקת סביבת עבודה
+	Delete the graphic style “{name}”?	למחוק את הסגנון הגרפי "{name}"?
+	Delete theme	מחיקת ערכת נושא
+	Delete these {count} swatches and groups?	למחוק {count} דוגמיות וקבוצות אלה?
+	Delete this saved preset	מחיקת ההגדרה השמורה הזו
+	Delete {kind} Style	מחיקת סגנון {kind}
+	Delete “{name}”?	למחוק את "{name}"?
+	Depth:	עומק:
+	Description	תיאור
+	Description:	תיאור:
+	Destination:	יעד:
+	Detail:	פירוט:
+	Devices	התקנים
+	Dialog	חלון
+	Diamond	יהלום
+	Difference	הפרש
+	Differences from {preset}:	הבדלים מ-{preset}:
+	Dim Copies to:	עמעום עותקים ל:
+	Dimensions	מידות
+	Direct Selection Tool	כלי בחירה ישירה
+	Disable Auto Add/Delete	השבתת הוספה/מחיקה אוטומטית
+	Disable Opacity Mask	השבתת מסכת אטימות
+	Discard	השלכה
+	Discard Empty Type	השלכת טקסט ריק
+	Discard Recovered Documents	השלכת מסמכים משוחזרים
+	Discard White Overprint in Output	השלכת הדפסת-על לבן בפלט
+	Discretionary Ligatures	ליגטורות לבחירה
+	Display All Blacks Accurately	הצגת כל הגוונים השחורים במדויק
+	Display All Blacks as Rich Black	הצגת כל הגוונים השחורים כשחור עשיר
+	Display Bitmaps as Anti-aliased Images in Pixel Preview	הצגת מפות סיביות כתמונות מוחלקות בתצוגת פיקסלים
+	Display Options	אפשרויות תצוגה
+	Display Print Size at 100% Zoom	הצגת גודל הדפסה בזום 100%
+	Distort Appearance	עיוות מראה
+	Distort Linear Gradients	עיוות מעברי צבע ליניאריים
+	Distort Pattern Fills	עיוות מילויי תבנית
+	Distortion	עיוות
+	Distribute	פיזור
+	Distribute Objects:	פיזור אובייקטים:
+	Distribute Spacing	פיזור מרווחים
+	Distribute Spacing:	פיזור מרווחים:
+	Dither:	פיזור נקודות (Dither):
+	Divide Horizontally Into	חלוקה אופקית ל
+	Divide Slices	חלוקת פרוסות
+	Divide Vertically Into	חלוקה אנכית ל
+	Do you want to save the changes you made to “{name}”?	לשמור את השינויים שביצעתם ב-"{name}"?
+	Document	מסמך
+	Document Ink Options	אפשרויות דיו של המסמך
+	Document JSON	JSON של המסמך
+	Document Raster Effects Settings	הגדרות אפקטי רסטר של המסמך
+	Document Raster Effects Settings Dialog	חלון הגדרות אפקטי רסטר של המסמך
+	Document Setup	הגדרות מסמך
+	Document Title:	כותרת המסמך:
+	Document open password	סיסמה לפתיחת המסמך
+	Documents you create appear here.	המסמכים שתיצרו יופיעו כאן.
+	Don't Save	לא לשמור
+	Don't Show Center	ללא הצגת מרכז
+	Done	סיום
+	Dots	נקודות
+	Double Click To Isolate	לחיצה כפולה לבידוד
+	Double Quotes:	מירכאות כפולות:
+	Double-click	לחיצה כפולה
+	Double-click to edit the characters' paint	לחיצה כפולה כדי לערוך את הצבע של התווים
+	Double-click to insert	לחיצה כפולה להוספה
+	Double-click to rename	לחיצה כפולה לשינוי שם
+	Double-click to target the contents	לחיצה כפולה כדי לטרגט את התוכן
+	Download:	הורדה:
+	Drag	גרירה
+	Drag a handle	גרירת ידית
+	Drag art here, or select it and click +. Hold Alt for one asset of several objects.	גררו לכאן ציור, או בחרו בו ולחצו על +. החזיקו Alt ליצירת נכס אחד מכמה אובייקטים.
+	Drag onto art to apply this appearance	גררו על ציור כדי להחיל את המראה הזה
+	Drag the art to move it on the paper	גררו את הציור כדי להזיז אותה על הדף
+	Draw	ציור
+	Draw in Perspective	ציור בפרספקטיבה
+	Draw:	ציור:
+	Drawing Mode	מצב ציור
+	Duplicate	שכפול
+	Duplicate Artboard	שכפול משטח עבודה
+	Copy Artboard	העתקת משטח עבודה
+	Cut Artboard	גזירת משטח עבודה
+	Duplicate Artboards	שכפול משטחי עבודה
+	Duplicate Brush	שכפול מברשת
+	Duplicate Character Style	שכפול סגנון תווים
+	Duplicate Effect	שכפול אפקט
+	Duplicate Graphic Style	שכפול סגנון גרפי
+	Duplicate Item	שכפול פריט
+	Duplicate Layer	שכפול שכבה
+	Duplicate Paragraph Style	שכפול סגנון פסקה
+	Duplicate Selected Item	שכפול הפריט הנבחר
+	Duplicate Swatch	שכפול דוגמית צבע
+	Duplicate Symbol	שכפול סמל
+	Duplicate {kind} Style	שכפול סגנון {kind}
+	Dutch	הולנדית
+	EPS Options	אפשרויות EPS
+	EPS Options Dialog	חלון אפשרויות EPS
+	Each page prints as one image, at the document's raster effects resolution.	כל עמוד מודפס כתמונה אחת, ברזולוציית אפקטי הרסטר של המסמך.
+	East Asian Type	טקסט מזרח-אסיאתי
+	Edit Artboards	עריכת משטחי עבודה
+	Edit Color Group	עריכת קבוצת צבעים
+	Edit Freeform Point	עריכת נקודה חופשית
+	Edit Gradient	עריכת מעבר צבע
+	Edit Opacity Mask	עריכת מסכת אטימות
+	Edit PDF Preset	עריכת הגדרה מוכנה של PDF
+	Edit Print Preset	עריכת הגדרה מוכנה של הדפסה
+	Edit Symbol	עריכת סמל
+	Edit Theme	עריכת ערכת נושא
+	Edit selected paths within:	עריכת נתיבים נבחרים בתוך:
+	Edit or Apply Color Group	עריכה או החלה של קבוצת צבעים
+	Edit or Apply Color Group…	עריכה או החלה של קבוצת צבעים…
+	Edit or Apply Colors	עריכה או החלה של צבעים
+	Edit the applied effect, or add another one?	לערוך את האפקט שהוחל, או להוסיף אפקט נוסף?
+	Edit the selected point's colour in the Color panel	עריכת צבע הנקודה הנבחרת בחלונית הצבע
+	Edit the stop	עריכת העצירה
+	Edit theme	עריכת ערכת נושא
+	Edit…	עריכה…
+	Effect Options	אפשרויות אפקט
+	Effective PPI	PPI אפקטיבי
+	Effects	אפקטים
+	Effect…	אפקט…
+	Ellipse	אליפסה
+	Ellipse Tool	כלי אליפסה
+	Embed	הטמעה
+	Embed Fonts (Glyphs Used)	הטמעת גופנים (תווים בשימוש)
+	Embed Fonts (for other applications)	הטמעת גופנים (ליישומים אחרים)
+	Embed ICC Profile	הטמעת פרופיל ICC
+	Embed ICC Profiles	הטמעת פרופילי ICC
+	Embed Image	הטמעת תמונה
+	Embed Image(s)	הטמעת תמונות
+	Embed page thumbnails	הטמעת תמונות ממוזערות של עמודים
+	Embedded	מוטמע
+	Embedded Image	תמונה מוטמעת
+	Emulsion:	אמולסיה:
+	Enable Background Export	הפעלת ייצוא ברקע
+	Enable Background Save	הפעלת שמירה ברקע
+	Enable Contextual Task Bar	הפעלת סרגל המשימות ההקשרי
+	Enable Missing Glyph Protection	הפעלת הגנה מפני תווים חסרים
+	Enable Opacity Mask	הפעלת מסכת אטימות
+	Enable Rubber Band for	הפעלת גומייה עבור
+	Enable Touch Gestures	הפעלת מחוות מגע
+	Enable Touch Workspace	הפעלת סביבת עבודה למגע
+	Enable copying of text, images and other content	אפשור העתקה של טקסט, תמונות ותוכן אחר
+	Enable in-menu font previews	הפעלת תצוגה מקדימה של גופנים בתפריט
+	Enable plaintext metadata	הפעלת מטא-נתונים בטקסט גלוי
+	Enable text access for screen readers	הפעלת גישה לטקסט עבור קוראי מסך
+	Encoding	קידוד
+	Encoding:	קידוד:
+	Encryption: {name} (set by Compatibility)	הצפנה: {name} (נקבעה לפי התאימות)
+	End arrowhead	ראש חץ בסוף
+	English: UK	אנגלית: בריטניה
+	English: USA	אנגלית: ארה"ב
+	Enter Isolation Mode	כניסה למצב בידוד
+	Envelope Info	מידע מעטפת
+	Envelope Mesh	רשת מעטפת
+	Envelope Options	אפשרויות מעטפת
+	Eraser	מחק
+	Eraser Tool	כלי מחק
+	Error	שגיאה
+	Every (minutes)	כל (דקות)
+	Every option is at its default.	כל האפשרויות במצב ברירת המחדל.
+	Every option matches {base}.	כל האפשרויות תואמות ל-{base}.
+	Every-line Composer	מסדר שורות מלא
+	Exact dash lengths	אורכי קו מקוקו מדויקים
+	Exceptions (comma separated)	חריגים (מופרדים בפסיקים)
+	Exclusion	החרגה
+	Expand Brush Strokes	הרחבת משיכות מברשת
+	Expand Compound Shape	הרחבת צורה מורכבת
+	Expand Gradient Mesh	הרחבת רשת מעבר צבע
+	Expand Gradient To	הרחבת מעבר צבע ל
+	Expand Layers Panel Rows	הרחבת שורות בחלונית השכבות
+	Expand Options	אפשרויות הרחבה
+	Expand Repeat	הרחבת חזרה
+	Expand applies to compound shapes (Alt-click a shape mode) — on the roadmap	ההרחבה חלה על צורות מורכבות (Alt+לחיצה על מצב צורה) — בתוכנית העבודה
+	Expand:	הרחבה:
+	Export All…	ייצוא הכול…
+	Export Artboard	ייצוא משטח עבודה
+	Export As	ייצוא בשם
+	Export Assets	ייצוא נכסים
+	Export CSS	ייצוא CSS
+	Export CSS…	ייצוא CSS…
+	Export DXF	ייצוא DXF
+	Export Document	ייצוא מסמך
+	Export EPS	ייצוא EPS
+	Export Keyboard Shortcuts…	ייצוא קיצורי מקלדת…
+	Export Option	אפשרות ייצוא
+	Export PDF	ייצוא PDF
+	Export PDF Presets	ייצוא הגדרות PDF מוכנות
+	Export Perspective Grid Presets	ייצוא הגדרות מוכנות של רשת פרספקטיבה
+	Export Print Presets	ייצוא הגדרות הדפסה מוכנות
+	Export Selected Art Only	ייצוא העבודה הנבחרת בלבד
+	Export Selected CSS…	ייצוא CSS נבחר…
+	Export Settings	הגדרות ייצוא
+	Export Transparency Flattener Presets	ייצוא הגדרות מוכנות של משטח שקיפות
+	Export and Clipboard Transparency Flattener Settings	הגדרות משטח שקיפות לייצוא וללוח
+	Export for Screens	ייצוא למסכים
+	Export for Screens Settings	הגדרות ייצוא למסכים
+	Export the selected assets (else all of them)	ייצוא הנכסים הנבחרים (אחרת כולם)
+	Export to:	ייצוא אל:
+	Export {count} Selected	ייצוא {count} נבחרים
+	Export:	ייצוא:
+	Export…	ייצוא…
+	Eyedropper	טפטפת
+	Eyedropper Applies:	המטפטף מחיל:
+	Eyedropper Options	אפשרויות המטפטף
+	Eyedropper Picks Up:	המטפטף דוגם:
+	Eyedropper Tool	כלי טפטפת
+	Eyedropper: click the art to sample the stop's colour	מטפטף: לחצו על העבודה כדי לדגום את צבע הנקודה
+	Feet	רגל
+	Feet & Inches	רגל ואינץ'
+	Fewer <tspan> Elements	פחות רכיבי <tspan>
+	Fidelity:	נאמנות:
+	Figure:	דמות:
+	File Format:	פורמט קובץ:
+	File Formats	פורמטי קבצים
+	File Handling	טיפול בקבצים
+	File Info	פרטי קובץ
+	File Info Dialog	חלון פרטי קובץ
+	File Name:	שם קובץ:
+	File › Place… brings in an image, linked or embedded.	קובץ › הוספה… מכניס תמונה, מקושרת או מוטמעת.
+	Files	קבצים
+	Files of a PDF standard can't be password-protected.	קבצים בתקן PDF אינם יכולים להיות מוגנים בסיסמה.
+	Files of this standard tag their colours with ICC profiles.	קבצים בתקן זה מתייגים את הצבעים שלהם בפרופילי ICC.
+	Fill	מילוי
+	Fill New Type Objects With Placeholder Text	מילוי אובייקטי טקסט חדשים בטקסט דוגמה
+	Fill Rule	כלל מילוי
+	Fill and Stroke	מילוי וקו מתאר
+	Fill new strokes	מילוי קווי מתאר חדשים
+	Fill:	מילוי:
+	Find	חיפוש
+	Find Font	חיפוש גופן
+	First Page	עמוד ראשון
+	First-line Left Indent	הזחה שמאלית בשורה הראשונה
+	Fit All	התאמת הכול
+	Fit dashes to corners and ends	התאמת הקווים המקווקווים לפינות ולקצוות
+	Fit in Window	התאמה לחלון
+	Fit on Screen	התאמה למסך
+	Flare	הבהק עדשה
+	Flare Tool	כלי הבהק עדשה
+	Flat Image	תמונה שטוחה
+	Flatness:	שטיחות:
+	Flatten Artwork	שיטוח עבודה
+	Flatten Transparency	שיטוח שקיפות
+	Flattener preset:	הגדרה מוכנה לשיטוח:
+	Flip Across	היפוך לרוחב
+	Flip Along	היפוך לאורך
+	Flip Along Horizontal Axis	היפוך לאורך הציר האופקי
+	Flip Along Vertical Axis	היפוך לאורך הציר האנכי
+	Flip Horizontal	היפוך אופקי
+	Flip Row Order	היפוך סדר השורות
+	Flip Vertical	היפוך אנכי
+	Folder	תיקייה
+	Folder Name:	שם תיקייה:
+	Font List	רשימת גופנים
+	Font Preview Size	גודל תצוגה מקדימה של גופן
+	Font:	גופן:
+	Fonts	גופנים
+	Fonts in Document	גופנים במסמך
+	Fonts in Document: {count}	גופנים במסמך: {count}
+	Fonts whose licence doesn't allow embedding are not copied.	גופנים שהרישיון שלהם אינו מתיר הטמעה לא יועתקו.
+	Format	פורמט
+	Format Options	אפשרויות פורמט
+	Format Settings	הגדרות פורמט
+	Format:	פורמט:
+	Formats:	פורמטים:
+	Fractions	שברים
+	Free Distort	עיוות חופשי
+	Free Transform Tool	כלי המרה חופשית
+	Freeform Gradient	מעבר צבע חופשי
+	French	צרפתית
+	Frequencies and angles are the output device's to apply.	את התדרים והזוויות מחיל התקן הפלט.
+	Frequency	תדר
+	Full Document	מסמך מלא
+	GPL palettes keep solid colours only, as RGB.	לוחות צבעים של GPL שומרים צבעים אחידים בלבד, ב-RGB.
+	GPU Performance	ביצועי GPU
+	Gamma	גאמה
+	Gamut Check	בדיקת טווח צבעים
+	Gamut Warning	אזהרת טווח צבעים
+	General	כללי
+	Generate CSS	יצירת CSS
+	Generate CSS: the whole document's CSS while nothing is selected	יצירת CSS: ה-CSS של המסמך כולו כשדבר אינו נבחר
+	German	גרמנית
+	Get Preferences	קבלת העדפות
+	Get Text Range	קבלת טווח טקסט
+	Global	גלובלי
+	Global Brush Dimensions	ממדי מברשת גלובליים
+	Global Process Color	צבע תהליך גלובלי
+	Go To Link	מעבר לקישור
+	Go to Artboard	מעבר למשטח עבודה
+	Gradient Fill: click to apply, drag onto art	מילוי במעבר צבע: לחצו להחלה, גררו אל העבודה
+	Gradient Mesh	רשת מעבר צבע
+	Gradient Tool	כלי מעבר צבע
+	Gradient Vector	וקטור מעבר צבע
+	Gradient across stroke	מעבר צבע לרוחב קו המתאר
+	Gradient along stroke	מעבר צבע לאורך קו המתאר
+	Gradient and Mesh Resolution:	רזולוציית מעבר צבע ורשת:
+	Gradient swatches	דוגמיות מעבר צבע
+	Gradient within stroke	מעבר צבע בתוך קו המתאר
+	Graphic Style Library	ספריית סגנונות גרפיים
+	Graphic Style Options	אפשרויות סגנון גרפי
+	Graphic Style Options…	אפשרויות סגנון גרפי…
+	Graphic Styles Options	אפשרויות סגנונות גרפיים
+	Graphics Processor	מעבד גרפי
+	Graphics: {adapter}	גרפיקה: {adapter}
+	Grays	גווני אפור
+	Grayscale	גווני אפור
+	Grayscale images	תמונות בגווני אפור
+	Green	ירוק
+	Grid Color & Opacity	צבע ושקיפות הרשת
+	Grid Colors:	צבעי רשת:
+	Grid Size:	גודל רשת:
+	Gridline every	קו רשת כל
+	Gridline every:	קו רשת כל:
+	Grids In Back	רשתות מאחור
+	Group Selection Tool	כלי בחירת קבוצה
+	Guides & Grid	קווי עזר ורשת
+	H Spacing:	ריווח אופקי:
+	Hand Tool	כלי יד
+	Handles	ידיות
+	Hard Light	אור קשה
+	Harmony Rules:	כללי הרמוניה:
+	Height	גובה
+	Height:	גובה:
+	Help › Search Commands…	עזרה › חיפוש פקודות…
+	Hide Code	הסתרת קוד
+	Hide Contextual Task Bar	הסתרת סרגל המשימות הקשרי
+	Hide Corner Widget for angles greater than	הסתרת ווידג'ט הפינה לזוויות גדולות מ
+	Hide Note	הסתרת הערה
+	Hide Options	הסתרת אפשרויות
+	Hide Others	הסתרת האחרים
+	Hide Thumbnail	הסתרת תמונה ממוזערת
+	Hide Thumbnails	הסתרת תמונות ממוזערות
+	High Performance (discrete)	ביצועים גבוהים (נפרד)
+	Highlight Alternate Glyphs	הדגשת גליפים חלופיים
+	Highlight Rows	הדגשת שורות
+	Highlight Substituted Fonts	הדגשת גופנים חלופיים
+	Highlight Substituted Glyphs	הדגשת גליפים חלופיים שהוחלפו
+	Highlight anchors on mouse over	הדגשת נקודות עוגן במעבר עכבר
+	History Options…	אפשרויות היסטוריה…
+	History States	מצבי היסטוריה
+	Hollow	חלול
+	Home	בית
+	Horizon Height:	גובה אופק:
+	Horizontal Distribute Space	פיזור מרווח אופקי
+	Horizontal Grid:	רשת אופקית:
+	Horizontal Plane	מישור אופקי
+	Horizontal Scale %	קנה מידה אופקי %
+	Horizontal:	אופקי:
+	How colours outside the press's gamut are separated.	אופן ההפרדה של צבעים מחוץ לטווח הצבעים של מכונת ההדפסה.
+	Hue	גוון
+	Hyphenate	מיקוף
+	Hyphenation	מיקוף
+	Hyphenation…	מיקוף…
+	ICC Profile	פרופיל ICC
+	Identify Objects By	זיהוי אובייקטים לפי
+	Ignore	התעלמות
+	Ignore Artboards (all the art as one page)	התעלמות ממשטחי עבודה (כל העבודה כעמוד אחד)
+	Ignore White	התעלמות מלבן
+	Image Info	פרטי תמונה
+	Image Map:	מפת תמונה:
+	Image Size	גודל תמונה
+	Image Trace Presets	הגדרות מוכנות של מעקב תמונה
+	Image:	תמונה:
+	Images:	תמונות:
+	Import Keyboard Shortcuts…	ייבוא קיצורי מקלדת…
+	Import PDF	ייבוא PDF
+	Import PDF Presets	ייבוא הגדרות PDF מוכנות
+	Import Perspective Grid Presets	ייבוא הגדרות מוכנות של רשת פרספקטיבה
+	Import Print Presets	ייבוא הגדרות הדפסה מוכנות
+	Import Transparency Flattener Presets	ייבוא הגדרות מוכנות של משטח שקיפות
+	Import…	ייבוא…
+	In Tangent Handles	ידיות משיק פנימיות
+	In the selected objects	באובייקטים הנבחרים
+	Inches	אינצ'ים
+	Include Bleed	הכללת גלישה
+	Include CMYK PostScript in RGB Files	הכללת PostScript של CMYK בקובצי RGB
+	Include Document Thumbnails	הכללת תמונות ממוזערות של המסמך
+	Include Hidden Layers	הכללת שכבות מוסתרות
+	Include Linked Files	הכללת קבצים מקושרים
+	Include Metadata	הכללת מטא-נתונים
+	Include SVG Code	הכללת קוד SVG
+	Include Swatches for Tints	הכללת דוגמיות לגוונים
+	Include non-printing layers	הכללת שכבות שאינן מודפסות
+	Ink	דיו
+	Insert Character	הוספת תו
+	Inspect Document	בדיקת מסמך
+	Inspect Object	בדיקת אובייקט
+	Install Plug-in	התקנת תוסף
+	Intensity:	עוצמה:
+	Intent:	כוונה:
+	Interface Language	שפת ממשק
+	Interlaced	משולב
+	Invert	היפוך
+	Invert Mask	היפוך מסכה
+	Isolate	בידוד
+	Isolate Blending	בידוד מיזוג
+	Isolate Group	בידוד קבוצה
+	Italian	איטלקית
+	Join Tool	כלי חיבור
+	Join our Discord	הצטרפו ל-Discord שלנו
+	Join the ArtCraft community on Discord (discord.gg/artcraft)	הצטרפו לקהילת ArtCraft ב-Discord‏ (discord.gg/artcraft)
+	Join the lines of each paragraph	חיבור השורות של כל פסקה
+	Justification…	יישור…
+	Keep Formatting	שמירת העיצוב
+	Keep Original	שמירת המקור
+	Keep Plain Text	שמירת טקסט פשוט
+	Keep both sides the same width	שמירה על רוחב זהה בשני הצדדים
+	Keep this row's colors (exclude)	שמירת הצבעים של שורה זו (החרגה)
+	Kerning (0 = Auto)	קרנינג (0 = אוטומטי)
+	Keyboard Increment	קפיצת מקלדת
+	Keyboard Shortcut Conflicts	התנגשויות קיצורי מקלדת
+	Keyboard Shortcut Set	ערכת קיצורי מקלדת
+	Keywords:	מילות מפתח:
+	Knife	סכין
+	Knockout Group	קבוצת חיתוך
+	Layer Options	אפשרויות שכבה
+	Layers Panel Options	אפשרויות חלונית השכבות
+	Lock Others	נעילת האחרות
+	LZW Compression	דחיסת LZW
+	Lab Spot Colors:	צבעי ספוט של Lab:
+	Landscape	לרוחב
+	Language Options	אפשרויות שפה
+	Language:	שפה:
+	Large	גדול
+	Large Tabs	לשוניות גדולות
+	Lasso Tool	כלי לאסו
+	Last Effect: {name}	האפקט האחרון: {name}
+	Last Page	עמוד אחרון
+	Layer Options…	אפשרויות שכבה…
+	Layout:	פריסה:
+	Leader:	מוביל:
+	Leading	מרווח שורות
+	Left Grid:	רשת שמאלית:
+	Left Indent	הזחה שמאלית
+	Left Plane	מישור שמאלי
+	Left:	שמאל:
+	Legacy vector clipboard	לוח וקטורי מדור קודם
+	Legacy vector clipboard (no transparency)	לוח וקטורי מדור קודם (ללא שקיפות)
+	Less	פחות
+	Ligatures are off while the text is tracked.	ליגטורות כבויות כשהטקסט במרווח אותיות.
+	Lighten	הבהרה
+	Limit Color Guide to Library	הגבלת מדריך הצבעים לספרייה
+	Limit colors to swatch library	הגבלת צבעים לספריית דוגמיות
+	Limit colors to swatch library: {name}	הגבלת צבעים לספריית דוגמיות: {name}
+	Limit to Library:	הגבלה לספרייה:
+	Limit:	מגבלה:
+	Line	קו
+	Line Art and Text Resolution:	רזולוציית קווים וטקסט:
+	Line Breaks	מעברי שורה
+	Line Color	צבע קו
+	Line Cut	חיתוך קו
+	Line Cut Tool	כלי חיתוך קו
+	Line Endings:	סיומות שורה:
+	Line Graph Tool	כלי גרף קווים
+	Line Segment	קטע קו
+	Line Segment Tool	כלי קטע קו
+	Line Segment Tool Options	אפשרויות כלי קטע קו
+	Linear Gradient	מעבר צבע ליניארי
+	Lines	קווים
+	Lines: clicks add points joined by a line	קווים: לחיצות מוסיפות נקודות המחוברות בקו
+	Link Info	פרטי קישור
+	Link Opacity Mask	קישור מסכת שקיפות
+	Link harmony colors	קישור צבעי הרמוניה
+	Link start and end arrowhead scales	קישור קנה המידה של ראש החץ בתחילה ובסוף
+	Link the mask	קישור המסכה
+	Linked	מקושר
+	Linked File	קובץ מקושר
+	Linked File Not Found	הקובץ המקושר לא נמצא
+	Liquify	עיוות נוזלי
+	List Graphic Styles	רשימת סגנונות גרפיים
+	List Keyboard Shortcuts	רשימת קיצורי מקלדת
+	List Patterns	רשימת דוגמאות
+	List Plug-ins	רשימת תוספים
+	List Preferences	רשימת העדפות
+	List Slices	רשימת פרוסות
+	List View	תצוגת רשימה
+	List Workspaces	רשימת סביבות עבודה
+	Live Paint Bucket	דלי צביעה חי
+	Live Paint Bucket (Stroke)	דלי צביעה חי (קו מתאר)
+	Live Paint Info	פרטי צביעה חיה
+	Live Paint Selection Tool	כלי בחירה בצביעה חיה
+	Live Shape Properties	מאפייני צורה חיה
+	Load Color Profile…	טעינת פרופיל צבע…
+	Load Image into Clipboard	טעינת תמונה ללוח
+	Load Metafile into Clipboard	טעינת קובץ Metafile ללוח
+	Load PDF into Clipboard	טעינת PDF ללוח
+	Load Place Cursor	טעינת סמן הוספה
+	Load Profile…	טעינת פרופיל…
+	Load SVG into Clipboard	טעינת SVG ללוח
+	Load Text into Clipboard	טעינת טקסט ללוח
+	Local Libraries	ספריות מקומיות
+	Locate Object	איתור אובייקט
+	Location	מיקום
+	Location:	מיקום:
+	Lock (⌘2)	נעילה (⌘2)
+	Lossless (lossy WebP isn't available yet)	ללא איבוד (WebP עם איבוד עדיין אינו זמין)
+	Lossy:	עם איבוד:
+	Luminosity	בהירות
+	Magic Wand Options	אפשרויות שרביט הקסם
+	Magic Wand Settings	הגדרות שרביט הקסם
+	Magic Wand Tool	כלי מטה קסם
+	Maintain Envelope Shape	שמירת צורת המעטפת
+	Make Compound Shape	יצירת צורה מורכבת
+	Make Mask	יצירת מסכה
+	Make Opacity Mask	יצירת מסכת שקיפות
+	Make a theme on Create and save it.	יצירת ערכת נושא ביצירה ושמירתה.
+	Make all bleed settings the same	קביעת כל הגדרות הגלישה זהות
+	Make and Expand	יצירה והרחבה
+	Make the bleed values differ	קביעת ערכי גלישה שונים
+	Make/Release Clipping Mask	יצירה/שחרור של מסכת חיתוך
+	Manage Workspaces	ניהול סביבות עבודה
+	Manually	ידנית
+	Mark Older Files as [Converted] When Opened	סימון קבצים ישנים כ-[Converted] בעת הפתיחה
+	Mark as trapped	סימון כמלכוד
+	Marks	סימנים
+	Match User Interface Brightness	התאמת בהירות הממשק
+	Matte:	מט:
+	Maximize	הגדלה
+	Maximum Editability	יכולת עריכה מרבית
+	Measure Tool	כלי מדידה
+	Measurement Labels	תוויות מדידה
+	Media	מדיה
+	Medium	בינוני
+	Menu Dialog	חלון תפריט
+	Merge Graphic Styles	מיזוג סגנונות גרפיים
+	Merge Graphic Styles…	מיזוג סגנונות גרפיים…
+	Merge Layers	מיזוג שכבות
+	Merge Selected	מיזוג הנבחרים
+	Merge Swatches	מיזוג דוגמיות
+	Merge colors into one row	מיזוג צבעים לשורה אחת
+	Mesh Tool	כלי רשת
+	Message:	הודעה:
+	Metadata:	מטא-נתונים:
+	Meters	מטרים
+	Method:	שיטה:
+	Millimeters	מילימטרים
+	Minify	כיווץ קוד
+	Minimize	מזעור
+	Minus Front	חיסור הצורה הקדמית
+	Mirror & Cut	שיקוף וחיתוך
+	Mirror & Cut Tool	כלי שיקוף וחיתוך
+	Missing	חסר
+	Missing: {path}	חסר: {path}
+	Miter Join	חיבור חד
+	Mixed Appearances	מראות מעורבים
+	Mode:	מצב:
+	Modified	שונה
+	Modified since it was read: {path}	השתנה מאז שנקרא: {path}
+	Modified:	שונה:
+	Modify	שינוי
+	Mono	מונו
+	Monochrome images	תמונות מונוכרומטיות
+	More	עוד
+	More Pathfinder options	אפשרויות נוספות של Pathfinder
+	More Settings	הגדרות נוספות
+	Move	העברה
+	Move Anchors	הזזת נקודות עיגון
+	Move Appearance	הזזת מראה
+	Move Artboard	הזזת משטח עבודה
+	Move Artboard Up/Down	הזזת משטח עבודה למעלה/למטה
+	Move Direction Handle	הזזת ידית כיוון
+	Move Down	הזזה למטה
+	Move Effect	הזזת אפקט
+	Move Envelope Mesh Point	הזזת נקודת רשת של מעטפת
+	Move Graphic Style	הזזת סגנון גרפי
+	Move Guide	הזזת קו עזר
+	Move Locked and Hidden Artwork with Artboard	הזזת יצירות נעולות ומוסתרות עם משטח העבודה
+	Move Mesh Point	הזזת נקודת רשת
+	Move Plane	הזזת מישור
+	Move Rows	הזזת שורות
+	Move Slices	הזזת פרוסות
+	Move Spine Point	הזזת נקודת שלד
+	Move Swatch	הזזת דוגמית צבע
+	Move Up	הזזה למעלה
+	Move in Perspective	הזזה בפרספקטיבה
+	Multiply	הכפלה
+	My Themes	ערכות הנושא שלי
+	Name	שם
+	Name:	שם:
+	Navigate	ניווט
+	Needs the desktop app	דורש את אפליקציית שולחן העבודה
+	New	חדש
+	New Art Appearance	מראה יצירה חדש
+	New Art Brush from Selection	מברשת אמנותית חדשה מהבחירה
+	New Art Has Basic Appearance	ליצירה חדשה יש מראה בסיסי
+	New Artboard	משטח עבודה חדש
+	New Bristle Brush	מברשת זיפים חדשה
+	New Brush…	מברשת חדשה…
+	New Calligraphic Brush	מברשת קליגרפית חדשה
+	New Character Style	סגנון תו חדש
+	New Color Group	קבוצת צבעים חדשה
+	New Color Group…	קבוצת צבעים חדשה…
+	New Document Presets	הגדרות מוכנות למסמך חדש
+	New Graphic Style	סגנון גרפי חדש
+	New Graphic Style (Alt-click to name it)	סגנון גרפי חדש (Alt + לחיצה למתן שם)
+	New Graphic Style…	סגנון גרפי חדש…
+	New Layer Options…	אפשרויות שכבה חדשה…
+	New Layer…	שכבה חדשה…
+	New Opacity Masks Are Clipping	מסכות אטימות חדשות חותכות
+	New Opacity Masks Are Inverted	מסכות אטימות חדשות הפוכות
+	New PDF Preset	הגדרת PDF מוכנה חדשה
+	New Paragraph Style	סגנון פסקה חדש
+	New Pattern Brush from Selection	מברשת דוגמה חדשה מהבחירה
+	New Print Preset	הגדרת הדפסה מוכנה חדשה
+	New Scatter Brush from Selection	מברשת פיזור חדשה מהבחירה
+	New Sublayer…	תת-שכבה חדשה…
+	New Swatch	דוגמית צבע חדשה
+	New Swatch…	דוגמית צבע חדשה…
+	New Symbol	סמל חדש
+	New Symbol…	סמל חדש…
+	New Workspace	סביבת עבודה חדשה
+	New file	קובץ חדש
+	New from Template	חדש מתבנית
+	New theme from the current color	ערכת נושא חדשה מהצבע הנוכחי
+	New {kind} Style…	סגנון {kind} חדש…
+	Next	הבא
+	Next Library	הספרייה הבאה
+	Next Page	העמוד הבא
+	Next page	העמוד הבא
+	No CSS	ללא CSS
+	No Document	אין מסמך
+	No Selection	אין בחירה
+	No actions. Press ● to record.	אין פעולות. לחצו על ● להקלטה.
+	No assets	אין נכסים
+	No assets yet. Collect art with Object › Collect for Export, or drag it into the Asset Export panel.	עדיין אין נכסים. אספו יצירות באמצעות אובייקט › איסוף לייצוא, או גררו אותן אל החלונית ייצוא נכסים.
+	No brushes	אין מברשות
+	No colors to recolor (preserved colors are left out).	אין צבעים לצביעה מחדש (צבעים שמורים אינם נכללים).
+	No document	אין מסמך
+	No document open	אין מסמך פתוח
+	No document open.	אין מסמך פתוח.
+	No fonts are available.	אין גופנים זמינים.
+	No gradient swatches	אין דוגמיות מעברי צבע
+	No graphic styles	אין סגנונות גרפיים
+	No images	אין תמונות
+	No matches.	אין התאמות.
+	No options	אין אפשרויות
+	No printer settings to open here	אין כאן הגדרות מדפסת לפתיחה
+	No saved themes	אין ערכות נושא שמורות
+	No selection	אין בחירה
+	No symbols in this document	אין סמלים במסמך זה
+	No text selected	לא נבחר טקסט
+	Noise	רעש
+	None	ללא
+	None.	אין.
+	Normal	רגיל
+	Note:	הערה:
+	Nothing matches the Show filter.	שום דבר אינו תואם למסנן התצוגה.
+	Nothing to print	אין מה להדפיס
+	Nudge	הזזה מדורגת
+	Nudge in Perspective	הזזה מדורגת בפרספקטיבה
+	Number of Artboards:	מספר משטחי עבודה:
+	Number of Colors:	מספר צבעים:
+	Number of Recent Files to Display	מספר הקבצים האחרונים להצגה
+	Number of Recent Fonts	מספר הגופנים האחרונים
+	Numbers Without Units Are Points	מספרים ללא יחידות הם נקודות
+	Object Highlighting	הדגשת אובייקטים
+	Object IDs:	מזהי אובייקטים:
+	Object Name	שם האובייקט
+	Object Properties	מאפייני אובייקט
+	Object Selection by Path Only	בחירת אובייקט לפי נתיב בלבד
+	Objects	אובייקטים
+	Objects using them keep their look but are no longer linked.	אובייקטים שמשתמשים בהם שומרים על המראה שלהם אך אינם מקושרים עוד.
+	Off	כבוי
+	Offset Path	קיזוז נתיב
+	Offset:	קיזוז:
+	On	פועל
+	On Copy	בעת העתקה
+	On Paste	בעת הדבקה
+	On Screen	על המסך
+	One Point	נקודה אחת
+	One Point Perspective Preset 1	הגדרת פרספקטיבה מוכנה של נקודה אחת 1
+	One Point Perspective Preset 2	הגדרת פרספקטיבה מוכנה של נקודה אחת 2
+	One Point Perspective Preset 3	הגדרת פרספקטיבה מוכנה של נקודה אחת 3
+	One Point Perspective Preset 4	הגדרת פרספקטיבה מוכנה של נקודה אחת 4
+	One Point Perspective Preset 5	הגדרת פרספקטיבה מוכנה של נקודה אחת 5
+	One file per artboard: <name>-<artboard>.{ext}	קובץ אחד לכל משטח עבודה: <name>-<artboard>.{ext}
+	One page per artboard.	עמוד אחד לכל משטח עבודה.
+	Only Web Colors	צבעי אינטרנט בלבד
+	Opacity & Mask Define Knockout Shape	אטימות ומסכה מגדירות צורת חיתוך
+	Opacity Mask	מסכת אטימות
+	Opacity Mask Info	מידע על מסכת אטימות
+	Opacity Mask Options	אפשרויות מסכת אטימות
+	Opacity:	אטימות:
+	Opacity: {value}	אטימות: {value}
+	Opaque	אטום
+	Open	פתיחה
+	Open Document	פתיחת מסמך
+	Open Documents As Tabs	פתיחת מסמכים ככרטיסיות
+	Open Graphic Style Library	פתיחת ספריית סגנונות גרפיים
+	Open Location after Export	פתיחת מיקום הקובץ לאחר הייצוא
+	Open Recent File 1	פתיחת קובץ אחרון 1
+	Open Recent File 10	פתיחת קובץ אחרון 10
+	Open Recent File 11	פתיחת קובץ אחרון 11
+	Open Recent File 12	פתיחת קובץ אחרון 12
+	Open Recent File 13	פתיחת קובץ אחרון 13
+	Open Recent File 14	פתיחת קובץ אחרון 14
+	Open Recent File 15	פתיחת קובץ אחרון 15
+	Open Recent File 16	פתיחת קובץ אחרון 16
+	Open Recent File 17	פתיחת קובץ אחרון 17
+	Open Recent File 18	פתיחת קובץ אחרון 18
+	Open Recent File 19	פתיחת קובץ אחרון 19
+	Open Recent File 2	פתיחת קובץ אחרון 2
+	Open Recent File 20	פתיחת קובץ אחרון 20
+	Open Recent File 21	פתיחת קובץ אחרון 21
+	Open Recent File 22	פתיחת קובץ אחרון 22
+	Open Recent File 23	פתיחת קובץ אחרון 23
+	Open Recent File 24	פתיחת קובץ אחרון 24
+	Open Recent File 25	פתיחת קובץ אחרון 25
+	Open Recent File 26	פתיחת קובץ אחרון 26
+	Open Recent File 27	פתיחת קובץ אחרון 27
+	Open Recent File 28	פתיחת קובץ אחרון 28
+	Open Recent File 29	פתיחת קובץ אחרון 29
+	Open Recent File 3	פתיחת קובץ אחרון 3
+	Open Recent File 30	פתיחת קובץ אחרון 30
+	Open Recent File 4	פתיחת קובץ אחרון 4
+	Open Recent File 5	פתיחת קובץ אחרון 5
+	Open Recent File 6	פתיחת קובץ אחרון 6
+	Open Recent File 7	פתיחת קובץ אחרון 7
+	Open Recent File 8	פתיחת קובץ אחרון 8
+	Open Recent File 9	פתיחת קובץ אחרון 9
+	Open Swatch Library	פתיחת ספריית דוגמיות צבע
+	Open a document to edit its patterns.	פתחו מסמך כדי לערוך את הדוגמאות שלו.
+	Open a document to navigate it.	פתחו מסמך כדי לנווט בו.
+	Open a document to preview its flattening.	פתחו מסמך כדי לראות תצוגה מקדימה של השיטוח שלו.
+	Open a document to preview its pages	פתחו מסמך כדי לראות תצוגה מקדימה של העמודים שלו
+	Open a document to see its artboards.	פתחו מסמך כדי לראות את משטחי העבודה שלו.
+	Open a document to see its graphic styles.	פתחו מסמך כדי לראות את הסגנונות הגרפיים שלו.
+	Open a document to see its history.	פתחו מסמך כדי לראות את ההיסטוריה שלו.
+	Open a document to see its swatches.	פתחו מסמך כדי לראות את דוגמיות הצבע שלו.
+	Open password:	סיסמת פתיחה:
+	Open the URL in the web browser	פתיחת הכתובת בדפדפן
+	Optimize for fast web view	מיטוב לתצוגת אינטרנט מהירה
+	Optimized	ממוטב
+	Options	אפשרויות
+	Options for Selection…	אפשרויות לבחירה…
+	Options:	אפשרויות:
+	Order:	סדר:
+	Ordinals	סודרים
+	Orientation	כיוון
+	Orientation:	כיוון:
+	Original	מקורי
+	Original: click to restore	מקורי: לחצו לשחזור
+	Other	אחר
+	Out Tangent Handles	ידיות משיק חיצוניות
+	Outline Others	מתאר לאחרים
+	Outline Text	הפיכת טקסט למתאר
+	Output All Blacks Accurately	פלט מדויק של כל השחורים
+	Output All Blacks as Rich Black	פלט של כל השחורים כשחור עשיר
+	Output Intent	ייעוד פלט
+	Output condition:	תנאי פלט:
+	Output intent profile:	פרופיל ייעוד הפלט:
+	Output:	פלט:
+	Overlap:	חפיפה:
+	Overlapping	חופף
+	Overlay	שכבת על
+	Overprint	הדפסת-יתר
+	Overprint Fill	הדפסת-יתר של מילוי
+	Overprint Preview (separations)	תצוגה מקדימה של הדפסת-יתר (הפרדות)
+	Overprint Stroke	הדפסת-יתר של קו מתאר
+	Overprint and Transparency Flattener	משטח הדפסת-יתר ושקיפות
+	Overprint and Transparency Flattener Options	אפשרויות משטח הדפסת-יתר ושקיפות
+	Overprint:	הדפסת-יתר:
+	Overprints:	הדפסות-יתר:
+	Override Character Color	עקיפת צבע התו
+	PDF 1.3 files have no transparency: the preset flattens it.	קובצי PDF 1.3 אינם תומכים בשקיפות: ההגדרה המוכנה משטחת אותה.
+	PDF Info	מידע על PDF
+	PDF Preset	הגדרת PDF מוכנה
+	PDF Preset:	הגדרת PDF מוכנה:
+	PDF Presets	הגדרות PDF מוכנות
+	PDF Settings	הגדרות PDF
+	PDF/A files carry their own output intent.	קובצי PDF/A נושאים ייעוד פלט משלהם.
+	PDF/X-1a files are CMYK: every colour is converted to the destination (blank: the output intent's CMYK profile), untagged.	קובצי PDF/X-1a הם בצבעי CMYK: כל צבע מומר ליעד (ריק: פרופיל CMYK של ייעוד הפלט), ללא תיוג.
+	Power Saving (integrated)	חיסכון בחשמל (משולב)
+	PRESET DETAILS	פרטי ההגדרה המוכנה
+	Package	אריזה
+	Package collects a saved document with its linked files and fonts.	אריזה אוספת מסמך שמור יחד עם הקבצים והגופנים המקושרים שלו.
+	Package created	החבילה נוצרה
+	Page	דף
+	Page Isolated Blending	מיזוג מבודד לעמוד
+	Page Knockout Group	קבוצת חיתוך לעמוד
+	Pages	עמודים
+	Paintbrush	מברשת צבע
+	Paintbrush Tool	כלי מברשת צבע
+	Panel Options…	אפשרויות חלונית…
+	Panel menu	תפריט חלונית
+	Panels	חלוניות
+	Paragraph Style Options	אפשרויות סגנון פסקה
+	Password	סיסמה
+	Paste Offset	קיזוז הדבקה
+	Paste Remembers Layers	הדבקה זוכרת שכבות
+	Pasted	הודבק
+	Path Eraser	מחיקת נתיב
+	Path Eraser Tool	כלי מחיקת נתיב
+	Pathfinder Options…	אפשרויות Pathfinder…
+	Pathfinders:	Pathfinder:
+	Paths	נתיבים
+	Paths: {paths}    Anchors: {anchors}    Colors: {colors}	נתיבים: {paths}    נקודות עיגון: {anchors}    צבעים: {colors}
+	Pattern Editing	עריכת דוגמה
+	Pattern options are available in pattern editing mode.	אפשרויות הדוגמה זמינות במצב עריכת דוגמה.
+	Pen Tool	כלי עט
+	Pencil	עיפרון
+	Pencil Tool	כלי עיפרון
+	Percent:	אחוז:
+	Performance	ביצועים
+	Performance & Storage	ביצועים ואחסון
+	Permissions	הרשאות
+	Permissions password:	סיסמת הרשאות:
+	Perspective Grid Options	אפשרויות רשת פרספקטיבה
+	Perspective Grid Preset	הגדרת רשת פרספקטיבה מוכנה
+	Perspective Grid Presets	הגדרות רשת פרספקטיבה מוכנות
+	Perspective Grid Settings	הגדרות רשת פרספקטיבה
+	Perspective Grid Tool	כלי רשת פרספקטיבה
+	Perspective Plane Options…	אפשרויות מישור פרספקטיבה…
+	Perspective Selection Tool	כלי בחירה בפרספקטיבה
+	Picas	פיקות
+	Pie Graph Tool	כלי תרשים עוגה
+	Pixels	פיקסלים
+	Place	מיקום
+	Place DXF	מיקום DXF
+	Place PDF	מיקום PDF
+	Place Symbol Instance	מיקום מופע סמל
+	Place the pages with the placement again	מיקום מחדש של העמודים עם אופן המיקום
+	Placed File Info	מידע על קובץ ממוקם
+	Placement Options	אפשרויות מיקום
+	Placement Options…	אפשרויות מיקום…
+	Placement:	מיקום:
+	Plates	לוחות
+	Platform:	פלטפורמה:
+	Play Current Selection	הפעלת הבחירה הנוכחית
+	Plug-in Info	מידע על תוסף
+	Plug-in…	תוסף…
+	Points	נקודות
+	Points: clicks add free points	נקודות: לחיצות מוסיפות נקודות חופשיות
+	Polar Grid	רשת קוטבית
+	Polar Grid Tool	כלי רשת קוטבית
+	Polygon	מצולע
+	Polygon Properties:	מאפייני מצולע:
+	Polygon Tool	כלי מצולע
+	Portrait	לאורך
+	Portuguese	פורטוגזית
+	Position	מיקום
+	Preferences	העדפות
+	Prefix:	קידומת:
+	Preserve Alpha Transparency	שמירה על שקיפות אלפא
+	Preserve Appearance and Overprints	שמירה על המראה וההדפסות-יתר
+	Preserve CMYK Numbers	שמירה על מספרי CMYK
+	Preserve Editing Capabilities	שמירה על יכולות עריכה
+	Preserve Lightness	שמירה על בהירות
+	Preserve Overprints and Spot Colors	שמירה על הדפסות-יתר וצבעי ספוט
+	Preserve Paths	שמירה על נתיבים
+	Preserve Shape Using:	שמירה על הצורה באמצעות:
+	Preserve Spot Colors	שמירה על צבעי ספוט
+	Preserve Text Appearance	שמירה על מראה הטקסט
+	Preserve Text Editability	שמירה על יכולת עריכת הטקסט
+	Preserve editing capabilities	שמירה על יכולות עריכה
+	Preserve:	שמירה על:
+	Preset Name	שם ההגדרה המוכנה
+	Preset name:	שם ההגדרה המוכנה:
+	Preset:	הגדרה מוכנה:
+	Presets you save with the Save Preset button appear here.	הגדרות מוכנות ששמרתם בלחצן שמירת הגדרה מוכנה יופיעו כאן.
+	Presets:	הגדרות מוכנות:
+	Press 	לחצו על 
+	Preview All Layers	תצוגה מקדימה של כל השכבות
+	Preview Mode	מצב תצוגה מקדימה
+	Preview in Browser	תצוגה מקדימה בדפדפן
+	Preview the document as it is now	תצוגה מקדימה של המסמך כפי שהוא עכשיו
+	Previous	הקודם
+	Previous Library	הספרייה הקודמת
+	Previous Page	העמוד הקודם
+	Previous page	העמוד הקודם
+	Primary	ראשי
+	Print	הדפסה
+	Print Layers:	שכבות להדפסה:
+	Print Preset	הגדרת הדפסה מוכנה
+	Print Preset:	הגדרת הדפסה מוכנה:
+	Print Presets	הגדרות הדפסה מוכנות
+	Print Preview	תצוגה מקדימה להדפסה
+	Print Setup	הגדרות הדפסה
+	Print Tiling	ריצוף הדפסה
+	Print Tiling Pages	עמודי ריצוף הדפסה
+	Print Tiling Tool	כלי ריצוף הדפסה
+	Print as Bitmap	הדפסה כמפת סיביות
+	Printer	מדפסת
+	Printer Setup…	הגדרות מדפסת…
+	Printer mark type:	סוג סימני מדפסת:
+	Printer profile:	פרופיל מדפסת:
+	Printer:	מדפסת:
+	Printers	מדפסות
+	Printing / Exporting	הדפסה / ייצוא
+	Printing allowed:	הדפסה מותרת:
+	Process Color	צבע תהליך
+	Profile inclusion:	הכללת פרופיל:
+	Profile:	פרופיל:
+	Progressive	הדרגתי
+	Projecting Cap	קצה בולט
+	Pucker Tool	כלי כיווץ
+	Puppet Warp	עיוות בובה
+	Puppet Warp Pins	סיכות עיוות בובה
+	Puppet Warp Tool	כלי עיוות בובה
+	Quality {quality}	איכות {quality}
+	Quality:	איכות:
+	Quick Actions	פעולות מהירות
+	Quickly start a new file	התחלה מהירה של קובץ חדש
+	RECENT	אחרונים
+	Radar Graph Tool	כלי תרשים מכ"ם
+	Radial Gradient	מעבר צבע רדיאלי
+	Random	אקראי
+	Randomize Colors	צבעים אקראיים
+	Randomly change color order	שינוי אקראי של סדר הצבעים
+	Randomly change saturation and brightness	שינוי אקראי של הרוויה והבהירות
+	Range:	טווח:
+	Raster File Format:	פורמט קובץ רסטר:
+	Raster Sample Size:	גודל דגימת רסטר:
+	Raster/Vector Balance:	איזון רסטר/וקטור:
+	Rasterize Unsupported Art	המרה לרסטר של גרפיקה שאינה נתמכת
+	Rasters	רסטרים
+	Rating:	דירוג:
+	Real World:	עולם אמיתי:
+	Real-time Drawing and Editing	ציור ועריכה בזמן אמת
+	Rearrange All Artboards (on the roadmap)	סידור מחדש של כל משטחי העבודה (בתוכנית העבודה)
+	Recall Selection	שחזור בחירה
+	Recent Colors	צבעים אחרונים
+	Recent Files	קבצים אחרונים
+	Recent Font 1	גופן אחרון 1
+	Recent Font 10	גופן אחרון 10
+	Recent Font 11	גופן אחרון 11
+	Recent Font 12	גופן אחרון 12
+	Recent Font 13	גופן אחרון 13
+	Recent Font 14	גופן אחרון 14
+	Recent Font 15	גופן אחרון 15
+	Recent Font 2	גופן אחרון 2
+	Recent Font 3	גופן אחרון 3
+	Recent Font 4	גופן אחרון 4
+	Recent Font 5	גופן אחרון 5
+	Recent Font 6	גופן אחרון 6
+	Recent Font 7	גופן אחרון 7
+	Recent Font 8	גופן אחרון 8
+	Recent Font 9	גופן אחרון 9
+	Recent URLs	כתובות URL אחרונות
+	Recolor	צביעה מחדש
+	Recolor Artwork	צביעה מחדש של הגרפיקה
+	Recolor this row	צביעה מחדש של שורה זו
+	Recover Documents	שחזור מסמכים
+	Recovery Data	נתוני שחזור
+	Rectangle	מלבן
+	Rectangle Cut	חיתוך מלבני
+	Rectangle Cut Tool	כלי חיתוך מלבני
+	Rectangle Properties:	מאפייני מלבן:
+	Rectangle Tool	כלי מלבן
+	Rectangular Grid	רשת מלבנית
+	Rectangular Grid Tool	כלי רשת מלבנית
+	Red	אדום
+	Redefine Character Style	הגדרה מחדש של סגנון תו
+	Redefine Graphic Style	הגדרה מחדש של סגנון גרפי
+	Redefine Graphic Style “{name}”	הגדרה מחדש של הסגנון הגרפי “{name}”
+	Redefine Paragraph Style	הגדרה מחדש של סגנון פסקה
+	Redefine Symbol	הגדרה מחדש של סמל
+	Redefine {kind} Style	הגדרה מחדש של סגנון {kind}
+	Redo {name}	ביצוע מחדש של {name}
+	Reduce Colors	הפחתת צבעים
+	Reduce to Basic Appearance	צמצום למראה בסיסי
+	Reduction:	הפחתה:
+	Reference Point	נקודת ייחוס
+	Reflect	שיקוף
+	Reflect Tool	כלי שיקוף
+	Reflect X	שיקוף X
+	Reflect Y	שיקוף Y
+	Refresh	רענון
+	Refresh Font List	רענון רשימת הגופנים
+	Registry name:	שם רישום:
+	Release Compound Shape	שחרור צורה מורכבת
+	Release Opacity Mask	שחרור מסיכת אטימות
+	Release to Layers (Build)	שחרור לשכבות (בנייה)
+	Release to Layers (Sequence)	שחרור לשכבות (רצף)
+	Relink	קישור מחדש
+	Relink to Folder…	קישור מחדש לתיקייה…
+	Relink…	קישור מחדש…
+	Remove	הסרה
+	Remove Asset	הסרת נכס
+	Remove Brush Stroke	הסרת משיכת מברשת
+	Remove Effect	הסרת אפקט
+	Remove Guide	הסרת קו עזר
+	Remove Item	הסרת פריט
+	Remove Plug-in	הסרת תוסף
+	Remove Selected Assets	הסרת הנכסים שנבחרו
+	Remove blank lines between paragraphs	הסרת שורות ריקות בין פסקאות
+	Remove “{keyword}”	הסרת “{keyword}”
+	Rename	שינוי שם
+	Rename Asset	שינוי שם נכס
+	Rename Character Style	שינוי שם סגנון תו
+	Rename Graphic Style	שינוי שם סגנון גרפי
+	Rename Paragraph Style	שינוי שם סגנון פסקה
+	Rename Workspace	שינוי שם סביבת עבודה
+	Render Threads (-1 = Automatic)	תהליכי רינדור (‎-1 = אוטומטי)
+	Rendering intent:	כוונת רינדור:
+	Reorder	סידור מחדש
+	Reorder Appearance Item	סידור מחדש של פריט מראה
+	Repeat Pathfinder	חזרה על Pathfinder
+	Repeat Tab	חזרה על לשונית
+	Repeat {name}	חזרה על {name}
+	Replace	החלפה
+	Replace Font	החלפת גופן
+	Replace Symbol	החלפת סמל
+	Replace With Font	החלפה בגופן
+	Replace it with another file, or ignore it: its images keep showing the preview saved with the document.	החליפו אותו בקובץ אחר או התעלמו ממנו: התמונות שלו ימשיכו להציג את התצוגה המקדימה ששמורה במסמך.
+	Replaces the saved preset of that name.	מחליף את ההגדרה המוכנה השמורה בעלת אותו שם.
+	Replace…	החלפה…
+	Require a password to open the document	דרישת סיסמה לפתיחת המסמך
+	Reset	איפוס
+	Reset Envelope Mesh	איפוס רשת המעטפת
+	Reset Envelope Shape	איפוס צורת המעטפת
+	Reset Keyboard Shortcuts	איפוס קיצורי המקלדת
+	Reset OpenType Features	איפוס תכונות OpenType
+	Reset Panel	איפוס הלוח
+	Reset Preferences	איפוס העדפות
+	Reset Profiles	איפוס פרופילים
+	Reset the rows to the artwork's colors	איפוס השורות לצבעי הגרפיקה
+	Reset to Default	איפוס לברירת מחדל
+	Reset to White, Black	איפוס ללבן, שחור
+	Reset {name}	איפוס {name}
+	Reshape	עיצוב מחדש
+	Reshape Segment	עיצוב מחדש של מקטע
+	Reshape Tool	כלי עיצוב מחדש
+	Reshape Type Area	עיצוב מחדש של אזור טקסט
+	Resolution:	רזולוציה:
+	Responsive	רספונסיבי
+	Restore	שחזור
+	Restore Recovered Documents	שחזור מסמכים משוחזרים
+	Restore every preference to its default (applied on OK)	שחזור כל ההעדפות לברירת המחדל (יוחל באישור)
+	Restored documents open unsaved: save them to keep them.	מסמכים משוחזרים נפתחים כשהם לא שמורים: שמרו אותם כדי לשמור אותם.
+	Restrict printing, editing and other tasks	הגבלת הדפסה, עריכה ופעולות אחרות
+	Reverse Gradient	היפוך מעבר צבע
+	Reverse Order	היפוך סדר
+	Reverse Path Direction Off	ביטול היפוך כיוון נתיב
+	Reverse Path Direction On	הפעלת היפוך כיוון נתיב
+	Revert to the saved version of “{name}”?	לחזור לגרסה השמורה של “{name}”?
+	Right Grid:	רשת ימנית:
+	Right Indent	הזחה ימנית
+	Right Plane	מישור ימני
+	Right:	ימין:
+	Roman Hanging Punctuation	פיסוק רומי תלוי
+	Rotate	סיבוב
+	Rotate Tool	כלי סיבוב
+	Rotate View Tool	כלי סיבוב תצוגה
+	Rotation	סיבוב
+	Round Cap	קצה מעוגל
+	Round Join	חיבור מעוגל
+	Rounded Rectangle	מלבן מעוגל
+	Rounded Rectangle Tool	כלי מלבן מעוגל
+	Row Size:	גודל שורה:
+	Rows:	שורות:
+	Rule:	כלל:
+	Rulers & Grids	סרגלים ורשתות
+	Run Plug-in	הפעלת תוסף
+	SAVED	נשמר
+	Select Art	בחירת גרפיקה
+	Show All Layers	הצגת כל השכבות
+	Show Layers Only	הצגת שכבות בלבד
+	SVG Options	אפשרויות SVG
+	SVG Profile:	פרופיל SVG:
+	Sample Color	דגימת צבע
+	Saturate	הגברת רוויה
+	Saturation	רוויה
+	Save As	שמירה בשם
+	Save Colors as Swatches	שמירת צבעים כדוגמיות
+	Save Document	שמירת מסמך
+	Save Document Info…	שמירת מידע על המסמך…
+	Save Graphic Style Library	שמירת ספריית סגנונות גרפיים
+	Save Grid as Preset	שמירת רשת כהגדרה מוכנה
+	Save PDF	שמירת PDF
+	Save PDF Dialog	תיבת הדו-שיח שמירת PDF
+	Save PDF Preset	שמירת הגדרה מוכנה ל-PDF
+	Save Perspective Grid Preset	שמירת הגדרה מוכנה לרשת פרספקטיבה
+	Save Preset	שמירת הגדרה מוכנה
+	Save Preset…	שמירת הגדרה מוכנה…
+	Save Print Preset	שמירת הגדרה מוכנה להדפסה
+	Save Recovery Data	שמירת נתוני שחזור
+	Save Save for Web Preset	שמירת הגדרה מוכנה לשמירה לאינטרנט
+	Save Swatch Library	שמירת ספריית דוגמיות
+	Save Theme	שמירת ערכת נושא
+	Save To:	שמירה אל:
+	Save Transparency Flattener Preset	שמירת הגדרה מוכנה לשיטוח שקיפות
+	Save Transparency Flattener Preset…	שמירת הגדרה מוכנה לשיטוח שקיפות…
+	Save a Copy	שמירת עותק
+	Save as Template	שמירה כתבנית
+	Save as preset:	שמירה כהגדרה מוכנה:
+	Save changes to {name}	שמירת השינויים ב-{name}
+	Save color group to Swatch panel	שמירת קבוצת הצבעים בלוח הדוגמיות
+	Save each artboard to a separate file	שמירת כל משטח עבודה בקובץ נפרד
+	Save for Office Documents	שמירה למסמכי Office
+	Save for Web	שמירה לאינטרנט
+	Save for Web Presets	הגדרות מוכנות לשמירה לאינטרנט
+	Save for Web Preview	תצוגה מקדימה לשמירה לאינטרנט
+	Save for Web Settings	הגדרות שמירה לאינטרנט
+	Save selected colors as swatches	שמירת הצבעים שנבחרו כדוגמיות
+	Save the current layout under this name	שמירת הפריסה הנוכחית בשם זה
+	Save the document first?	לשמור את המסמך קודם?
+	Save the selected preset to a file	שמירת ההגדרה המוכנה שנבחרה לקובץ
+	Save the settings as a preset	שמירת ההגדרות כהגדרה מוכנה
+	Save theme to My Themes	שמירת ערכת הנושא ב"ערכות הנושא שלי"
+	Save these settings as a preset	שמירת הגדרות אלה כהגדרה מוכנה
+	Save these settings as a print preset	שמירת הגדרות אלה כהגדרה מוכנה להדפסה
+	Save to Swatches	שמירה בדוגמיות
+	Saved Selections	בחירות שמורות
+	Saved Views	תצוגות שמורות
+	Saves the current bars, toolbar and panel layout.	שומר את סרגלי הכלים, סרגל הכלים והלוחות הנוכחיים בפריסה.
+	Save…	שמירה…
+	Scale	שינוי גודל
+	Scale Corners	שינוי גודל פינות
+	Scale Cursor Proportional to UI	שינוי גודל סמן ביחס לממשק
+	Scale Lineweights	שינוי גודל עובי קווים
+	Scale Strokes & Effects	שינוי גודל קווי מתאר ואפקטים
+	Scale Tool	כלי שינוי גודל
+	Scale to Fit Artboard	שינוי גודל להתאמה למשטח העבודה
+	Scale:	קנה מידה:
+	Scaling	שינוי גודל
+	Scaling:	שינוי גודל:
+	Scallop Tool	כלי קווים מסולסלים
+	Scans:	סריקות:
+	Scatter Graph Tool	כלי תרשים פיזור
+	Scissors Tool	כלי מספריים
+	Scratch Disks	דיסקים זמניים
+	Screen	מסך
+	Screens	מסכים
+	Search All	חיפוש בכול
+	Search commands and tools	חיפוש פקודות וכלים
+	Search commands and tools…	חיפוש פקודות וכלים…
+	Secondary	משני
+	Select All Art on Layer	בחירת כל הגרפיקה בשכבה
+	Select All Assets	בחירת כל הנכסים
+	Select All Instances	בחירת כל המופעים
+	Select All Unused	בחירת כל הלא בשימוש
+	Select Anchors	בחירת עוגנים
+	Select Appearance Item	בחירת פריט מראה
+	Select Freeform Point	בחירת נקודה חופשית
+	Select Gradient Stop	בחירת עצירת מעבר צבע
+	Select Objects	בחירת אובייקטים
+	Select Same Tint %	בחירת אותו אחוז גוון
+	Select Slices	בחירת פרוסות
+	Select Text by Font	בחירת טקסט לפי גופן
+	Select Tool	כלי בחירה
+	Select a text object	בחירת אובייקט טקסט
+	Select a text object to edit its character attributes.	בחרו אובייקט טקסט כדי לערוך את מאפייני התווים שלו.
+	Select a text object to edit its paragraph attributes.	בחרו אובייקט טקסט כדי לערוך את מאפייני הפסקה שלו.
+	Select a text object to set its tab stops.	בחרו אובייקט טקסט כדי להגדיר את עצירות הטאב שלו.
+	Select an image to see its Link Info.	בחרו תמונה כדי לראות את פרטי הקישור שלה.
+	Select an image to trace	בחרו תמונה למעקב
+	Select art and choose Object › Pattern › Make.	בחרו גרפיקה ובחרו אובייקט › תבנית › יצירה.
+	Select art and click New Symbol to make one.	בחרו גרפיקה ולחצו על סמל חדש כדי ליצור סמל.
+	Select art and use New Brush to make one.	בחרו גרפיקה והשתמשו ב"מברשת חדשה" כדי ליצור מברשת.
+	Select objects to see their CSS, or Generate CSS for the whole document.	בחרו אובייקטים כדי לראות את ה-CSS שלהם, או צרו CSS לכל המסמך.
+	Select styled art and click New Graphic Style.	בחרו גרפיקה בעלת סגנון ולחצו על "סגנון גרפי חדש".
+	Select text	בחירת טקסט
+	Select text to set its OpenType features.	בחרו טקסט כדי להגדיר את תכונות OpenType שלו.
+	Select the art (and, on top of it, the mask object)	בחרו את הגרפיקה (ומעליה את אובייקט המסיכה)
+	Select:	בחירה:
+	Selected Artwork	גרפיקה שנבחרה
+	Selected Styles Only	סגנונות שנבחרו בלבד
+	Selected Swatches	דוגמיות שנבחרו
+	Selected Swatches Only	דוגמיות שנבחרו בלבד
+	Selection & Anchor Display	תצוגת בחירה ועוגנים
+	Selection Only	בחירה בלבד
+	Selection Tool	כלי בחירה
+	Separate colors into rows	הפרדת צבעים לשורות
+	Separate several keywords with commas.	הפרידו בין מילות מפתח באמצעות פסיקים.
+	Separations list the document's inks here: one page per ink that prints.	רשימת ההפרדות מציגה כאן את הדיו של המסמך: עמוד אחד לכל דיו שמודפס.
+	Serialize Document	סריאליזציה של המסמך
+	Set Anchors	הגדרת עוגנים
+	Set Bounds	הגדרת גבולות
+	Set Current Layer	הגדרת שכבה נוכחית
+	Set Key Object	הגדרת אובייקט מפתח
+	Set Keyboard Shortcut	הגדרת קיצור מקלדת
+	Set Mesh Point Color	הגדרת צבע נקודת רשת
+	Set Preference	הגדרת העדפה
+	Set Slice Rectangle	הגדרת מלבן פרוסה
+	Set Tab Stops	הגדרת עצירות טאב
+	Set Text	הגדרת טקסט
+	Set Zoom	הגדרת זום
+	Set base color to the current color	הגדרת צבע הבסיס לצבע הנוכחי
+	Set the selected color to the current color	הגדרת הצבע שנבחר לצבע הנוכחי
+	Setup…	הגדרות…
+	Shape Builder	בונה צורות
+	Shape Builder Regions	אזורי בונה צורות
+	Shape Builder Tool	כלי בונה צורות
+	Shape Modes:	מצבי צורה:
+	Shape Properties:	מאפייני צורה:
+	Shaper Tool	כלי Shaper
+	Shapes	צורות
+	Shear	הטיה
+	Shear Tool	כלי הטיה
+	Shifts the tints of global and spot colors; other colors stay.	מזיז את הגוונים של צבעים גלובליים וצבעי ספוט; שאר הצבעים נשארים.
+	Show	הצגה
+	Show Active Plane Widget	הצגת ווידג'ט המישור הפעיל
+	Show All Hidden Attributes	הצגת כל התכונות המוסתרות
+	Show All Plates	הצגת כל הלוחות
+	Show Brush Size	הצגת גודל המברשת
+	Show Center	הצגת מרכז
+	Show Code	הצגת קוד
+	Show East Asian Options	הצגת אפשרויות מזרח אסיה
+	Show Find Field	הצגת שדה חיפוש
+	Show Font Names in English	הצגת שמות גופנים באנגלית
+	Show Grid (⌘')	הצגת רשת (⌘')
+	Show Images in Outline Mode	הצגת תמונות במצב מתאר
+	Show Indic Options	הצגת אפשרויות הודיות
+	Show Link Info	הצגת פרטי קישור
+	Show List View	הצגת תצוגת רשימה
+	Show Note	הצגת הערה
+	Show Options	הצגת אפשרויות
+	Show Package	הצגת חבילה
+	Show Panel	הצגת לוח
+	Show Perspective Grid	הצגת רשת פרספקטיבה
+	Show Pixel Grid (Above 600% Zoom)	הצגת רשת פיקסלים (מעל זום 600%)
+	Show Rulers (⌘R)	הצגת סרגלים (⌘R)
+	Show Slice Numbers	הצגת מספרי פרוסות
+	Show Swatch Bounds	הצגת גבולות דוגמית
+	Show Swatch Kinds	הצגת סוגי דוגמיות
+	Show The Home Screen When No Documents Are Open	הצגת מסך הבית כשאין מסמכים פתוחים
+	Show Thumbnail	הצגת תמונה ממוזערת
+	Show Thumbnail View	הצגת תצוגת תמונות ממוזערות
+	Show Thumbnails	הצגת תמונות ממוזערות
+	Show Tile Edge	הצגת קצה האריח
+	Show Tints/Shades	הצגת גוונים/צלליות
+	Show Tool Tips	הצגת כלי עזר (טיפים)
+	Show Vivid/Muted	הצגת חי/עמום
+	Show Warm/Cool	הצגת חם/קר
+	Show all plates	הצגת כל הלוחות
+	Show handles when multiple anchors are selected	הצגת ידיות כשנבחרו כמה עוגנים
+	Show {kind} Brushes	הצגת מברשות {kind}
+	Show/hide plate (Alt-click: only this plate)	הצגה/הסתרה של לוח (Alt+לחיצה: רק הלוח הזה)
+	Show:	הצגה:
+	Shown with the optimised preview.	מוצג עם התצוגה המקדימה המותאמת.
+	Side 1:	צד 1:
+	Side 2:	צד 2:
+	Sides:	צלעות:
+	Simplify	פישוט
+	Simplify:	פישוט:
+	Simulate Colored Paper	הדמיית נייר צבעוני
+	Simulate Paper	הדמיית נייר
+	Single Quotes:	מירכאות בודדות:
+	Single-line Composer	מסדר שורה בודדת
+	Size Tile to Art	התאמת האריח לגרפיקה
+	Size/Leading	גודל/מרווח שורות
+	Size:	גודל:
+	Size: {size}  Tracking: {tracking}	גודל: {size}  ריווח אותיות: {tracking}
+	Skip Blank Artboards	דילוג על משטחי עבודה ריקים
+	Slice Options	אפשרויות פרוסה
+	Slice Selection Tool	כלי בחירת פרוסות
+	Slice Tool	כלי פרוסה
+	Slice Type:	סוג פרוסה:
+	Slices:	פרוסות:
+	Small	קטן
+	Small Caps	אותיות רישיות קטנות
+	Small Caps (on the roadmap)	אותיות רישיות קטנות (בתוכנית העבודה)
+	Small Caps:	אותיות רישיות קטנות:
+	Smaller ↔ Larger	קטן ↔ גדול
+	Smart Guides (View → Smart Guides)	קווי עזר חכמים (תצוגה ← קווי עזר חכמים)
+	Smart Guides (⌘U)	קווי עזר חכמים (⌘U)
+	Smooth	חלק
+	Smooth Tool	כלי החלקה
+	Snap Curves To Lines	הצמדת עקומות לקווים
+	Snap Options	אפשרויות הצמדה
+	Snapping Tolerance	סובלנות הצמדה
+	Soft Light	אור רך
+	Solid	רציף
+	Sort by Kind	מיון לפי סוג
+	Sort by Name	מיון לפי שם
+	Source code on GitHub	קוד המקור ב-GitHub
+	Space After Paragraph	רווח אחרי פסקה
+	Space Before Paragraph	רווח לפני פסקה
+	Spaces	רווחים
+	Spacing Guides	קווי עזר לריווח
+	Spacing:	ריווח:
+	Spanish	ספרדית
+	Specify:	ציין:
+	Spiral	ספירלה
+	Spiral Tool	כלי ספירלה
+	Split Freeform Line	פיצול קו חופשי
+	Split Into Grid	פיצול לרשת
+	Split Path	פיצול נתיב
+	Spot Color	צבע ספוט
+	Spot Colors	צבעי ספוט
+	Spot Colors…	צבעי ספוט…
+	Spread:	פיזור:
+	Square	ריבועי
+	Stacked Bar Graph Tool	כלי גרף עמודות מוערמות אופקי
+	Stacked Column Graph Tool	כלי גרף עמודות מוערמות
+	Standard Ligatures	ליגטורות רגילות
+	Standard:	רגיל:
+	Star	כוכב
+	Star Tool	כלי כוכב
+	Start arrowhead	ראש חץ בתחילת הקו
+	Status	סטטוס
+	Steps:	שלבים:
+	Stop Editing Opacity Mask	הפסקת עריכת מסכת אטימות
+	Stop Playing/Recording	הפסקת הפעלה/הקלטה
+	Stop editing the opacity mask	הפסקת עריכת מסכת האטימות
+	Strikethrough	קו חוצה
+	Stroke Options	אפשרויות קו מתאר
+	Character:	תו:
+	Character options	אפשרויות תו
+	Stroke options	אפשרויות קו מתאר
+	Stroke:	קו מתאר:
+	Style	סגנון
+	Style Name:	שם סגנון:
+	Style:	סגנון:
+	Styling:	עיצוב:
+	Subdivisions	חלוקות משנה
+	Subscript (on the roadmap)	כתב תחתי (בתוכנית העבודה)
+	Subscript:	כתב תחתי:
+	Subset fonts below:	יצירת תת-קבוצה של הגופנים שלהלן:
+	Suffix	סיומת
+	Superscript (on the roadmap)	כתב עילי (בתוכנית העבודה)
+	Superscript:	כתב עילי:
+	Swap Fill and Stroke	החלפת מילוי וקו מתאר
+	Swap start and end arrowheads	החלפת ראשי החצים של התחלה וסוף
+	Swash	עיטור
+	Swatch Conflict	התנגשות דוגמיות צבע
+	Swatch Conflicts	התנגשויות דוגמיות צבע
+	Swatch Library	ספריית דוגמיות צבע
+	Swatch Name:	שם דוגמית צבע:
+	Swatch Options	אפשרויות דוגמית צבע
+	Swatch Options…	אפשרויות דוגמית צבע…
+	Swatch Tiles	אריחי דוגמיות צבע
+	Switch workspace	החלפת סביבת עבודה
+	Symbol Libraries (on the roadmap)	ספריות סמלים (בתוכנית העבודה)
+	Symbol Screener Tool	כלי סינון סמלים
+	Symbol Scruncher Tool	כלי כיווץ סמלים
+	Symbol Shifter Tool	כלי הזזת סמלים
+	Symbol Sizer Tool	כלי שינוי גודל סמלים
+	Symbol Spinner Tool	כלי סיבוב סמלים
+	Symbol Sprayer	מרסס סמלים
+	Symbol Sprayer Tool	כלי מרסס סמלים
+	Symbol Stainer Tool	כלי צביעת סמלים
+	Symbol Styler Tool	כלי עיצוב סמלים
+	Symbolism Tool	כלי סמלים
+	Tab Stops	עצירות טאב
+	Target	יעד
+	Target Contents	תוכן היעד
+	Target:	יעד:
+	Templates Folder	תיקיית תבניות
+	Templates…	תבניות…
+	Text Displayed in Cell:	טקסט המוצג בתא:
+	Text Export Options	אפשרויות ייצוא טקסט
+	Text Import Options	אפשרויות ייבוא טקסט
+	The Print Tiling tool placed the pages.	כלי ריצוף ההדפסה סידר את הדפים.
+	The bounds of the visible art.	גבולות העבודה הגלויה.
+	The cell shows the type object's text as HTML.	התא מציג את הטקסט של אובייקט הטקסט כ-HTML.
+	The document has no colour swatches.	במסמך אין דוגמיות צבע.
+	The edge of the paper the printer can't reach: the art goes inside it, and the preview shows it dashed.	הקצה של הנייר שהמדפסת אינה מגיעה אליו: העבודה נכנסת בתוכו, והתצוגה המקדימה מציגה אותו בקו מקווקו.
+	The page as it prints	הדף כפי שיודפס
+	The selected objects have no CSS of their own (see below).	לאובייקטים הנבחרים אין CSS משלהם (ראו להלן).
+	The system's settings of this printer	הגדרות המערכת של מדפסת זו
+	Third Vanishing Point:	נקודת מגוז שלישית:
+	This document already has a swatch named “{name}” with another color.	במסמך זה כבר קיימת דוגמית צבע בשם “{name}” עם צבע אחר.
+	This library is empty.	הספרייה הזו ריקה.
+	This panel is on the roadmap (see the parity plan).	חלונית זו נמצאת בתוכנית העבודה (ראו את תוכנית השוויון).
+	Threads	תהליכונים
+	Three Point	שלוש נקודות
+	Three Point Perspective Preset 1	הגדרת פרספקטיבה מוכנה בשלוש נקודות 1
+	Three Point Perspective Preset 2	הגדרת פרספקטיבה מוכנה בשלוש נקודות 2
+	Three Point Perspective Preset 3	הגדרת פרספקטיבה מוכנה בשלוש נקודות 3
+	Three Point Perspective Preset 4	הגדרת פרספקטיבה מוכנה בשלוש נקודות 4
+	Three Point Perspective Preset 5	הגדרת פרספקטיבה מוכנה בשלוש נקודות 5
+	Threshold	סף
+	Thumbnail View	תצוגת תמונות ממוזערות
+	Thumbnails:	תמונות ממוזערות:
+	Tile Edge Color	צבע קצה האריח
+	Tile Range:	טווח אריחים:
+	Tile Type:	סוג אריח:
+	Tiles are numbered across, then down; leave the range empty for every tile.	האריחים ממוספרים לרוחב ואז כלפי מטה; השאירו את הטווח ריק לכל האריחים.
+	Toggle Fill/Stroke Focus	החלפת מיקוד מילוי/קו מתאר
+	Toggle Selection	החלפת מצב בחירה
+	Toggle single/double column	מעבר בין עמודה אחת לשתיים
+	Tolerance	סובלנות
+	Tolerance:	סובלנות:
+	Tool Option	אפשרות כלי
+	Tool Options…	אפשרויות כלי…
+	Toolbar: Advanced / Basic	סרגל כלים: מתקדם / בסיסי
+	Toolbar: Single/Double Column	סרגל כלים: עמודה אחת/שתיים
+	Top:	למעלה:
+	Total Width:	רוחב כולל:
+	Touch Type Tool	כלי טקסט במגע
+	Trace	עקיבה
+	Trace the image with the Default preset	עקיבה אחר התמונה עם ההגדרה המוכנה המוגדרת כברירת מחדל
+	Tracking	ריווח אותיות
+	Transform Both	טרנספורמציה של שניהם
+	Transform Each	טרנספורמציה לכל אחד
+	Transform Object Only	טרנספורמציה של האובייקט בלבד
+	Transform Panel	חלונית טרנספורמציה
+	Transform Pattern Only	טרנספורמציה של הדוגמה בלבד
+	Transform Pattern Tiles	טרנספורמציה של אריחי הדוגמה
+	Transform Patterns	טרנספורמציה של דוגמאות
+	Transform Tools	כלי טרנספורמציה
+	Transform in Perspective	טרנספורמציה בפרספקטיבה
+	Transparency Flattener Presets	הגדרות מוכנות לשיטוח שקיפות
+	Transparency Grid	רשת שקיפות
+	Transparency Info	מידע על שקיפות
+	Transparency Options	אפשרויות שקיפות
+	Transparency is flattened with the preset. Type is written as outlines; gradients as bands of colour.	השקיפות משוטחת לפי ההגדרה המוכנה. טקסט נכתב כקווי מתאר; מעברי צבע כפסי צבע.
+	Transparency is flattened with the preset. Type is written as outlines; gradients stay smooth.	השקיפות משוטחת לפי ההגדרה המוכנה. טקסט נכתב כקווי מתאר; מעברי צבע נשארים חלקים.
+	Transparent	שקוף
+	Transparent Background	רקע שקוף
+	Transverse (the page a quarter turn on the paper)	רוחבי (הדף מסובב רבע סיבוב על הנייר)
+	Trap…	מלכודת…
+	Trim mark weight:	עובי סימן חיתוך:
+	True colour needs version 2004 or later: the nearest of 256 colours is written.	צבע אמיתי דורש גרסה 2004 ואילך: נכתב הצבע הקרוב ביותר מתוך 256 צבעים.
+	Turn off Data Recovery for complex documents	כיבוי שחזור נתונים למסמכים מורכבים
+	Twirl Rate:	קצב סחרור:
+	Twirl Tool	כלי סחרור
+	Two Point	שתי נקודות
+	Two Point Perspective Preset 1	הגדרת פרספקטיבה מוכנה בשתי נקודות 1
+	Two Point Perspective Preset 2	הגדרת פרספקטיבה מוכנה בשתי נקודות 2
+	Two Point Perspective Preset 3	הגדרת פרספקטיבה מוכנה בשתי נקודות 3
+	Two Point Perspective Preset 4	הגדרת פרספקטיבה מוכנה בשתי נקודות 4
+	Two Point Perspective Preset 5	הגדרת פרספקטיבה מוכנה בשתי נקודות 5
+	Type Object Selection by Path Only	בחירת אובייקט טקסט לפי נתיב בלבד
+	Type Tool	כלי טקסט
+	Type becomes outlines, and strokes a CAD line can't draw become filled shapes.	הטקסט הופך לקווי מתאר, וקווים ש-CAD אינו יכול לצייר הופכים לצורות מלאות.
+	Type on a Path Tool	כלי טקסט על נתיב
+	Type stays text, and every stroke is a line with its lineweight and dashes.	הטקסט נשאר טקסט, וכל קו הוא קו עם עובי הקו והקווקוו שלו.
+	Type:	סוג:
+	UI Scaling	קנה מידה של ממשק
+	Underline	קו תחתון
+	Undo {name}	ביטול {name}
+	Unembed	ביטול הטמעה
+	Unembed…	ביטול הטמעה…
+	Ungroup Color Group	פירוק קבוצת צבעים
+	Uniform	אחיד
+	Unite	איחוד
+	Units	יחידות
+	Units:	יחידות:
+	Units: {units}	יחידות: {units}
+	Unlink Opacity Mask	ביטול קישור מסכת אטימות
+	Unlink harmony colors	ביטול קישור צבעי ההרמוניה
+	Unlink the mask	ביטול קישור המסכה
+	Unlock	שחרור נעילה
+	Unlock All Layers	שחרור נעילה של כל השכבות
+	Unnamed Objects	אובייקטים ללא שם
+	Unprintable margin:	שוליים שאינם ניתנים להדפסה:
+	Unshift	ביטול הזזה
+	Update Link	עדכון קישור
+	Update Links	עדכון קישורים
+	Update Modified Links	עדכון קישורים ששונו
+	Use 	בחרו 
+	Use Artboards	שימוש במשטחי עבודה
+	Use Black Point Compensation	שימוש בפיצוי נקודת שחור
+	Use Compression	שימוש בדחיסה
+	Use Even-Odd Fill Rule	שימוש בכלל מילוי זוגי-אי-זוגי
+	Use Japanese Crop Marks	שימוש בסימני חיתוך יפניים
+	Use Low Resolution Proxy for Linked EPS	שימוש בפרוקסי ברזולוציה נמוכה עבור EPS מקושר
+	Use Non-Zero Winding Fill Rule	שימוש בכלל מילוי מספר סיבובים שאינו אפס
+	Use Precise Cursors	שימוש בסמנים מדויקים
+	Use Pressure Pen	שימוש בעט רגיש ללחץ
+	Use Preview Bounds	שימוש בגבולות התצוגה המקדימה
+	Use Registration Point for Symbol	שימוש בנקודת הרישום עבור הסמל
+	Use Square for Previews	שימוש בריבוע לתצוגות מקדימות
+	Use Text for Previews	שימוש בטקסט לתצוגות מקדימות
+	Use Typographer's Quotes	שימוש במירכאות טיפוגרפיות
+	Use document bleed settings	שימוש בהגדרות השטח החתוך של המסמך
+	Use the Selected Text's Font	שימוש בגופן של הטקסט הנבחר
+	User Defined Libraries	ספריות מוגדרות על ידי המשתמש
+	User Graphic Style Library 1	ספריית סגנונות גרפיים של המשתמש 1
+	User Graphic Style Library 10	ספריית סגנונות גרפיים של המשתמש 10
+	User Graphic Style Library 2	ספריית סגנונות גרפיים של המשתמש 2
+	User Graphic Style Library 3	ספריית סגנונות גרפיים של המשתמש 3
+	User Graphic Style Library 4	ספריית סגנונות גרפיים של המשתמש 4
+	User Graphic Style Library 5	ספריית סגנונות גרפיים של המשתמש 5
+	User Graphic Style Library 6	ספריית סגנונות גרפיים של המשתמש 6
+	User Graphic Style Library 7	ספריית סגנונות גרפיים של המשתמש 7
+	User Graphic Style Library 8	ספריית סגנונות גרפיים של המשתמש 8
+	User Graphic Style Library 9	ספריית סגנונות גרפיים של המשתמש 9
+	User Interface	ממשק משתמש
+	User Swatch Library 1	ספריית דוגמיות צבע של המשתמש 1
+	User Swatch Library 10	ספריית דוגמיות צבע של המשתמש 10
+	User Swatch Library 2	ספריית דוגמיות צבע של המשתמש 2
+	User Swatch Library 3	ספריית דוגמיות צבע של המשתמש 3
+	User Swatch Library 4	ספריית דוגמיות צבע של המשתמש 4
+	User Swatch Library 5	ספריית דוגמיות צבע של המשתמש 5
+	User Swatch Library 6	ספריית דוגמיות צבע של המשתמש 6
+	User Swatch Library 7	ספריית דוגמיות צבע של המשתמש 7
+	User Swatch Library 8	ספריית דוגמיות צבע של המשתמש 8
+	User Swatch Library 9	ספריית דוגמיות צבע של המשתמש 9
+	V Spacing:	ריווח אנכי:
+	Variable Width Profile	פרופיל רוחב משתנה
+	Variation:	וריאציה:
+	Vector Halftone	רשת חצי-גוני וקטורית
+	Vector illustration — fast, open, scriptable.	איור וקטורי — מהיר, פתוח וניתן לסקריפטים.
+	Epic Vector didn't quit normally last time. These documents had unsaved changes:	Epic Vector לא נסגרה כרגיל בפעם הקודמת. במסמכים אלה היו שינויים שלא נשמרו:
+	Vectors	וקטורים
+	Version {version} — open-source vector illustration in pure Rust.	גרסה {version} — איור וקטורי בקוד פתוח ב-Rust טהור.
+	Version:	גרסה:
+	Vertical Area Type Tool	כלי טקסט באזור אנכי
+	Vertical Distribute Space	פיזור רווח אנכי
+	Vertical Scale %	קנה מידה אנכי %
+	Vertical Type Tool	כלי טקסט אנכי
+	Vertical Type on a Path Tool	כלי טקסט אנכי על נתיב
+	Vertical:	אנכי:
+	View Artboard Only	הצגת משטח העבודה בלבד
+	View Opacity Mask	הצגת מסכת אטימות
+	View PDF after saving	הצגת PDF לאחר השמירה
+	Viewing Angle:	זווית צפייה:
+	Viewing Distance:	מרחק צפייה:
+	Warnings	אזהרות
+	Warp Options	אפשרויות עיוות
+	Warp Tool	כלי עיוות
+	Web Shift	הסטת רשת
+	Web Snap:	הצמדה לרשת:
+	Weight:	משקל:
+	Welcome to Epic Vector	ברוכים הבאים אל Epic Vector
+	When pasting text	בעת הדבקת טקסט
+	White	לבן
+	Widget Position:	מיקום הווידג׳ט:
+	Width	רוחב
+	Width Point	נקודת רוחב
+	Width Point Edit	עריכת נקודת רוחב
+	Width Point Edit…	עריכת נקודת רוחב…
+	Width Profile	פרופיל רוחב
+	Width Profiles	פרופילי רוחב
+	Width Tool	כלי רוחב
+	Width and Height	רוחב וגובה
+	Width:	רוחב:
+	Wrinkle Tool	כלי קמטים
+	Write Layers	כתיבת שכבות
+	Yards	יארדים
+	Your browser downloads the files (several as one .zip).	הדפדפן מוריד את הקבצים (כמה קבצים כקובץ .zip אחד).
+	Your changes will be lost if you don't save them.	השינויים יאבדו אם לא תשמרו אותם.
+	Zoom Tool	כלי זום
+	Zoom to Selection	התמקדות בבחירה
+	Zoom with Mouse Wheel	זום עם גלגלת העכבר
+	Scrub Numeric Fields by Dragging	גרירה לשינוי ערכים בשדות מספריים
+	[Default] is protected: New… starts an editable copy.	[ברירת מחדל] מוגן: ‏“חדש…” מתחיל עותק הניתן לעריכה.
+	[Unnamed]	[ללא שם]
+	above	מעל
+	dash	קו
+	e.g. 1-3, 5	לדוגמה 1-3, 5
+	gap	רווח
+	glyph {id}	גליף {id}
+	of characters used	מהתווים שנעשה בהם שימוש
+	of {count}	מתוך {count}
+	or more spaces with a tab	או יותר רווחים עם טאב
+	per slice	לכל פרוסה
+	slices across, evenly spaced	פרוסות לרוחב, במרווחים שווים
+	slices down, evenly spaced	פרוסות כלפי מטה, במרווחים שווים
+	spot	ספוט
+	the preset	ההגדרה המוכנה
+	tile {number}	אריח {number}
+	to	עד
+	{count} file(s) in {folder}{note}. Show the package folder?	{count} קבצים ב-{folder}{note}. להציג את תיקיית החבילה?
+	{count} linked file(s) not found	לא נמצאו {count} קבצים מקושרים
+	{count} linked image(s) changed since this document was saved. Show the new versions?	{count} תמונות מקושרות השתנו מאז שמירת המסמך. להציג את הגרסאות החדשות?
+	{count} more rules: Export writes every one.	עוד {count} כללים: הייצוא כותב את כולם.
+	{count} unnamed objects left out: name them, or turn on Unnamed Objects in the panel menu.	{count} אובייקטים ללא שם הושמטו: תנו להם שם, או הפעילו את “אובייקטים ללא שם” בתפריט החלונית.
+	{effect} is already applied	{effect} כבר הוחל
+	{format} Options	אפשרויות {format}
+	{kind} Gradient	מעבר צבע {kind}
+	{kind} Style Options…	אפשרויות סגנון {kind}…
+	{kind}, {model}	{kind}, {model}
+	{name} (spot)	{name} (ספוט)
+	{pages} in all, {count} per copy	{pages} בסך הכול, {count} לכל עותק
+	{page} of {count}	{page} מתוך {count}
+	{percent}% opacity	אטימות {percent}%
+	{secs} sec	{secs} שנ׳
+	{shortcut} with the tool sizes the brush	{shortcut} עם הכלי משנה את גודל המברשת
+	{title} (selection)	{title} (בחירה)
+	{tool} Options	אפשרויות {tool}
+	{tool} Tool Options	אפשרויות כלי {tool}
+	{warning}: click to correct to the closest color ({hex})	{warning}: לחצו כדי לתקן לצבע הקרוב ביותר ({hex})
+	“{file}” is protected by a password.	“{file}” מוגן בסיסמה.
+	● Recording	● מקליט
+	:	:
+	CMYK	CMYK
+	H:	H:
+	OK	אישור
+	PPI	PPI
+	PostScript:	PostScript:
+	URL:	URL:
+	V:	V:
+	W:	W:
+	Enter	Enter
+	Esc	Esc
+	PDF	PDF
+	Shift	Shift
+	XML ID	XML ID
+# Built at run time (status messages, counts, section lists).
+	Action {n}	פעולה {n}
+	Add Swatches	הוספת דוגמיות צבע
+	Align center	יישור למרכז
+	Align left	יישור לשמאל
+	Align right	יישור לימין
+	All colours are within the CMYK gamut	כל הצבעים נמצאים בתוך טווח CMYK
+	Alt	Alt
+	Amount	כמות
+	Area Type Options	אפשרויות טקסט באזור
+	Art	עבודה
+	Axis:	ציר:
+	Backspace	Backspace
+	Basic Latin	לטינית בסיסית
+	Black and White	שחור ולבן
+	Black and White Logo	לוגו בשחור ולבן
+	Bottom	תחתית
+	Bottom in Front	התחתון בחזית
+	Bounds	גבולות
+	Bounds (Fill Proportionally)	גבולות (מילוי יחסי)
+	Bounds (Fit Proportionally)	גבולות (התאמה יחסית)
+	Brick by Column	לבנה לפי עמודה
+	Brick by Row	לבנה לפי שורה
+	Bristle	זיפים
+	Calligraphic	קליגרפי
+	Cap	קצה
+	Center on Artboard	מירכוז במשטח העבודה
+	Center-Justified Tab	טאב ממורכז
+	Change Screen Mode (F)	שינוי מצב מסך (F)
+	Character Style	סגנון תו
+	Classic Defaults	ברירות מחדל קלאסיות
+	Client-side (.html)	צד לקוח (.html)
+	Cmd	Cmd
+	Collect Links in a Separate Folder	איסוף קישורים בתיקייה נפרדת
+	Color (,)	צבע (,)
+	Color Group	קבוצת צבעים
+	Color Library	ספריית צבעים
+	Color Management	ניהול צבע
+	Color Mixer (Shift-click the chip)	מערבל צבעים (Shift+לחיצה על השבב)
+	Color Table ({n} color)	טבלת צבעים ({n} צבעים)
+	Color Table ({n} colors)	טבלת צבעים ({n} צבעים)
+	Color Theme	ערכת צבעים
+	Color bars	פסי צבע
+	Compression	דחיסה
+	Compression › Color › Above Ppi	דחיסה › צבע › מעל ppi
+	Contrast	ניגודיות
+	Convert To Outlines	המרה למתארים
+	Copied the CSS of {rules} object(s)	CSS של {rules} אובייקטים הועתק
+	Copy All Objects	העתקת כל האובייקטים
+	Copy Fonts Used in the Document	העתקת הגופנים שבשימוש במסמך
+	Copy Links	העתקת קישורים
+	Couldn't copy to the system clipboard: {e}	לא ניתן להעתיק ללוח המערכת: {e}
+	Couldn't paste from the clipboard: {e}	לא ניתן להדביק מהלוח: {e}
+	Couldn't save recovery data: {e}	לא ניתן לשמור נתוני שחזור: {e}
+	Couldn't {} {name}: {e}	לא ניתן {} את {name}: {e}
+	Create Report	יצירת דוח
+	Ctrl	Ctrl
+	Currency & Symbols	מטבעות וסמלים
+	Cyan	ציאן
+	Dash Pattern	תבנית קווים מקווקווים
+	Decimal-Justified Tab	טאב עשרוני
+	Default Actions	פעולות ברירת מחדל
+	Default Figure	ספרות ברירת מחדל
+	Default Fill and Stroke (D)	מילוי וקו מתאר ברירת מחדל (D)
+	Default Printer	מדפסת ברירת מחדל
+	Delete these {n} graphic styles?	למחוק {n} סגנונות גרפיים אלה?
+	Delete this {n} graphic style?	למחוק סגנון גרפי זה ({n})?
+	Discarded {} recovered document(s)	{} מסמכים משוחזרים נמחקו
+	Discord	Discord
+	Do Not Move	לא להזיז
+	Document Swatches	דוגמיות צבע של המסמך
+	Document profile	פרופיל המסמך
+	Download	הורדה
+	Downloaded {what}	{what} הורד
+	Downloaded {} file(s)	{} קבצים הורדו
+	Draw Behind	ציור מאחור
+	Draw Inside	ציור בפנים
+	Draw Normal	ציור רגיל
+	Drop Shadow	הטלת צל
+	Duplicate and Offset 10 pt	שכפול והזזה ב-10 pt
+	Edit Toolbar	עריכת סרגל הכלים
+	Edit Views	עריכת תצוגות
+	Embedded {n} image(s)	{n} תמונות הוטמעו
+	Embedded {n} image(s); {missing} missing: relink them first	{n} תמונות הוטמעו; {missing} חסרות: קשרו אותן מחדש תחילה
+	English	English
+	Entire Font	הגופן כולו
+	Export Asset	ייצוא נכס
+	Exported {count} file(s) to {folder}	{count} קבצים יוצאו אל {folder}
+	Exported {path}	{path} יוצא
+	Exported {what}	{what} יוצא
+	Exported {what} with {} note(s): {first}	{what} יוצא עם {} הערות: {first}
+	Exporting {}	מייצא את {}
+	File Dimensions	ממדי הקובץ
+	Fill (X), double-click for the Color Picker	מילוי (X), לחיצה כפולה לבורר הצבעים
+	Fill: click for swatches, Shift-click for the color mixer	מילוי: לחיצה לדוגמיות צבע, Shift+לחיצה למערבל הצבעים
+	Fit in View	התאמה לתצוגה
+	Flare Tool Options	אפשרויות כלי ההבהוב
+	Flattener presets	הגדרות מוכנות של המשטח
+	Focal Fill	מילוי מוקד
+	Focal Stroke	קו מתאר מוקד
+	Fractional Widths	רוחבים חלקיים
+	Free	חופשי
+	General › Placement › X	כללי › מיקום › X
+	General › Thumbnails	כללי › תמונות ממוזערות
+	Global Process Color, CMYK	צבע תהליך גלובלי, CMYK
+	Gradient (.)	מעבר צבע (.)
+	Graph Data	נתוני התרשים
+	Graph Type	סוג תרשים
+	Graphic Style Libraries Menu	תפריט ספריות סגנונות גרפיים
+	Graphics	גרפיקה
+	Greek & Cyrillic	יוונית וקירילית
+	Hex by Column	משושה לפי עמודה
+	Hex by Row	משושה לפי שורה
+	High	גבוה
+	High (300 ppi)	גבוהה (300 ppi)
+	Horizontal %	% אופקי
+	Horizontal Distribute Center	פיזור מרכזים אופקית
+	Horizontal Distribute Left	פיזור לשמאל אופקית
+	Horizontal Distribute Right	פיזור לימין אופקית
+	Image	תמונה
+	Imported {what}: {}	{what} יובא: {}
+	Include Blacks with CMY:	הכללת שחורים עם CMY:
+	Include Cmy Blacks	הכללת שחורים של CMY
+	Input Black	שחור קלט
+	Input White	לבן קלט
+	Installed plug-in {}	התוסף {} הותקן
+	Internal CSS	CSS פנימי
+	Justify all lines	יישור כל השורות לשני הצדדים
+	Justify with last line aligned center	יישור לשני הצדדים, שורה אחרונה במרכז
+	Justify with last line aligned left	יישור לשני הצדדים, שורה אחרונה לשמאל
+	Justify with last line aligned right	יישור לשני הצדדים, שורה אחרונה לימין
+	Keep a link to an image file instead of only embedding it	שמירת קישור לקובץ התמונה במקום הטמעה בלבד
+	Keep the pasted color as a new swatch with a numbered name.	שמירת הצבע שהודבק כדוגמית צבע חדשה בשם ממוספר.
+	Keep:	שמירה:
+	Lab	Lab
+	Lab Values	ערכי Lab
+	Large List View	תצוגת רשימה גדולה
+	Large Thumbnail View	תצוגת תמונות ממוזערות גדולות
+	Large Thumbnails	תמונות ממוזערות גדולות
+	Last Effect: {}	אפקט אחרון: {}
+	Latin Extended	לטינית מורחבת
+	Latin-1 Supplement	תוסף לטינית-1
+	Layer	שכבה
+	Layer Names	שמות שכבות
+	Left	שמאל
+	Left in Front	שמאל בחזית
+	Left-Justified Tab	טאב מיושר לשמאל
+	Letter	Letter
+	Light Blue	כחול בהיר
+	Lightness	בהירות
+	Link	קישור
+	Low	נמוך
+	Mac	Mac
+	Magenta	מג'נטה
+	Make Envelope	יצירת מעטפת
+	Marks and Bleed	סימנים וגלישה
+	Marks and Bleeds	סימנים וגלישות
+	Matte	שוליים
+	Maximum	מקסימום
+	Medium (150 ppi)	בינונית (150 ppi)
+	Medium Thumbnail View	תצוגת תמונות ממוזערות בינוניות
+	Medium Thumbnails	תמונות ממוזערות בינוניות
+	Minimal	מינימלי
+	Miter Limit	מגבלת חיתוך זוויתי
+	Miter Limit:	מגבלת חיתוך זוויתי:
+	Mixed Objects	אובייקטים מעורבים
+	Model	דגם
+	Move All Objects	הזזת כל האובייקטים
+	N pt per	N pt לכל
+	N slices …, evenly spaced	N פרוסות …, במרווחים שווים
+	New View	תצוגה חדשה
+	No Break	ללא מעבר שורה
+	No Thumbnails	ללא תמונות ממוזערות
+	No matching fonts	אין גופנים תואמים
+	No saved views (View → New View…)	אין תצוגות שמורות (תצוגה ← תצוגה חדשה…)
+	None (/)	ללא (/)
+	None (keep transparency)	ללא (שמירת שקיפות)
+	Offset X	היסט X
+	Opened with {} note(s): {}	נפתח עם {} הערות: {}
+	Other Libraries	ספריות אחרות
+	Out of Gamut Warning	התראת חריגה מטווח הצבעים
+	Out of Web Color Warning	התראת צבע שאינו בטוח לרשת
+	Output	פלט
+	Output Black	שחור פלט
+	Output White	לבן פלט
+	Output › Mode	פלט › מצב
+	Packaged {n} file(s) in {folder}{note}	{n} קבצים נארזו ב-{folder}{note}
+	Packaged {n} file(s){note}	{n} קבצים נארזו{note}
+	Page information	פרטי עמוד
+	Paragraph Style	סגנון פסקה
+	Part of ArtCraft. MIT OR Apache-2.0. Fonts: Source Sans 3, Inter, JetBrains Mono (OFL). Icons: Lucide (ISC) + VectorCraft.	חלק מ-ArtCraft. MIT OR Apache-2.0. גופנים: Source Sans 3, Inter, JetBrains Mono (OFL). סמלים: Lucide (ISC) + VectorCraft.
+	Perspective grid presets	הגדרות מוכנות של רשת פרספקטיבה
+	Phone 390×844	טלפון 390×844
+	Place onto a new locked, dimmed template layer below the current layer	מיקום בשכבת תבנית חדשה, נעולה ומעומעמת, מתחת לשכבה הנוכחית
+	Point Sample	דגימת נקודה
+	Postcard	גלויה
+	Presentation Attributes	מאפייני הצגה
+	Preset {}	הגדרה מוכנה {}
+	Preview in Browser needs the desktop app (the web downloads files instead)	תצוגה מקדימה בדפדפן דורשת את אפליקציית שולחן העבודה (בגרסת הרשת הקבצים יורדים במקום זאת)
+	Print presets	הגדרות מוכנות להדפסה
+	Proportional Oldstyle	סגנון ישן פרופורציונלי
+	Punctuation	פיסוק
+	Radius 1	רדיוס 1
+	Radius 2	רדיוס 2
+	Radius1	רדיוס1
+	Radius2	רדיוס2
+	Rasterize	המרה לרסטר
+	Recent	אחרונים
+	Recent File	קובץ אחרון
+	Recent Font	גופן אחרון
+	Redo {}	ביצוע מחדש של {}
+	Reflect Horizontal	שיקוף אופקי
+	Registration marks	סימני רישום
+	Regular	רגיל
+	Relink Linked Files to the Document	קישור מחדש של קבצים מקושרים למסמך
+	Relinked {n} image(s)	{n} תמונות קושרו מחדש
+	Relinked {n} image(s); not in that folder: {}	{n} תמונות קושרו מחדש; לא בתיקייה זו: {}
+	Relinked {} image(s)	{} תמונות קושרו מחדש
+	Repeat Options	אפשרויות חזרה
+	Reset with Mesh	איפוס עם רשת
+	Reset with Warp	איפוס עם כיפוף
+	Reset {}	איפוס {}
+	Restored {} recovered document(s): save them to keep them	{} מסמכים משוחזרים שוחזרו: שמרו אותם כדי לשמור עליהם
+	Right	ימין
+	Right in Front	ימין בחזית
+	Right-Justified Tab	טאב מיושר לימין
+	Rotate 90° CW	סיבוב ב-90° עם כיוון השעון
+	Same As Source	זהה למקור
+	Saved	נשמר
+	Saved recovery data for {title}	נתוני שחזור של {title} נשמרו
+	Saved to User Defined: {}	נשמר ב'מוגדר על ידי המשתמש': {}
+	Saved {n} files beside {path}	{n} קבצים נשמרו לצד {path}
+	Saved {path}	{path} נשמר
+	Saved {path} with {} note(s): {first}	{path} נשמר עם {} הערות: {first}
+	Saving	שומר
+	Saving recovery data for {}	שומר נתוני שחזור של {}
+	Saving {}	שומר את {}
+	Scatter	פיזור
+	Screen (72 ppi)	מסך (72 ppi)
+	Search	חיפוש
+	Security	אבטחה
+	Select All Pins	בחירת כל הסיכות
+	Select Guides	בחירת קווי עזר
+	Select text or click into text with the Type tool to insert glyphs	בחרו טקסט או לחצו בתוך טקסט בכלי הטקסט כדי להוסיף גליפים
+	Server-side (.map)	בצד השרת (.map)
+	Set 1	קבוצה 1
+	Set base color	הגדרת צבע בסיס
+	Show All Swatches	הצגת כל דוגמיות הצבע
+	Show Color Groups	הצגת קבוצות צבעים
+	Show Color Swatches	הצגת דוגמיות צבע
+	Show Embedded	הצגת מוטמעים
+	Show Gradient Swatches	הצגת מעברי צבע
+	Show Mesh	הצגת רשת העיוות
+	Show Missing	הצגת חסרים
+	Show Modified	הצגת ששונו
+	Show Pattern Swatches	הצגת דוגמיות דוגמה
+	Show and print from the Lab definition; PDF files carry it as the ink's alternate color.	הצגה והדפסה לפי הגדרת Lab; קובצי PDF נושאים אותה כצבע חלופי של הדיו.
+	Show and separate through the working CMYK space, as in older documents.	הצגה והפרדה דרך מרחב ה-CMYK העובד, כמו במסמכים ישנים.
+	Small List View	תצוגת רשימה קטנה
+	Small Thumbnail View	תצוגת תמונות ממוזערות קטנות
+	Small Thumbnails	תמונות ממוזערות קטנות
+	Smooth Color	צבע חלק
+	Social Square Post 1080×1080	פוסט ריבועי לרשתות חברתיות 1080×1080
+	Sort by Status	מיון לפי מצב
+	Specified Distance	מרחק מוגדר
+	Specified Steps	שלבים מוגדרים
+	Standard Vertical Roman Alignment	יישור לטיני אנכי סטנדרטי
+	Stroke (X), double-click for the Color Picker	קו מתאר (X), לחיצה כפולה לבורר הצבעים
+	Stroke: click for swatches, Shift-click for the color mixer	קו מתאר: לחיצה לדוגמיות צבע, Shift+לחיצה למערבל הצבעים
+	Style Attributes	מאפייני סגנון
+	Style Attributes (Entity References)	מאפייני סגנון (הפניות לישויות)
+	Subscript	כתב תחתי
+	Summary	סיכום
+	Superscript	כתב עילי
+	Swap Fill and Stroke (Shift+X)	החלפת מילוי וקו מתאר (Shift+X)
+	Swap the selected object for the file, keeping its place and transform	החלפת האובייקט הנבחר בקובץ, תוך שמירה על מיקומו וטרנספורמציה
+	Swatch Libraries Menu	תפריט ספריות דוגמיות צבע
+	System Layout	פריסת מערכת
+	Tabular Lining	ספרות טבלאיות גבוהות
+	Tabular Oldstyle	ספרות טבלאיות בסגנון ישן
+	Tate-chu-yoko	Tate-chu-yoko
+	Temperature	טמפרטורה
+	Template	תבנית
+	Templates	תבניות
+	Text Wrap Options	אפשרויות גלישת טקסט
+	Tile Full Pages	ריצוף עמודים מלאים
+	Tint	גוון
+	Tip extends past the end point	הקצה חורג מנקודת הסיום
+	Tip on the end point	הקצה בנקודת הסיום
+	Top	למעלה
+	Top in Front	עליון בחזית
+	Transforms	טרנספורמציות
+	Transparent (Default)	שקוף (ברירת מחדל)
+	Trim marks	סימני חיתוך
+	Undo {}	ביטול {}
+	Unembedded to {}	ההטמעה בוטלה אל {}
+	Unicode	Unicode
+	Unicode (UTF-16)	Unicode (UTF-16)
+	Unicode (UTF-8)	Unicode (UTF-8)
+	Unique	ייחודי
+	Unite and Simplify	איחוד ופישוט
+	Untitled	ללא כותרת
+	Updated {} image(s)	{} תמונות עודכנו
+	Use the document's swatch: pasted colors take its color.	שימוש בדוגמית הצבע של המסמך: צבעים שהודבקו לוקחים את צבעה.
+	User Library	ספריית משתמש
+	User Preset	הגדרה מוכנה של המשתמש
+	Vertical %	% אנכי
+	Vertical Distribute Bottom	פיזור תחתון אנכית
+	Vertical Distribute Center	פיזור מרכזים אנכית
+	Vertical Distribute Top	פיזור עליון אנכית
+	Very High	גבוהה מאוד
+	View {n}	תצוגה {n}
+	Web 1920×1080	Web 1920×1080
+	Web Safe RGB	RGB בטוח לרשת
+	Weight	משקל
+	Windows	Windows
+	Working CMYK (don't tag)	CMYK עובד (ללא תיוג)
+	Workspace {i}	סביבת עבודה {i}
+	Yellow	צהוב
+	[Normal Character Style]	[סגנון תו רגיל]
+	[Normal Paragraph Style]	[סגנון פסקה רגיל]
+@plural	Color Table ({n} color)|Color Table ({n} colors)	טבלת צבעים (צבע {n})|טבלת צבעים ({n} צבעים)
+@plural	Delete this {n} graphic style?|Delete these {n} graphic styles?	למחוק סגנון גרפי זה ({n})?|למחוק {n} סגנונות גרפיים אלה?
+@plural	{n} Layer|{n} Layers	שכבה {n}|{n} שכבות
+@plural	{n} Object|{n} Objects	אובייקט {n}|{n} אובייקטים
+@plural	{n} area highlighted|{n} areas highlighted	אזור {n} מודגש|{n} אזורים מודגשים
+@plural	{n} color|{n} colors	צבע {n}|{n} צבעים
+@plural	{n} fill|{n} fills	מילוי {n}|{n} מילויים
+@plural	{n} glyph|{n} glyphs	גליף {n}|{n} גליפים
+@plural	{n} item|{n} items	פריט {n}|{n} פריטים
+@plural	{n} object highlighted|{n} objects highlighted	אובייקט {n} מודגש|{n} אובייקטים מודגשים
+@plural	{n} star|{n} stars	כוכב {n}|{n} כוכבים
+@plural	{n} step|{n} steps	שלב {n}|{n} שלבים
+@plural	{n} stroke|{n} strokes	קו מתאר {n}|{n} קווי מתאר
+
+# Strings added on main since the catalog was written (Layers panel, saved selections, Delete Anchor Points).
+	Delete Anchor Points	מחיקת נקודות עוגן
+	Edit Selection	עריכת בחירה
+	Saved Selection 1	בחירה שמורה 1
+	Saved Selection 2	בחירה שמורה 2
+	Saved Selection 3	בחירה שמורה 3
+	Saved Selection 4	בחירה שמורה 4
+	Saved Selection 5	בחירה שמורה 5
+	Saved Selection 6	בחירה שמורה 6
+	Saved Selection 7	בחירה שמורה 7
+	Saved Selection 8	בחירה שמורה 8
+	Saved Selection 9	בחירה שמורה 9
+	Saved Selection 10	בחירה שמורה 10
+	Saved Selection 11	בחירה שמורה 11
+	Saved Selection 12	בחירה שמורה 12
+	Saved Selection 13	בחירה שמורה 13
+	Saved Selection 14	בחירה שמורה 14
+	Saved Selection 15	בחירה שמורה 15
+	Saved Selection 16	בחירה שמורה 16
+	Saved Selection 17	בחירה שמורה 17
+	Saved Selection 18	בחירה שמורה 18
+	Saved Selection 19	בחירה שמורה 19
+	Saved Selection 20	בחירה שמורה 20
+	Saved Selection 21	בחירה שמורה 21
+	Saved Selection 22	בחירה שמורה 22
+	Saved Selection 23	בחירה שמורה 23
+	Saved Selection 24	בחירה שמורה 24
+	Saved Selection 25	בחירה שמורה 25
+	Left-to-Right Paragraph Direction	כיוון פסקה משמאל לימין
+	Right-to-Left Paragraph Direction	כיוון פסקה מימין לשמאל
+
+# About › Contributors / Models (credits.rs)
+	About	אודות
+	Contributors	תורמים
+	Models	מודלים
+	Username	שם משתמש
+	Display name	שם תצוגה
+	Real name	שם אמיתי
+	Sort	מיון
+	Reverse the order	היפוך הסדר
+	Grab bag	מגוון
+	Table	טבלה
+	Name (A–Z)	שם (א–ת)
+	Merged PRs	PR שמוזגו
+	Commits	Commits
+	Lines added	שורות שנוספו
+	Lines deleted	שורות שנמחקו
+	Line delta	הפרש שורות
+	Binary assets added	נכסים בינאריים שנוספו
+	Binary assets removed	נכסים בינאריים שהוסרו
+	First commit	Commit ראשון
+	Last commit	Commit אחרון
+	First	ראשון
+	Last	אחרון
+	{people} contributors · {commits} commits	{people} תורמים · {commits} commits
+	No contributor data was built into this copy.	לא נכללו נתוני תורמים בעותק זה.
+	No model credits were built into this copy.	לא נכללו קרדיטים למודלים בעותק זה.
+	Company	חברה
+	Version	גרסה
+	% of all commits	% מכל ה-commits
+	Lines +/−	שורות +/−
+	Joins	חיבורים
+	Miter	חיתוך זוויתי
+	Bevel	שיפוע
+	Offset	היסט
+	Axis	ציר
+axis	Horizontal	אופקי
+axis	Vertical	אנכי
+axis	Both	שניהם
+	Drag to move	גרירה להזזה
+	Drag to float as a toolbar	גרירה לצפייה כסרגל כלים צף
+	Put back in the toolbar	החזרה לסרגל הכלים
+	Float Tool Group	הפיכת קבוצת הכלים לצפה

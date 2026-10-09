@@ -163,10 +163,15 @@ fn load_prefs(app: &mut VectorcraftApp, saved: Option<vectorcraft_ui_egui::UiSta
     if !prefs_enabled() {
         return;
     }
+    let first_run = saved.is_none();
     if let Some(ui) = saved {
         app.ui = ui.sanitized();
     }
     vectorcraft_ui_egui::prefs_dialog::restore(app);
+    // Epic Vector opens in Hebrew until another interface language is chosen in Preferences.
+    if first_run && app.session.prefs.interface_language == "auto" {
+        app.session.prefs.interface_language = "he".to_owned();
+    }
 }
 
 fn save_prefs(app: &VectorcraftApp) {
