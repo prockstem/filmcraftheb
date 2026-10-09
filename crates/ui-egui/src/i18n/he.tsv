@@ -134,9 +134,9 @@
 	Use now	השתמשו עכשיו
 	Open file	פתיחת קובץ
 	Recent	אחרונים
-	Files you open in PdfCraft appear here. Drop a PDF anywhere to open it.	קבצים שתפתחו ב-PdfCraft יופיעו כאן. גררו קובץ PDF לכל מקום כדי לפתוח אותו.
+	Files you open in PdfCraft appear here. Drop a PDF anywhere to open it.	קבצים שתפתחו ב-Epic PDF יופיעו כאן. גררו קובץ PDF לכל מקום כדי לפתוח אותו.
 	Privacy	פרטיות
-	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft פועל במצב לא מקוון. ללא טלמטריה, ללא חשבון וללא עיבוד בענן, אלא אם תוסיפו ספק.
+	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	Epic PDF פועל במצב לא מקוון. ללא טלמטריה, ללא חשבון וללא עיבוד בענן, אלא אם תוסיפו ספק.
 	Scripts run in a sandbox without file or network access. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	סקריפטים רצים בסביבה מבודדת ללא גישה לקבצים או לרשת. כשהפעלת JavaScript כבויה, פונקציות הפורמט, האימות והחישוב הסטנדרטיות של Acrobat ממשיכות לעבוד.
 	Back to all tools	חזרה לכל הכלים
 	Close panel	סגירת החלונית
@@ -824,7 +824,7 @@
 	No changes allowed	אין שינויים מותרים
 	Annotations, form fill-in, and digital signatures	הערות, מילוי טפסים וחתימות דיגיטליות
 	Form fill-in and digital signatures	מילוי טפסים וחתימות דיגיטליות
-	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	המפתח נמצא ב-Keychain של macOS, ויתכן שתתבקש לאשר ל-PdfCraft להשתמש בו.
+	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	המפתח נמצא ב-Keychain של macOS, ויתכן שתתבקש לאשר ל-Epic PDF להשתמש בו.
 	Digital ID password	סיסמת תעודה דיגיטלית
 	Back	חזרה
 	Validate all	אימות הכול
@@ -1472,10 +1472,10 @@
 	On the web, open or drop an image to convert it	באינטרנט, פתחו או גררו תמונה כדי להמיר אותה
 	Couldn't optimize the file: {e}	לא ניתן לבצע אופטימיזציה לקובץ: {e}
 	Couldn't write {path}: {e}	לא ניתן לכתוב את {path}: {e}
-	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	הטופס מבקש להישלח אל {u}; PdfCraft לא שולח נתוני טופס. שמרו את המסמך כדי לשמור את הערכים שהזנתם.
+	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	הטופס מבקש להישלח אל {u}; Epic PDF לא שולח נתוני טופס. שמרו את המסמך כדי לשמור את הערכים שהזנתם.
 	{s} actions run in the JavaScript engine (M6)	פעולות {s} פועלות במנוע JavaScript (M6)
 	{name}: the {other} action isn't supported yet	{name}: הפעולה {other} עדיין לא נתמכת
-	{name} submits the form to {url}; PdfCraft doesn't send form data. Save the document to keep your entries.	{name} שולח את הטופס אל {url}; PdfCraft לא שולח נתוני טופס. שמרו את המסמך כדי לשמור את הערכים שהזנתם.
+	{name} submits the form to {url}; PdfCraft doesn't send form data. Save the document to keep your entries.	{name} שולח את הטופס אל {url}; Epic PDF לא שולח נתוני טופס. שמרו את המסמך כדי לשמור את הערכים שהזנתם.
 	Export stopped: {e}	הייצוא נעצר: {e}
 	Exported 1 image	יוצאה תמונה אחת
 	Exported {n} images	יוצאו {n} תמונות
@@ -1632,8 +1632,8 @@
 	Signed and all signatures are valid.	החתימות תקינות והמסמך חתום.
 	At least one signature has problems.	לפחות חתימה אחת כוללת בעיות.
 	This document is secured. Some changes are restricted by its security settings.	המסמך מאובטח. חלק מהשינויים מוגבלים על ידי הגדרות האבטחה שלו.
-	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	זהו טופס XFA דינמי ש-PdfCraft עדיין אינו יכול להציג. מה שמוצג הוא דף ממלא המקום של הקובץ.
-	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	הטופס כולל גם נתוני XFA ש-PdfCraft עדיין אינו קורא. אפשר למלא את השדות, אך Acrobat עשוי להציג את ערכי ה-XFA במקומם.
+	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	זהו טופס XFA דינמי ש-Epic PDF עדיין אינו יכול להציג. מה שמוצג הוא דף ממלא המקום של הקובץ.
+	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	הטופס כולל גם נתוני XFA ש-Epic PDF עדיין אינו קורא. אפשר למלא את השדות, אך Acrobat עשוי להציג את ערכי ה-XFA במקומם.
 	This document contains {n} interactive form fields.	מסמך זה מכיל {n} שדות טופס אינטראקטיביים.
 	This file was damaged and has been repaired. Saving keeps the repaired version.	הקובץ ניזוק ותוקן. השמירה תשמור את הגרסה המתוקנת.
 	Dismiss	סגירה
