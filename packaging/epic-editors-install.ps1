@@ -1,5 +1,5 @@
 # Builds the Hebrew Epic Film and Epic PDF from source into D:\EPIC EDITORS, with Desktop shortcuts.
-# Needs Git, Rust (rustup) and the Visual Studio C++ build tools; they are installed with winget
+# Needs Git, Rust (rustup) and the Visual Studio C++ build tools. Git and Rust are installed with winget
 # when missing. Run it again later to update both apps.
 foreach ($tool in @(@{ Cmd = 'git'; Id = 'Git.Git' }, @{ Cmd = 'cargo'; Id = 'Rustlang.Rustup' })) {
   if (-not (Get-Command $tool.Cmd -ErrorAction SilentlyContinue)) { winget install -e --id $tool.Id }
