@@ -1,0 +1,53 @@
+# Builds the macOS version of Epic PDF (universal: Apple Silicon and Intel) on every push to this
+# branch and keeps "Epic-PDF-<version>-macOS.zip" (DMG + install notes + licences) on the Actions
+# run's Summary page as the "macos-zip" artifact (sign in to GitHub to download it). Signed ad hoc and not notarized: there are no Apple signing secrets here.
+name: Epic PDF macOS
+
+on:
+  push:
+    branches: [epic-pdf]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: epic-macos-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  macos:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-apple-darwin, x86_64-apple-darwin
+      - uses: Swatinem/rust-cache@v2
+        with:
+          key: epic-macos
+      - name: Build the app and DMG (ad-hoc signed)
+        run: packaging/macos/package.sh --arch universal
+      - name: Zip the DMG with install notes and licences
+        id: zip
+        run: |
+          set -euo pipefail
+          version=$(sed -n 's/^version = "\(.*\)"/\1/p' Cargo.toml | head -1)
+          dmg=$(ls dist/release/*-macos-universal.dmg | head -1)
+          stage="dist/zip/Epic PDF"
+          mkdir -p "$stage"
+          cp "$dmg" "$stage/Epic PDF.dmg"
+          cp LICENSE-MIT LICENSE-APACHE NOTICE ATTRIBUTION.md "$stage/"
+          sed -e "s|@APP@|Epic PDF|g" -e "s|@VERSION@|$version|g" -e "s|@DMG@|Epic PDF.dmg|g" \
+              -e "s|@UPSTREAM@|PdfCraft|g" -e "s|@UPSTREAM_URL@|https://github.com/storytold/pdfcraft|g" -e "s|@SOURCE_URL@|https://github.com/prockstem/filmcraftheb/tree/epic-pdf|g" \
+              packaging/macos/INSTALL-README-mac.txt >"$stage/README.txt"
+          zip="Epic-PDF-$version-macOS.zip"
+          (cd dist/zip && zip -9 -r "../$zip" "Epic PDF")
+          echo "zip=dist/$zip" >>"$GITHUB_OUTPUT"
+      - name: Keep the zip as a build artifact (download it from the run's Summary page)
+        uses: actions/upload-artifact@v4
+        with:
+          name: macos-zip
+          path: ${{ steps.zip.outputs.zip }}
+          if-no-files-found: error
+          retention-days: 90
