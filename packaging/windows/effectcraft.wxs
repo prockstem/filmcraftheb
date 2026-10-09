@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Epic Effects MSI (WiX Toolset v5: `dotnet tool install -g wix`). Built by package.ps1:
+
+    wix build effectcraft.wxs -arch x64 -d Version=1.2.3 -d BinDir=... -d IconPath=... -o out.msi
+
+  Per-machine install into Program Files, a Start Menu shortcut, `.pcraft` owned by Epic Effects,
+  and Epic Effects offered under "Open with" for PSD/PSB and the image formats it reads (without
+  taking over the user's default app for them).
+-->
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package
+      Name="Epic Effects"
+      Manufacturer="prockstem"
+      Version="$(var.Version)"
+      UpgradeCode="E285060A-3447-474E-AC2B-E467CF1096B7"
+      Scope="perMachine"
+      Compressed="yes"
+      Language="1033">
+    <SummaryInformation Description="Epic Effects motion graphics and visual effects" Manufacturer="prockstem" />
+    <!-- Same-version upgrades let successive pre-releases of one X.Y.Z replace each other
+         (MSI versions are numeric, so 1.2.3-rc.1 and 1.2.3-rc.2 are both 1.2.3). -->
+    <MajorUpgrade AllowSameVersionUpgrades="yes"
+        DowngradeErrorMessage="A newer version of Epic Effects is already installed." />
+    <MediaTemplate EmbedCab="yes" CompressionLevel="high" />
+
+    <Icon Id="EffectcraftIcon.ico" SourceFile="$(var.IconPath)" />
+    <Property Id="ARPPRODUCTICON" Value="EffectcraftIcon.ico" />
+    <Property Id="ARPURLINFOABOUT" Value="https://github.com/prockstem/filmcraftheb/tree/epic-effects" />
+    <Property Id="ARPURLUPDATEINFO" Value="https://github.com/prockstem/filmcraftheb/tree/epic-effects" />
+    <Property Id="ARPHELPLINK" Value="https://discord.gg/artcraft" />
+
+    <StandardDirectory Id="ProgramFiles6432Folder">
+      <Directory Id="INSTALLFOLDER" Name="Epic Effects" />
+    </StandardDirectory>
+    <StandardDirectory Id="ProgramMenuFolder" />
+
+    <Feature Id="Main" Title="Epic Effects" Level="1">
+      <ComponentGroupRef Id="EffectcraftFiles" />
+    </Feature>
+  </Package>
+
+  <Fragment>
+    <ComponentGroup Id="EffectcraftFiles" Directory="INSTALLFOLDER">
+      <Component Id="EffectcraftApp" Guid="BA719860-95FE-4154-B265-47006B8E9083">
+        <File Id="EffectcraftExe" Source="$(var.BinDir)\effectcraft.exe" KeyPath="yes">
+          <Shortcut Id="StartMenuShortcut" Directory="ProgramMenuFolder" Name="Epic Effects"
+              Description="Epic Effects motion graphics and visual effects" WorkingDirectory="INSTALLFOLDER" Advertise="yes"
+              Icon="EffectcraftIcon.ico" IconIndex="0" />
+        </File>
+
+        <RegistryValue Root="HKLM" Key="Software\Microsoft\Windows\CurrentVersion\App Paths\effectcraft.exe" Value="[#EffectcraftExe]" Type="string" />
+      </Component>
+
+      <Component Id="EffectcraftCli">
+        <File Id="EffectcraftCliExe" Source="$(var.BinDir)\effectcraft-cli.exe" KeyPath="yes" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

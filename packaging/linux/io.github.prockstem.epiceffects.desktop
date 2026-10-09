@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=Epic Effects
+GenericName=Motion Graphics Editor
+Comment=Motion graphics and visual effects compositor
+Exec=effectcraft %F
+TryExec=effectcraft
+Icon=io.github.prockstem.epiceffects
+Terminal=false
+StartupNotify=true
+StartupWMClass=io.github.prockstem.epiceffects
+Categories=AudioVideo;Video;Graphics;2DGraphics;
+Keywords=motion;graphics;animation;compositor;effects;keyframe;vfx;
