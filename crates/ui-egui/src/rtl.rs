@@ -117,14 +117,23 @@ fn visual_line(job: &LayoutJob, bidi: &BidiInfo<'_>, line: Range<usize>) -> Layo
         }
         for (section, range) in sections {
             let mut format = section.format.clone();
+            let text = &job.text[range.clone()];
             if rtl {
                 let bold = format.font_id.family == FontFamily::Name("semibold".into());
-                format.font_id.family = FontFamily::Name(if bold { "arabic-semibold" } else { "arabic" }.into());
-                if bold {
+                // Hebrew runs use the `hebrew` families (a system face with Hebrew letters); every
+                // other right-to-left run keeps the Arabic face.
+                let hebrew = text.chars().any(|c| ('\u{0590}'..='\u{05FF}').contains(&c) || ('\u{FB1D}'..='\u{FB4F}').contains(&c));
+                let family = match (hebrew, bold) {
+                    (true, true) => "hebrew-semibold",
+                    (true, false) => "hebrew",
+                    (false, true) => "arabic-semibold",
+                    (false, false) => "arabic",
+                };
+                format.font_id.family = FontFamily::Name(family.into());
+                if bold && !hebrew {
                     format.coords = egui::epaint::text::VariationCoords::new([(*b"wght", 600.0)]);
                 }
             }
-            let text = &job.text[range];
             if rtl && !text.chars().any(designcraft_fonts::is_rtl) {
                 // Neutral-only RTL runs have no script for the shaper to infer a direction.
                 // Apply UBA L4 mirroring here; Arabic runs are mirrored by the shaper.

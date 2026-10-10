@@ -335,7 +335,9 @@ fn font_definitions(craft: &'static [designcraft_fonts::CraftFont], lang: &str) 
         stack.extend(first.iter().chain(second).chain(&arabic).map(|f| name(f)));
     }
     // Hebrew (the UI faces have no Hebrew letters): a system sans-serif with Hebrew, last in
-    // every family. The `arabic` families get it below, through their own fallback chain.
+    // every family, and first in the `hebrew` families that rtl.rs uses for Hebrew runs. It stays
+    // out of the `arabic` families: system faces such as DejaVu Sans also have Arabic letters,
+    // which must keep shaping with the Arabic face.
     #[cfg(not(target_arch = "wasm32"))]
     let hebrew = system_hebrew_font();
     #[cfg(target_arch = "wasm32")]
@@ -349,14 +351,15 @@ fn font_definitions(craft: &'static [designcraft_fonts::CraftFont], lang: &str) 
     // Arabic runs (rtl.rs): the Arabic face first, so letters and spaces shape as one run.
     for family in ["arabic", "arabic-semibold"] {
         let ui = if family == "arabic" { "ui" } else { "ui-semibold" };
-        let stack = arabic
-            .iter()
-            .map(|f| name(f))
-            .chain([ui.to_string(), "ui".to_string()])
-            .chain(japanese.iter().chain(&chinese).map(|f| name(f)))
-            .chain(hebrew.is_some().then(|| "hebrew-system".to_string()));
+        let stack = arabic.iter().map(|f| name(f)).chain([ui.to_string(), "ui".to_string()]).chain(japanese.iter().chain(&chinese).map(|f| name(f)));
         let mut seen = std::collections::HashSet::new();
         fonts.families.insert(FontFamily::Name(family.into()), stack.filter(|n| seen.insert(n.clone())).collect());
+    }
+    for (family, ui) in [("hebrew", "ui"), ("hebrew-semibold", "ui-semibold")] {
+        let mut stack: Vec<String> = hebrew.iter().map(|_| "hebrew-system".to_string()).collect();
+        stack.extend([ui.to_string(), "ui".to_string()]);
+        stack.dedup();
+        fonts.families.insert(FontFamily::Name(family.into()), stack);
     }
     fonts
 }
