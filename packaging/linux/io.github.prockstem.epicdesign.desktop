@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=Epic Design
+GenericName=Page Layout
+Comment=Lay out magazines, books and print documents
+Exec=designcraft %F
+TryExec=designcraft
+Icon=io.github.prockstem.epicdesign
+Terminal=false
+StartupNotify=true
+StartupWMClass=io.github.prockstem.epicdesign
+Categories=Graphics;Publishing;
+Keywords=layout;page;desktop publishing;dtp;magazine;book;indesign;idml;typesetting;

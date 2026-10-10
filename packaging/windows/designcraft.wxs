@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Epic Design MSI (WiX Toolset v5: `dotnet tool install -g wix`). Built by package.ps1:
+
+    wix build designcraft.wxs -arch x64 -d Version=1.2.3 -d BinDir=... -d IconPath=... -o out.msi
+
+  Per-machine install into Program Files, a Start Menu shortcut, `.pcraft` owned by Epic Design,
+  and Epic Design offered under "Open with" for PSD/PSB and the image formats it reads (without
+  taking over the user's default app for them).
+-->
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package
+      Name="Epic Design"
+      Manufacturer="prockstem"
+      Version="$(var.Version)"
+      UpgradeCode="C24504B3-2C47-48C5-BC55-8166CB508DAA"
+      Scope="perMachine"
+      Compressed="yes"
+      Language="1033">
+    <SummaryInformation Description="Epic Design page layout and publishing" Manufacturer="prockstem" />
+    <!-- Same-version upgrades let successive pre-releases of one X.Y.Z replace each other
+         (MSI versions are numeric, so 1.2.3-rc.1 and 1.2.3-rc.2 are both 1.2.3). -->
+    <MajorUpgrade AllowSameVersionUpgrades="yes"
+        DowngradeErrorMessage="A newer version of Epic Design is already installed." />
+    <MediaTemplate EmbedCab="yes" CompressionLevel="high" />
+
+    <Icon Id="DesigncraftIcon.ico" SourceFile="$(var.IconPath)" />
+    <Property Id="ARPPRODUCTICON" Value="DesigncraftIcon.ico" />
+    <Property Id="ARPURLINFOABOUT" Value="https://github.com/prockstem/filmcraftheb/tree/epic-design" />
+    <Property Id="ARPURLUPDATEINFO" Value="https://github.com/prockstem/filmcraftheb/tree/epic-design" />
+    <Property Id="ARPHELPLINK" Value="https://discord.gg/artcraft" />
+
+    <StandardDirectory Id="ProgramFiles6432Folder">
+      <Directory Id="INSTALLFOLDER" Name="Epic Design" />
+    </StandardDirectory>
+    <StandardDirectory Id="ProgramMenuFolder" />
+
+    <Feature Id="Main" Title="Epic Design" Level="1">
+      <ComponentGroupRef Id="DesigncraftFiles" />
+    </Feature>
+  </Package>
+
+  <Fragment>
+    <ComponentGroup Id="DesigncraftFiles" Directory="INSTALLFOLDER">
+      <Component Id="DesigncraftApp" Guid="DE018EF3-EE87-4E36-9F76-0B7B060A195E">
+        <File Id="DesigncraftExe" Source="$(var.BinDir)\designcraft.exe" KeyPath="yes">
+          <Shortcut Id="StartMenuShortcut" Directory="ProgramMenuFolder" Name="Epic Design"
+              Description="Epic Design page layout and publishing" WorkingDirectory="INSTALLFOLDER" Advertise="yes"
+              Icon="DesigncraftIcon.ico" IconIndex="0" />
+        </File>
+
+        <RegistryValue Root="HKLM" Key="Software\Microsoft\Windows\CurrentVersion\App Paths\designcraft.exe" Value="[#DesigncraftExe]" Type="string" />
+      </Component>
+
+      <Component Id="DesigncraftCli">
+        <File Id="DesigncraftCliExe" Source="$(var.BinDir)\designcraft-cli.exe" KeyPath="yes" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>
