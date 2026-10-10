@@ -326,7 +326,7 @@ mod tests {
                 let galley = plain(ctx, text, FontId::proportional(15.0), Color32::WHITE);
                 let x = |c: char| galley.rows[0].glyphs.iter().find(|g| g.chr == c).map(|g| g.pos.x).unwrap_or(f32::NAN);
                 let first = text.chars().next().unwrap();
-                let last = text.chars().filter(|c| !c.is_whitespace() && *c != '…').last().unwrap();
+                let last = text.chars().rev().find(|c| !c.is_whitespace() && *c != '…').unwrap();
                 assert!(x(first) > x(last), "{text}: the first letter is drawn rightmost: {}", displayed(&galley));
             }
         });
