@@ -316,6 +316,22 @@ mod tests {
         output.textures_delta.clear();
     }
 
+    #[test]
+    fn hebrew_words_read_right_to_left() {
+        if crate::theme::system_hebrew_font().is_none() {
+            return; // no Hebrew font on this machine (none is bundled)
+        }
+        with_fonts(|ctx| {
+            for text in ["קובץ", "קובץ חדש", "שמירה בשם…"] {
+                let galley = plain(ctx, text, FontId::proportional(15.0), Color32::WHITE);
+                let x = |c: char| galley.rows[0].glyphs.iter().find(|g| g.chr == c).map(|g| g.pos.x).unwrap_or(f32::NAN);
+                let first = text.chars().next().unwrap();
+                let last = text.chars().filter(|c| !c.is_whitespace() && *c != '…').last().unwrap();
+                assert!(x(first) > x(last), "{text}: the first letter is drawn rightmost: {}", displayed(&galley));
+            }
+        });
+    }
+
     fn displayed(galley: &Galley) -> String {
         galley.rows.iter().flat_map(|row| row.glyphs.iter().filter(|g| g.advance_width > 0.0).map(|g| g.chr)).collect()
     }
