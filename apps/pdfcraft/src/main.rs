@@ -151,9 +151,9 @@ fn main() -> eframe::Result {
         native,
         Box::new(move |cc| {
             let mut app = PdfCraftApp::new();
-            // Epic PDF opens in Hebrew until another language is chosen (saved settings and
-            // --language win).
-            app.language = "he".to_owned();
+            // Epic PDF opens in Hebrew, or the edition's language (EPIC_DEFAULT_LANGUAGE at build
+            // time, e.g. en), until another language is chosen (saved settings and --language win).
+            app.language = option_env!("EPIC_DEFAULT_LANGUAGE").unwrap_or("he").to_owned();
             if let Some(json) = cc.storage.and_then(|s| s.get_string("pdfcraft").or_else(|| s.get_string(LEGACY_STORAGE_KEY))) {
                 app.restore(&json);
             }

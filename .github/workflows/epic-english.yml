@@ -1,0 +1,96 @@
+# English edition of this Epic app (opens in English; EPIC_DEFAULT_LANGUAGE=en at build time):
+# Windows, Linux and macOS packages built in parallel on every push to this branch, kept as
+# artifacts on the run's Summary page (sign in to GitHub to download them). Windows is
+# cross-built with mingw and Linux against glibc 2.31 (Ubuntu 20.04+), the same way as the
+# Hebrew packages. Unsigned: no signing secrets here.
+name: Epic PDF English
+
+on:
+  push:
+    branches: [epic-pdf]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: epic-english-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  EPIC_DEFAULT_LANGUAGE: en
+  CARGO_TERM_COLOR: always
+
+jobs:
+  windows:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: x86_64-pc-windows-gnu
+      - uses: Swatinem/rust-cache@v2
+        with:
+          key: epic-english-windows
+      - run: sudo apt-get update -q && sudo apt-get install -y -q --no-install-recommends mingw-w64 zip
+      - name: Icon and version resources (when the app's build.rs skips them on Linux)
+        run: |
+          if [ -f packaging/epic/app.rc ]; then
+            (cd packaging/epic && x86_64-w64-mingw32-windres app.rc -O coff -o "$RUNNER_TEMP/app-res.o")
+            echo "CARGO_TARGET_X86_64_PC_WINDOWS_GNU_RUSTFLAGS=-C link-arg=$RUNNER_TEMP/app-res.o" >>"$GITHUB_ENV"
+          fi
+      - name: Build
+        env:
+          CARGO_TARGET_X86_64_PC_WINDOWS_GNU_LINKER: x86_64-w64-mingw32-gcc
+        run: . packaging/epic/app.env && cargo build --release -p "$BIN" --target x86_64-pc-windows-gnu
+      - run: packaging/epic/package-english.sh windows
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows-english
+          path: dist/epic/*
+          if-no-files-found: error
+          retention-days: 90
+
+  linux:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+        with:
+          key: epic-english-linux
+      - run: sudo apt-get update -q && sudo apt-get install -y -q --no-install-recommends libasound2-dev pkg-config zip
+      - run: pip install ziglang && cargo install --locked cargo-zigbuild
+      - name: Build (glibc 2.31)
+        env:
+          PKG_CONFIG_ALLOW_CROSS: "1"
+          # libasound on the runner is newer than glibc 2.31; the user's own copy is loaded at run time.
+          CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_RUSTFLAGS: "-C link-arg=-Wl,--allow-shlib-undefined"
+        run: . packaging/epic/app.env && cargo zigbuild --release -p "$BIN" --target x86_64-unknown-linux-gnu.2.31
+      - run: packaging/epic/package-english.sh linux
+      - uses: actions/upload-artifact@v4
+        with:
+          name: linux-english
+          path: dist/epic/*
+          if-no-files-found: error
+          retention-days: 90
+
+  macos:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-apple-darwin, x86_64-apple-darwin
+      - uses: Swatinem/rust-cache@v2
+        with:
+          key: epic-english-macos
+      - name: Build the app and DMG (ad-hoc signed)
+        run: packaging/macos/package.sh --arch universal
+      - run: packaging/epic/package-english.sh macos
+      - uses: actions/upload-artifact@v4
+        with:
+          name: macos-english
+          path: dist/epic/*
+          if-no-files-found: error
+          retention-days: 90
