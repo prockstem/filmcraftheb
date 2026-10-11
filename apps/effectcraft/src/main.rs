@@ -141,11 +141,12 @@ fn main() -> eframe::Result {
                 }
                 session.config = Some(std::sync::Arc::new(effectcraft_engine::config::DirConfig::new(dir)));
             }
-            // Epic Effects opens in Hebrew until another language is chosen in Settings ▸ General.
+            // Epic Effects opens in Hebrew, or the edition's language (EPIC_DEFAULT_LANGUAGE at build
+            // time, e.g. en), until another language is chosen in Settings ▸ General.
             let first_run = session.config.as_ref().is_some_and(|c| c.read(effectcraft_engine::prefs::PREFS_FILE).is_none());
             session.load_settings();
             if first_run && session.prefs.general.language == "system" {
-                session.prefs.general.language = "he".to_owned();
+                session.prefs.general.language = option_env!("EPIC_DEFAULT_LANGUAGE").unwrap_or("he").to_owned();
             }
             let recovery = if control_port.is_none() { session.begin_recovery() } else { None };
             let project = files.iter().find(|f| f.ends_with(".ecproj")).cloned();
