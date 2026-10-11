@@ -70,8 +70,13 @@ fn load_prefs(app: &mut DesignApp) {
     {
         app.ui = ui;
     } else {
-        // First launch: Epic Design opens in Hebrew (Edit › Interface Language switches).
-        app.ui.language = "he".to_owned();
+        // First launch: Epic Design opens in Hebrew, or the edition's language (EPIC_DEFAULT_LANGUAGE
+        // at build time; `en` is the empty code here). Edit › Interface Language switches.
+        app.ui.language = match option_env!("EPIC_DEFAULT_LANGUAGE") {
+            Some("en") => String::new(),
+            Some(code) => code.to_owned(),
+            None => "he".to_owned(),
+        };
     }
     // Engine preferences (Preferences dialog, favourites…) live beside the UI state.
     if let Some(p) = prefs_path().map(|p| p.with_file_name("prefs.json"))
